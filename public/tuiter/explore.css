@@ -136,12 +136,21 @@
     margin-top: 5px;
 }
 
+.wd-align-text-center {
+    text-align: center;
+}
+
+.wd-align-text-left {
+    text-align: left;
+}
+
+.wd-padding-16 {
+    padding: 16px;
+}
+
 .wd-flex-link {
     display: inline-block;
     flex-grow: 1;
-    text-align: center;
-    font-size: 15px;
-    padding: 16px;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -258,12 +267,11 @@
 
 .wd-tuit-header-margins {
     margin-top: 12px;
-    margin-bottom: 12px;
 }
 
 .wd-tuit-dimensions {
     position: relative;
-    height: 500px;
+    height: 520px;
     width: calc(100% - 26px);
 }
 
@@ -349,3 +357,14 @@ wd-article-content-border-top {
     margin-top: 2px;
 }
 
+.wd-article-link-box-dimensions {
+    width: 504px;
+}
+
+.wd-icon-spacing {
+    margin-left: 12px;
+}
+
+.wd-color-red {
+    color: red;
+}
