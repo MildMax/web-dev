@@ -15,25 +15,43 @@
 
 .wd-left-right-page-borders {
     position: absolute;
-    margin-left: 30px;
-    margin-right: 10px;
+    top: 0;
+    left: 0;
     border-right-style: solid;
     border-right-width: 1px;
     border-left-style: solid;
     border-left-width: 1px;
     height: 100%;
-    width: calc(100% - 40px);
+
     min-width: 560px;
 }
 
-.wd-body-content {
+.wd-explore-page-border-margins {
+    width: calc(100% - 40px);
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.wd-bookmarks-page-border-margins {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.wd-explore-body-content {
     margin-left: 30px;
     margin-right: 10px;
     margin-top: 5px;
 }
 
+.wd-bookmarks-body-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
 .wd-content-padding {
-    padding-left: 30px;
+    padding-left: 16px;
     padding-right: 16px;
 }
 
@@ -112,13 +130,13 @@
     clear: both;
 }
 
-.wd-topic-link-box {
+.wd-link-box {
     display: flex;
     flex-wrap: nowrap;
     margin-top: 5px;
 }
 
-.wd-topic-link {
+.wd-flex-link {
     display: inline-block;
     flex-grow: 1;
     text-align: center;
@@ -158,12 +176,12 @@
     border-top-color: darkgrey;
 }
 
-.wd-border-bottom-color-darker-grey {
-    border-bottom-color: #5f5f5f;
+.wd-border-bottom-color-light-grey {
+    border-bottom-color: lightgray;
 }
 
 .wd-very-dark-grey-fill {
-    background-color: rgb(47, 51, 54);
+    background-color: rgb(33, 33, 36);
 }
 
 .wd-tuit-photo-content-box {
@@ -187,11 +205,14 @@
 
 .wd-sub-text-area {
     height: 20px;
+}
+
+.wd-size-13-font {
     font-size: 13px;
 }
 
 .wd-sub-text-color {
-    color: rgb(110,118,125);
+    color: rgb(110, 118, 125);
 }
 
 .wd-content-text-dimensions {
@@ -209,3 +230,122 @@
 .wd-content-text-size {
     font-size: 16px;
 }
+
+.wd-header-3-font-size {
+    font-size: 20px;
+}
+
+.wd-header-margins {
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.wd-light-gray-color {
+    color: lightgray;
+}
+
+.wd-handle-margins {
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.wd-avatar-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.wd-tuit-header-margins {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.wd-tuit-dimensions {
+    position: relative;
+    height: 500px;
+    width: calc(100% - 26px);
+}
+
+.wd-tuit-content-padding {
+    padding-left: 12px;
+    padding-right: 16px;
+}
+
+.wd-tuit-content-dimensions {
+    height: 100px;
+    width: calc(100% - 92px);
+}
+
+.wd-size-15-font {
+    font-size: 15px;
+}
+
+.wd-handle-size {
+    height: 20px;
+}
+
+.wd-zero-margins {
+    margin: 0px;
+}
+
+.wd-tuit-text-dimensions {
+    max-width: 506px;
+    height: calc(100% - 20px);
+}
+
+.wd-article-image-dimensions {
+    width: 504px;
+    height: 264px;
+}
+
+.wd-article-image-border-radius {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.wd-article-image {
+    overflow: hidden;
+    margin: 12px 0px 0px 0px;
+}
+
+.wd-article-description-border-radius {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.wd-article-description-dimensions {
+    width:478px;
+    height:85px;
+}
+
+.wd-article-description-padding {
+    padding:12px;
+}
+
+wd-article-content-border-top {
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-width: 1px;
+}
+
+.wd-article-content-border-bottom {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.wd-ellipsis-extended-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.wd-truncate-article-content-title {
+    padding-right: 100px;
+}
+
+.wd-article-content-slight-top-margin {
+    margin-top: 2px;
+}
+
