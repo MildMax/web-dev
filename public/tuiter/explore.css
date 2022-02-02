@@ -2,7 +2,7 @@
     background-color: black;
 }
 
-.wd-border-color-greyish {
+.wd-border-color-very-dark-grey {
     border-color: rgb(47, 51, 54);
 }
 
@@ -13,20 +13,28 @@
     margin: 0;
 }
 
-.wd-page-left-block {
+.wd-left-right-page-borders {
     position: absolute;
+    margin-left: 30px;
+    margin-right: 10px;
     border-right-style: solid;
     border-right-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
     height: 100%;
-    padding-right: 30px;
+    width: calc(100% - 40px);
+    min-width: 560px;
 }
 
 .wd-body-content {
-    padding: 0px 10px 0px 30px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
-.wd-page-left-padding {
-    padding-left: 46px;
+.wd-content-padding {
+    padding-left: 30px;
+    padding-right: 16px;
 }
 
 .wd-dark-grey-fill {
@@ -116,10 +124,16 @@
     text-align: center;
     font-size: 15px;
     padding: 16px;
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-    font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.wd-tuiter-font {
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+.wd-bold-font {
+    font-weight: bold;
 }
 
 .wd-selected-topic-link-border {
@@ -128,3 +142,70 @@
     border-bottom-style: solid;
 }
 
+.wd-link-box-separator {
+    border-top-style: solid;
+    border-top-width: 3px;
+    height: 10px;
+    width: calc(100% + 1px);
+}
+
+.wd-content-border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.wd-border-top-color-dark-grey {
+    border-top-color: darkgrey;
+}
+
+.wd-border-bottom-color-darker-grey {
+    border-bottom-color: #5f5f5f;
+}
+
+.wd-very-dark-grey-fill {
+    background-color: rgb(47, 51, 54);
+}
+
+.wd-tuit-photo-content-box {
+    height: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+}
+
+.wd-content-photo {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.wd-tuit-text-content-box {
+    height: 70px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.wd-sub-text-area {
+    height: 20px;
+    font-size: 13px;
+}
+
+.wd-sub-text-color {
+    color: rgb(110,118,125);
+}
+
+.wd-content-text-dimensions {
+    height: 25px;
+}
+
+.wd-photo-content-text-padding {
+    padding-top: 3px;
+}
+
+.wd-photo-margin-left {
+    margin-left: 10px;
+}
+
+.wd-content-text-size {
+    font-size: 16px;
+}
