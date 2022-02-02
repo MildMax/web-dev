@@ -1,0 +1,130 @@
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-border-color-greyish {
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-page-dimensions {
+    height: 100%;
+    width: 100%;
+    min-width: 600px;
+    margin: 0;
+}
+
+.wd-page-left-block {
+    position: absolute;
+    border-right-style: solid;
+    border-right-width: 1px;
+    height: 100%;
+    padding-right: 30px;
+}
+
+.wd-body-content {
+    padding: 0px 10px 0px 30px;
+}
+
+.wd-page-left-padding {
+    padding-left: 46px;
+}
+
+.wd-dark-grey-fill {
+    background-color: darkgrey;
+}
+
+.wd-full-width {
+    width: 100%;
+}
+
+.wd-search-field-container {
+    height: 33px;
+    display: flex;
+}
+
+.wd-rounded-box {
+    border-radius: 20px;
+}
+
+.wd-search-input-padding {
+    padding: 7px 20px;
+}
+
+.wd-search-input-right-margin {
+    margin-right: 20px;
+}
+
+.wd-faded-white-placeholder-text::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.wd-solid-white-text {
+    color: white;
+}
+
+.wd-input-outline-stopper:focus {
+    outline: none;
+}
+
+.wd-gear-dimensions {
+    height: 100%;
+    width: 35px;
+}
+
+.wd-gear-right-padding {
+    padding-right: 12px;
+}
+
+.wd-solid-baby-blue-color {
+    color: rgb(29,161,242);
+}
+
+.wd-grey-text-color {
+    color: rgb(110,118,125);
+}
+
+.wd-gear-link {
+    font-size: 24px;
+    position: absolute;
+}
+
+.wd-remove-link-underline {
+    text-decoration: none;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-topic-link-box {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+}
+
+.wd-topic-link {
+    display: inline-block;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 15px;
+    padding: 16px;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.wd-selected-topic-link-border {
+    border-bottom: rgb(29,161,242);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
