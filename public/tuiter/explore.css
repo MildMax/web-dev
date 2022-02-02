@@ -134,6 +134,15 @@
     display: flex;
     flex-wrap: nowrap;
     margin-top: 5px;
+
+}
+
+.wd-justify-space-between {
+    justify-content: space-between;
+}
+
+.wd-justify-left {
+    justify-content: left;
 }
 
 .wd-align-text-center {
@@ -150,7 +159,6 @@
 
 .wd-flex-link {
     display: inline-block;
-    flex-grow: 1;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -367,4 +375,8 @@ wd-article-content-border-top {
 
 .wd-color-red {
     color: red;
+}
+
+.wd-article-icon-padding-right{
+    padding-right: 100px;
 }
