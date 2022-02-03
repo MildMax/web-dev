@@ -135,6 +135,10 @@
     flex-wrap: nowrap;
 }
 
+.wd-link-border-padding {
+    padding-bottom: 3px;
+}
+
 .wd-justify-space-between {
     justify-content: space-between;
 }
@@ -152,13 +156,12 @@
 }
 
 .wd-padding-16 {
-    padding: 16px 16px 0px 16px;
+    padding: 16px;
 }
 
 .wd-flex-link {
     display: inline-block;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 .wd-tuiter-font {
@@ -172,6 +175,7 @@
 .wd-topic-link-border {
     border-bottom-width: 3px;
     border-bottom-style: solid;
+    border-bottom-color: rgb(29,161,242);
 }
 
 .wd-solid-baby-blue-color {
@@ -221,8 +225,8 @@
 
 .wd-tuit-text-content-box {
     height: 70px;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .wd-sub-text-area {
