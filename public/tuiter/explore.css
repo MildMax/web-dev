@@ -9,7 +9,6 @@
 .wd-page-dimensions {
     height: 100%;
     width: 100%;
-    min-width: 600px;
     margin: 0;
 }
 
@@ -23,6 +22,13 @@
     border-left-width: 1px;
     height: 100%;
     z-index: -1;
+}
+
+.wd-display-inline-block {
+    display: inline-block;
+}
+
+.wd-fix-page-borders {
     min-width: 560px;
 }
 
@@ -65,7 +71,7 @@
 }
 
 .wd-full-width {
-    width: 100%;
+    width: calc(100% - 116px);;
 }
 
 .wd-search-field-container {
@@ -135,10 +141,6 @@
     flex-wrap: nowrap;
 }
 
-.wd-link-border-padding {
-    padding-bottom: 3px;
-}
-
 .wd-justify-space-between {
     justify-content: space-between;
 }
@@ -155,8 +157,12 @@
     text-align: left;
 }
 
-.wd-padding-16 {
-    padding: 16px;
+.wd-padding-16-no-bottom {
+    padding: 16px 16px 0px 16px;
+}
+
+.wd-block-display {
+    display: block;
 }
 
 .wd-flex-link {
@@ -245,7 +251,7 @@
     height: 25px;
 }
 
-.wd-photo-content-text-padding {
+.wd-tuit-text-padding {
     padding-top: 3px;
 }
 
