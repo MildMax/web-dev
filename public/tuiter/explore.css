@@ -59,12 +59,16 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 12px;
-    min-width: 625px;
+    min-width: 597px;
 }
 
 .wd-content-padding {
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.wd-padding-left-16 {
+    padding-left: 16px;
 }
 
 .wd-search-field-padding {
@@ -304,7 +308,7 @@
 .wd-tuit-dimensions {
     position: relative;
     height: 534px;
-    min-width: 585px;
+    width: 582px;
 }
 
 .wd-explore-border-width {
@@ -412,4 +416,17 @@ wd-article-content-border-top {
 
 .wd-article-icon-padding-right-outside {
     padding-right: 20px;
+}
+
+.wd-tuit-image-content-padding {
+    padding: 12px 12px 0px 60px;
+}
+
+.wd-image-content-dimensions {
+    height: 422px;
+    width: 504px;
+}
+
+.wd-tuit-header-dimensions {
+    height: 100px;
 }
