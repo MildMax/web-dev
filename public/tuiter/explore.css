@@ -44,9 +44,9 @@
 
 .wd-bookmarks-page-border-margins {
     width: calc(100% - 20px);
-    margin-left: 10px;
-    margin-right: 10px;
-    min-width: 596px;
+    margin-left: 9px;
+    margin-right: 9px;
+    min-width: 598px;
 }
 
 .wd-explore-body-content {
@@ -152,6 +152,7 @@
 
 .wd-icon-box-padding {
     padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .wd-justify-space-between {
@@ -308,7 +309,11 @@
 .wd-tuit-dimensions {
     position: relative;
     height: 534px;
-    width: 582px;
+    min-width: 582px;
+}
+
+.wd-avatar-height {
+    height: 100%;
 }
 
 .wd-explore-border-width {
@@ -343,9 +348,19 @@
     height: calc(100% - 20px);
 }
 
+.wd-article-image-container-dimensions {
+    width: 506px;
+    height: 265px;
+}
+
 .wd-article-image-dimensions {
     width: 504px;
     height: 264px;
+}
+
+.wd-article-image-border {
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
 }
 
 .wd-article-image-border-radius {
@@ -364,7 +379,7 @@
 }
 
 .wd-article-description-dimensions {
-    width:478px;
+    width:480px;
     height:85px;
 }
 
@@ -411,22 +426,23 @@ wd-article-content-border-top {
 }
 
 .wd-article-icon-padding-right-inside {
-    padding-right: 100px;
+    padding-right: 90px;
 }
 
 .wd-article-icon-padding-right-outside {
-    padding-right: 20px;
+    padding-right: 80px;
 }
 
 .wd-tuit-image-content-padding {
-    padding: 12px 12px 0px 60px;
+    padding: 12px 16px 0px 12px;
 }
 
 .wd-image-content-dimensions {
     height: 422px;
-    width: 504px;
+    width: 506px;
 }
 
 .wd-tuit-header-dimensions {
     height: 100px;
+    width: 506px;
 }
