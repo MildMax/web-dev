@@ -111,3 +111,9 @@
 .wd-height-100-percent {
     height: 100%;
 }
+
+.wd-ellipsis-extended-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
