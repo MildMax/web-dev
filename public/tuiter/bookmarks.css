@@ -24,10 +24,6 @@
     font-size: 20px;
 }
 
-.wd-size-16-font {
-    font-size: 16px;
-}
-
 .wd-bookmark-header-margin {
     margin-top: 12px;
     margin-bottom: 0px;
@@ -111,11 +107,6 @@
 
 .wd-padding-12 {
     padding: 12px;
-}
-
-.wd-padding-top-bottom-12 {
-    padding-top: 12px;
-    padding-bottom: 12px;
 }
 
 .wd-article-content-border-bottom {

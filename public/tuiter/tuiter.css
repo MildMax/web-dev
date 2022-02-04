@@ -117,3 +117,8 @@
     overflow: hidden;
     white-space: nowrap;
 }
+
+.wd-padding-top-bottom-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
