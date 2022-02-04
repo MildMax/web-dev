@@ -1,0 +1,113 @@
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-border-color-very-dark-grey {
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-content-border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.wd-page-dimensions {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.wd-left-right-page-borders {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    height: 100%;
+    z-index: -1;
+}
+
+.wd-content-padding-lr-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.wd-solid-white-text {
+    color: white;
+}
+
+.wd-grey-text-color {
+    color: rgb(110,118,125);
+}
+
+.wd-remove-link-underline {
+    text-decoration: none;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-link-box {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.wd-flex-link {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.wd-justify-space-between {
+    justify-content: space-between;
+}
+
+.wd-justify-left {
+    justify-content: left;
+}
+
+.wd-align-text-center {
+    text-align: center;
+}
+
+.wd-align-text-left {
+    text-align: left;
+}
+
+.wd-block-display {
+    display: block;
+}
+
+.wd-bold-font {
+    font-weight: bold;
+}
+
+.wd-tuiter-font {
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+.wd-size-13-font {
+    font-size: 13px;
+}
+
+.wd-size-15-font {
+    font-size: 15px;
+}
+
+.wd-zero-margins {
+    margin: 0px;
+}
+
+.wd-height-100-percent {
+    height: 100%;
+}
