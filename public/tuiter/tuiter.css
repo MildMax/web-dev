@@ -1,21 +1,48 @@
+/* dimensions & containers */
+
+.wd-height-100-percent {
+    height: 100%;
+}
+
+/* colors */
+
 .wd-bg-color-black {
     background-color: black;
+}
+
+.wd-solid-white-text {
+    color: white;
+}
+
+.wd-grey-text-color {
+    color: rgb(110,118,125);
 }
 
 .wd-border-color-very-dark-grey {
     border-color: rgb(47, 51, 54);
 }
 
-.wd-content-border-bottom {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+/* padding & margins */
+
+.wd-content-padding-lr-16 {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.wd-page-dimensions {
-    height: 100%;
-    width: 100%;
-    margin: 0;
+.wd-0-margin {
+    margin: 0px;
 }
+
+.wd-tuit-body-content-margin {
+    margin: 12px 10px 0px;
+}
+
+.wd-padding-top-bottom-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* borders */
 
 .wd-left-right-page-borders {
     position: fixed;
@@ -29,22 +56,36 @@
     z-index: -1;
 }
 
-.wd-content-padding-lr-16 {
-    padding-left: 16px;
-    padding-right: 16px;
+.wd-content-border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
-.wd-solid-white-text {
-    color: white;
+/* font & text formatting */
+
+.wd-bold-font {
+    font-weight: bold;
 }
 
-.wd-grey-text-color {
-    color: rgb(110,118,125);
+.wd-tuiter-font {
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
 }
 
-.wd-remove-link-underline {
-    text-decoration: none;
+.wd-size-13-font {
+    font-size: 13px;
 }
+
+.wd-size-15-font {
+    font-size: 15px;
+}
+
+.wd-ellipsis-extended-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* flex & float */
 
 .wd-float-left {
     float: left;
@@ -84,41 +125,12 @@
     text-align: left;
 }
 
+/* html element manipulation */
+
+.wd-remove-link-underline {
+    text-decoration: none;
+}
+
 .wd-block-display {
     display: block;
-}
-
-.wd-bold-font {
-    font-weight: bold;
-}
-
-.wd-tuiter-font {
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-}
-
-.wd-size-13-font {
-    font-size: 13px;
-}
-
-.wd-size-15-font {
-    font-size: 15px;
-}
-
-.wd-zero-margins {
-    margin: 0px;
-}
-
-.wd-height-100-percent {
-    height: 100%;
-}
-
-.wd-ellipsis-extended-text {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.wd-padding-top-bottom-12 {
-    padding-top: 12px;
-    padding-bottom: 12px;
 }
