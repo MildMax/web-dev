@@ -52,6 +52,12 @@
     position: absolute;
 }
 
+.wd-tuit-suggested-icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 3px;
+}
+
 /* colors */
 
 .wd-dark-grey-fill {
@@ -120,6 +126,10 @@
     display: block;
     box-sizing: border-box;
     border-bottom: rgb(29,161,242) solid 3px;
+}
+
+.wd-border-spacing-0 {
+    border-spacing: 0;
 }
 
 /* font & text formatting */

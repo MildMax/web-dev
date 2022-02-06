@@ -61,6 +61,11 @@
     border-bottom-width: 1px;
 }
 
+.wd-circle-border-radius {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 /* font & text formatting */
 
 .wd-bold-font {
@@ -81,6 +86,11 @@
 
 .wd-ellipsis-extended-text {
     text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.wd-hide-extended-text-nowrap {
     overflow: hidden;
     white-space: nowrap;
 }
@@ -133,4 +143,8 @@
 
 .wd-block-display {
     display: block;
+}
+
+.wd-display-inline-block {
+    display: inline-block;
 }
