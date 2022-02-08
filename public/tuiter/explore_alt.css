@@ -48,6 +48,11 @@
     height: 45%;
 }
 
+.wd-bootstrap-padding-as-margins {
+    margin-right: calc(var(--bs-gutter-x) * .5);
+    margin-left: calc(var(--bs-gutter-x) * .5);
+}
+
 /* sizing */
 
 .wd-1-point-5-x {
