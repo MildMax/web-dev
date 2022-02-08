@@ -73,7 +73,7 @@
 }
 
 .wd-font-13 {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .wd-font-16 {
@@ -173,6 +173,14 @@
 
 .col-3.tuit-image-override {
     width: 16%;
+}
+
+.col-xxl-3.xxl-width-override {
+    width: 30%;
+}
+
+.col-xxl-2.xxl-width-override {
+    width: 14.5%;
 }
 
 /* media query */
