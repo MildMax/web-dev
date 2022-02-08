@@ -136,8 +136,9 @@
 }
 
 .col-1.gear-override {
-    width: 7%;
+    width: 10%;
     height: 100%;
+    padding-left: calc(var(--bs-gutter-x) * 1);
 }
 
 .btn.follow-button-override {
