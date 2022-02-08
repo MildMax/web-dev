@@ -1,0 +1,83 @@
+/* dimensions & containers */
+
+.wd-sidebar-images {
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    margin-top: 2px;
+}
+
+.wd-follow-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* padding & margins */
+
+.wd-margin-top-6 {
+    margin-top: 6px;
+}
+
+.wd-0-margin {
+    margin: 0;
+}
+
+.wd-fill-height-half {
+    height: 45%;
+}
+
+/* sizing */
+
+.wd-1-point-5-x {
+    font-size: 1.5em;
+}
+
+/* fonts and font styling */
+
+.wd-bold-font {
+    font-weight: bold;
+}
+
+.wd-font-13 {
+    font-size: 13px;
+}
+
+/* overrides */
+
+.fa-stack.overlap-override {
+    width: 1.5em;
+}
+
+.list-group-item.padding-top-bottom-override {
+    padding-bottom: 0.35rem;
+    padding-top: 0.3rem;
+}
+
+.col-7.follow-handle-override {
+    padding-left: 0;
+    padding-right: 0;
+    width: 55%;
+}
+
+.col-2.image-override {
+    padding-left: calc(var(--bs-gutter-x) * .3);
+    width: 18%;
+}
+
+.col-4.button-override {
+    padding-left: calc(var(--bs-gutter-x) * .3);
+    padding-right: calc(var(--bs-gutter-x) * .1);
+    width: 27%;
+}
+
+
+.btn.follow-button-override {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    height: 30px;
+    line-height: 0.5;
+}
+
+.row.follow-row-override {
+    height: 45px;
+}
