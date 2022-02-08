@@ -12,6 +12,20 @@
     justify-content: center;
 }
 
+.wd-tuiter-search {
+    border: 0;
+    width: calc(100% - 45px);
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.wd-tuiter-search-row-container {
+    height: 35px;
+}
+
+.wd-full-height {
+    height: 100%;
+}
 /* padding & margins */
 
 .wd-margin-top-6 {
@@ -20,6 +34,14 @@
 
 .wd-0-margin {
     margin: 0;
+}
+
+.wd-0-padding {
+    padding: 0;
+}
+
+.wd-0-border {
+    border: 0;
 }
 
 .wd-fill-height-half {
@@ -32,6 +54,10 @@
     font-size: 1.5em;
 }
 
+.wd-search-icon-line-height {
+    line-height: 2;
+}
+
 /* fonts and font styling */
 
 .wd-bold-font {
@@ -40,6 +66,45 @@
 
 .wd-font-13 {
     font-size: 13px;
+}
+
+.wd-font-30 {
+    font-size: 30px;
+}
+
+/* colors */
+
+.wd-fg-color-black {
+    color: black;
+}
+
+.wd-fg-bootstrap-blue {
+    color: #0d6efd;
+}
+
+/* display */
+
+.wd-display-inline-block {
+    display: inline-block;
+}
+
+.wd-display-flex {
+    display: flex;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+/* tag manip */
+
+.wd-hide-border:focus {
+    outline: none!important;
+}
+
+.wd-a-href-position-compensator {
+    position: relative;
+    top: -5px;
 }
 
 /* overrides */
@@ -70,6 +135,10 @@
     width: 27%;
 }
 
+.col-1.gear-override {
+    width: 7%;
+    height: 100%;
+}
 
 .btn.follow-button-override {
     padding-top: 0.3rem;
