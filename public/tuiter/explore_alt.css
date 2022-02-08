@@ -28,35 +28,10 @@
 }
 
 .wd-tuit-image-size {
-    height: 85px;
-    width: 85px;
+    height: 90px;
+    width: 90px;
 }
 /* padding & margins */
-
-.wd-padding-left-right-12 {
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.wd-margin-top-6 {
-    margin-top: 6px;
-}
-
-.wd-0-margin {
-    margin: 0;
-}
-
-.wd-0-margin-left {
-    margin-left: 0;
-}
-
-.wd-0-margin-right {
-    margin-right: 0;
-}
-
-.wd-0-padding {
-    padding: 0;
-}
 
 .wd-fill-height-half {
     height: 45%;
@@ -65,14 +40,6 @@
 .wd-bootstrap-padding-as-margins {
     margin-right: calc(var(--bs-gutter-x) * .5);
     margin-left: calc(var(--bs-gutter-x) * .5);
-}
-
-.wd-padding-8 {
-    padding: 8px;
-}
-
-.wd-padding-right-0 {
-    padding-right: 0px;
 }
 
 /* borders */
@@ -205,7 +172,7 @@
 }
 
 .col-3.tuit-image-override {
-    width: 16.5%;
+    width: 16%;
 }
 
 /* media query */
