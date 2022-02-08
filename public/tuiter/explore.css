@@ -58,6 +58,10 @@
     margin-right: 3px;
 }
 
+.wd-internal-explore-input-width {
+    width: calc(100% - 44px);
+}
+
 /* colors */
 
 .wd-dark-grey-fill {
@@ -103,6 +107,10 @@
     margin-left: 10px;
 }
 
+.wd-padding-left-16 {
+    padding-left: 16px;
+}
+
 /* borders */
 
 .wd-explore-page-border-margins {
@@ -128,6 +136,10 @@
     border-spacing: 0;
 }
 
+.wd-disappear-input-border {
+    border: 0px;
+}
+
 /* font & text formatting */
 
 .wd-hide-wrapping-text {
@@ -142,4 +154,9 @@
 
 .wd-input-outline-hider:focus {
     outline: none;
+}
+
+.wd-explore-input-negative-shift-1 {
+    position: relative;
+    top: -1px;
 }
