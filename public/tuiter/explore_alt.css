@@ -31,6 +31,16 @@
     height: 90px;
     width: 90px;
 }
+
+.wd-fixed-gear-icon {
+    width: 30px;
+    height: 100%;
+}
+
+.wd-full-width {
+    width: 100%
+}
+
 /* padding & margins */
 
 .wd-fill-height-half {
@@ -133,6 +143,10 @@
     top: -5px;
 }
 
+.wd-tuit-line-height {
+    line-height: 1.4;
+}
+
 /* overrides */
 
 .fa-stack.overlap-override {
@@ -153,11 +167,6 @@
     padding-left: calc(var(--bs-gutter-x) * .3);
     padding-right: calc(var(--bs-gutter-x) * .1);
     width: 27%;
-}
-
-.col-1.gear-override {
-    width: 8%;
-    height: 100%;
 }
 
 .btn.follow-button-override {
@@ -193,6 +202,10 @@ div.col-3.tuit-image-override {
         font-weight: bold;
     }
 
+    div.col-xxl-6.xxl-width-override {
+        width: 49%;
+    }
+
     div.col-xxl-3.xxl-width-override {
         width: 30%;
     }
@@ -218,8 +231,7 @@ div.col-3.tuit-image-override {
     span.wd-text-overlay {
         position: absolute;
         width: 300px;
-        top: 378px;
-        left: 4px;
+        top: 318px;
         font-size: 30px;
         font-weight: bold;
     }
@@ -250,8 +262,7 @@ div.col-3.tuit-image-override {
     span.wd-text-overlay {
         position: absolute;
         width: 300px;
-        top: 340px;
-        left: 4px;
+        top: 310px;
         font-size: 30px;
         font-weight: bold;
     }
@@ -278,7 +289,6 @@ div.col-3.tuit-image-override {
         position: absolute;
         width: 300px;
         top: 334px;
-        left: 4px;
         font-size: 30px;
         font-weight: bold;
     }
@@ -289,13 +299,12 @@ div.col-3.tuit-image-override {
 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
 
     span.wd-text-overlay {
         position: absolute;
         width: 300px;
         top: 236px;
-        left: 4px;
         font-size: 30px;
         font-weight: bold;
     }
@@ -304,4 +313,13 @@ div.col-3.tuit-image-override {
         display: none;
     }
 
+    .me-3.search-bar-override {
+        margin-right: 6px!important;
+    }
+}
+
+/* dark mode overrides */
+
+.wd-bg-color-black {
+    background-color: black;
 }
