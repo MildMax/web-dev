@@ -147,6 +147,10 @@
     line-height: 1.4;
 }
 
+.wd-position-relative {
+    position: relative;
+}
+
 /* overrides */
 
 .fa-stack.overlap-override {
@@ -196,8 +200,7 @@ div.col-3.tuit-image-override {
     span.wd-text-overlay {
         position: absolute;
         width: 400px;
-        top: 374px;
-        left: 4px;
+        top: 368px;
         font-size: 30px;
         font-weight: bold;
     }
@@ -452,3 +455,12 @@ div.col-3.tuit-image-override {
     border-radius: 0!important;
 }
 
+.main-content-border-override {
+    position: absolute;
+    top: -8px;
+    z-index: -1;
+    border-left: 1px solid rgb(110,118,125)!important;
+    border-right: 1px solid rgb(110,118,125)!important;
+    width: calc(100% - 24px);
+    height: 100vh;
+}
