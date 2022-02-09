@@ -116,6 +116,12 @@
     float: left;
 }
 
+.wd-visible-overflow{
+    overflow: visible;
+    white-space: nowrap;
+    z-index: 1;
+}
+
 /* tag manip */
 
 .wd-hide-border:focus {
@@ -136,12 +142,6 @@
 .list-group-item.padding-top-bottom-override {
     padding-bottom: 0.35rem;
     padding-top: 0.3rem;
-}
-
-.col-7.follow-handle-override {
-    padding-left: 0;
-    padding-right: 0;
-    width: 55%;
 }
 
 .col-2.image-override {
@@ -175,13 +175,19 @@ div.col-3.tuit-image-override {
     width: 98px;
 }
 
+.col-4.button-override {
+    padding-left: calc(var(--bs-gutter-x) * .3);
+    padding-right: calc(var(--bs-gutter-x) * .1);
+    width: 27%;
+}
+
 /* media query */
 
 @media (min-width: 1400px) {
     span.wd-text-overlay {
         position: absolute;
         width: 400px;
-        top: 376px;
+        top: 374px;
         left: 4px;
         font-size: 30px;
         font-weight: bold;
@@ -195,15 +201,24 @@ div.col-3.tuit-image-override {
         width: 15.5%;
     }
 
+    div.col-7.follow-handle-override {
+        padding-left: 0;
+        padding-right: 0;
+        width: 55%;
+    }
 
+    div.col-2.image-override {
+        padding-left: calc(var(--bs-gutter-x) * .3);
+        width: 18%;
+    }
 }
 
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
 
     span.wd-text-overlay {
         position: absolute;
         width: 300px;
-        top: 315px;
+        top: 378px;
         left: 4px;
         font-size: 30px;
         font-weight: bold;
@@ -215,6 +230,78 @@ div.col-3.tuit-image-override {
 
     div.col-xl-2.xl-width-override {
         width: 14%;
+    }
+
+    div.col-7.follow-handle-override {
+        padding-left: 0;
+        padding-right: 0;
+        width: 49%;
+    }
+
+    div.col-2.image-override {
+        padding-left: calc(var(--bs-gutter-x) * .3);
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    span.wd-text-overlay {
+        position: absolute;
+        width: 300px;
+        top: 340px;
+        left: 4px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    div.col-7.follow-handle-override {
+        padding-left: 0;
+        padding-right: 0;
+        width: 47%;
+    }
+
+    div.col-lg-4.l-width-override {
+        width: 28%;
+    }
+
+    .disappear-content-lg {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    span.wd-text-overlay {
+        position: absolute;
+        width: 300px;
+        top: 334px;
+        left: 4px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .disappear-content-m {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    span.wd-text-overlay {
+        position: absolute;
+        width: 300px;
+        top: 236px;
+        left: 4px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .disappear-content-s {
+        display: none;
     }
 
 }
