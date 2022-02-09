@@ -364,6 +364,7 @@ div.col-3.tuit-image-override {
 
 .list-group.border-override {
     border: 0!important;
+    border-radius: 1.25rem!important;
 }
 
 .list-group-item.border-override {
@@ -381,6 +382,10 @@ div.col-3.tuit-image-override {
 
 .wd-bg-color-grey {
     background-color: rgb(110,118,125);
+}
+
+.wd-fg-color-darker-grey {
+    color: rgb(72, 74, 76);
 }
 
 .wd-bg-color-grey > li {
@@ -446,3 +451,4 @@ div.col-3.tuit-image-override {
     border-bottom: 0!important;
     border-radius: 0!important;
 }
+
