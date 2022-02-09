@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Explore Dark</title>
+    <title>Explore</title>
 
     <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
@@ -10,31 +10,31 @@
 </head>
 <body class="wd-bg-color-black">
 
-<div class="container-xxl container-xl container-lg container-md container-sm mt-2 ">
+<div class="container-xxl container-xl container-lg container-md container-sm mt-2">
 
     <div class="row justify-content-center">
         <!-- left sidebar -->
         <div class="col-xxl-2 xxl-width-override col-xl-2 xl-width-override col-lg col-lg-1 col-md-2 col-sm-2">
-            <div class="list-group wd-font-13">
+            <div class="list-group border-override wd-bg-color-black wd-fg-color-greyish-white wd-font-13">
                 <i class="list-group-item fab fa-twitter"></i>
                 <a href="home.html" class="list-group-item">
-                    <i class="fa fa-home"></i>
+                    <i class="fa fa-icon-override fa-home"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">Home</span>
                 </a>
-                <a href="explore.html" class="list-group-item active">
+                <a href="explore.html" class="list-group-item active navigation-override active-color-override">
                     <i class="fa fa-hashtag"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">Explore</span>
                 </a>
                 <a href="notifications.html" class="list-group-item">
-                    <i class="fa fa-bell"></i>
+                    <i class="fa fa-icon-override fa-bell"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">Notifications</span>
                 </a>
                 <a href="messages.html" class="list-group-item">
-                    <i class="fa fa-envelope"></i>
+                    <i class="fa fa-icon-override fa-envelope"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">Messages</span>
                 </a>
                 <a href="bookmarks.html" class="list-group-item">
-                    <i class="fa fa-bookmark"></i>
+                    <i class="fa fa-icon-override fa-bookmark"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">Bookmarks</span>
                 </a>
                 <a href="lists.html" class="list-group-item">
@@ -42,30 +42,30 @@
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">Lists</span>
                 </a>
                 <a href="profile.html" class="list-group-item">
-                    <i class="fa fa-user"></i>
+                    <i class="fa fa-icon-override fa-user"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">Profile</span>
                 </a>
                 <a href="#" class="list-group-item">
                     <span class="fa-stack overlap-override">
-                        <i class="fa fa-stack-1x wd-1-point-5-x fa-circle "></i>
-                        <i class="fa fa-stack-1x fa-ellipsis-h  fa-inverse"></i>
+                        <i class="fa fa-icon-override fa-stack-1x wd-1-point-5-x fa-circle "></i>
+                        <i class="fa  fa-stack-1x fa-ellipsis-h fa-inverse inverse-color-override"></i>
                     </span>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">More</span>
                 </a>
             </div>
-            <button type="button" class="btn btn-primary col-12 rounded-pill mt-2">Tuit</button>
+            <button type="button" class="btn btn-primary bright-override col-12 rounded-pill mt-2">Tuit</button>
         </div>
 
         <!-- main content -->
-        <div class="col-xxl-6 col-xl-7 col-lg col-md-10 col-sm">
-            <div class="row wd-tuiter-search-row-container align-middle">
-                <div class="col border wd-full-height rounded-pill wd-display-flex align-middle wd-bootstrap-padding-as-margins">
+        <div class="col-xxl-6 xxl-width-override col-xl-6 col-lg-7 col-md-10 col-sm">
+            <div class="wd-display-flex wd-tuiter-search-row-container align-middle">
+                <div class="wd-full-width ps-2 me-3 search-bar-override border wd-full-height rounded-pill wd-display-flex align-middle">
                     <a href="search.html">
                         <i class="fa fa-search wd-float-left wd-search-icon-line-height wd-hide-border wd-fg-color-black"></i>
                     </a>
                     <input class="wd-tuiter-search wd-float-left wd-hide-border" type="text" placeholder="Search Tuiter"/>
                 </div>
-                <div class="col-1 gear-override wd-display-inline-block">
+                <div class="wd-fixed-gear-icon gear-padding-override wd-display-inline-block">
                     <a href="explore-settings.html" class="wd-a-href-position-compensator ps-0 pe-0 pt-0 pb-0 wd-0-border wd-font-30">
                         <i class="fa fa-cog wd-fg-bootstrap-blue wd-font-30"></i>
                     </a>
@@ -111,7 +111,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-3">
+                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-2">
                         <img src="images/react-logo.jpg" class="wd-tuit-border-radius wd-tuit-image-size"/>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                         </div>
                         <div class="row ps-2 pe-2 wd-fg-color-grey">123K Tuits</div>
                     </div>
-                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-3">
+                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-2">
                         <img src="images/javascript-logo.png" class="wd-tuit-border-radius wd-tuit-image-size"/>
                     </div>
                 </div>
@@ -139,13 +139,13 @@
                     <div class="col wd-font-16">
                         <div class="row ps-2 pe-2 wd-fg-color-grey">Web Development</div>
                         <div class="row wd-bold-font ps-2 pe-2">
-                            <p class="ms-0 me-0 mt-0 mb-0 ps-0 pe-0 pt-0 pb-0 wd-tuit-line-height">
+                            <p class="ms-0 me-0 mt-0 mb-0 ps-0 pe-0 pt-0 pb-0">
                                 jQuery
                             </p>
                         </div>
                         <div class="row ps-2 pe-2 wd-fg-color-grey">123K Tuits</div>
                     </div>
-                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-3">
+                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-2">
                         <img src="images/jquery-logo.png" class="wd-tuit-border-radius wd-tuit-image-size"/>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                         </div>
                         <div class="row ps-2 pe-2 wd-fg-color-grey">123K Tuits</div>
                     </div>
-                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-3">
+                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-2">
                         <img src="images/nodejs-logo.jpg" class="wd-tuit-border-radius wd-tuit-image-size"/>
                     </div>
                 </div>
@@ -170,7 +170,7 @@
 
         <!-- right sidebar -->
         <div class="col-xxl-3 xxl-width-override col-xl-3 xl-width-override col-lg-4 l-width-override col-md col-sm disappear-content-m disappear-content-s">
-            <ul class="list-group wd-font-13">
+            <ul class="list-group wd-font-13 wd-border-color-grey wd-bg-color-grey">
                 <li class="list-group-item padding-top-bottom-override">
                     <p class="ms-0 me-0 mt-0 mb-0 wd-bold-font">Who to follow</p>
                 </li>

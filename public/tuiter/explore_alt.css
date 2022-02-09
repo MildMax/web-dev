@@ -320,6 +320,63 @@ div.col-3.tuit-image-override {
 
 /* dark mode overrides */
 
+.wd-fg-color-greyish-white {
+    color: #c6c6c6;
+}
+
+.wd-fg-color-greyish-white > i {
+    color: #c6c6c6;
+}
+
+.wd-fg-color-greyish-white > a {
+    color: #c6c6c6;
+}
+
 .wd-bg-color-black {
     background-color: black;
+}
+.wd-bg-color-black > i {
+    background-color: black;
+}
+
+.wd-bg-color-black > a {
+    background-color: black;
+}
+
+.active.navigation-override {
+    border: 0!important;
+    background-color: black;
+    font-weight: bold;
+
+}
+
+.list-group-item.active.active-color-override {
+    color: #c6c6c6;
+}
+
+.list-group.border-override {
+    border: 0!important;
+}
+
+.btn-primary.bright-override {
+    background-color: #10aeff;
+    border-color: #10aeff;
+}
+
+.wd-border-color-grey {
+    border-color: rgb(110,118,125);
+}
+
+.wd-bg-color-grey {
+    border-color: rgb(110,118,125);
+}
+
+.fa.fa-icon-override {
+    color: transparent;
+    -webkit-text-stroke-color: #c6c6c6;
+    -webkit-text-stroke-width: 1px;
+}
+
+.fa-inverse.inverse-color-override {
+    color: #c6c6c6;
 }
