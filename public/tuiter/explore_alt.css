@@ -324,6 +324,10 @@ div.col-3.tuit-image-override {
     color: #c6c6c6;
 }
 
+.wd-fg-color-greyish-white::placeholder {
+    color: rgba(198, 198, 198, 0.5);
+}
+
 .wd-fg-color-greyish-white > i {
     color: #c6c6c6;
 }
@@ -389,6 +393,12 @@ div.col-3.tuit-image-override {
     -webkit-text-stroke-width: 1px;
 }
 
+.fa.fa-icon-gear-override {
+    color: transparent;
+    -webkit-text-stroke-color: #c6c6c6;
+    -webkit-text-stroke-width: 2px;
+}
+
 .fa-inverse.inverse-color-override {
     color: #c6c6c6;
 }
@@ -398,4 +408,41 @@ div.col-3.tuit-image-override {
     color: rgb(72, 74, 76);
     font-weight: bold;
     border: 0;
+}
+
+.border.search-bar-border-override {
+    border-color: black!important;
+}
+
+.nav-tabs.navigation-style-override {
+    border: 0;
+    justify-content: space-between;
+}
+
+
+.nav-tabs.navigation-style-override > li > a {
+    background-color: transparent;
+    color: rgb(110,118,125);
+    border: 0;
+    padding: 0.5rem 0rem;
+}
+
+.nav-link.active.active-navigation-style-override {
+    background-color: transparent;
+    color: #c6c6c6;
+    font-weight: bold;
+    border-bottom: 5px solid #10aeff;
+}
+
+.wd-image-border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border.tuit-content-border-style-override {
+    border-left: 1px solid rgb(110,118,125)!important;
+    border-right: 1px solid rgb(110,118,125)!important;
+    border-top: 0!important;
+    border-bottom: 0!important;
+    border-radius: 0!important;
 }
