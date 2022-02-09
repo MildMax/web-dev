@@ -171,10 +171,9 @@
     height: 45px;
 }
 
-.col-3.tuit-image-override {
-    width: 16%;
+div.col-3.tuit-image-override {
+    width: 98px;
 }
-
 
 /* media query */
 
@@ -183,7 +182,7 @@
         position: absolute;
         width: 400px;
         top: 376px;
-        left: 12px;
+        left: 4px;
         font-size: 30px;
         font-weight: bold;
     }
@@ -193,27 +192,29 @@
     }
 
     div.col-xxl-2.xxl-width-override {
-        width: 14.5%;
+        width: 15.5%;
     }
+
+
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
 
     span.wd-text-overlay {
         position: absolute;
-        width: 400px;
-        top: 376px;
-        left: 12px;
+        width: 300px;
+        top: 315px;
+        left: 4px;
         font-size: 30px;
         font-weight: bold;
     }
 
     div.col-xl-3.xl-width-override {
-        width: 30%;
+        width: 27%;
     }
 
     div.col-xl-2.xl-width-override {
-        width: 14.5%;
+        width: 14%;
     }
 
 }
