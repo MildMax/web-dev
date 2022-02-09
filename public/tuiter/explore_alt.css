@@ -332,6 +332,10 @@ div.col-3.tuit-image-override {
     color: #c6c6c6;
 }
 
+.wd-fg-color-greyish-white > li {
+    color: #c6c6c6;
+}
+
 .wd-bg-color-black {
     background-color: black;
 }
@@ -358,6 +362,10 @@ div.col-3.tuit-image-override {
     border: 0!important;
 }
 
+.list-group-item.border-override {
+    border: 0!important;
+}
+
 .btn-primary.bright-override {
     background-color: #10aeff;
     border-color: #10aeff;
@@ -368,7 +376,11 @@ div.col-3.tuit-image-override {
 }
 
 .wd-bg-color-grey {
-    border-color: rgb(110,118,125);
+    background-color: rgb(110,118,125);
+}
+
+.wd-bg-color-grey > li {
+    background-color: rgb(72, 74, 76);
 }
 
 .fa.fa-icon-override {
@@ -379,4 +391,11 @@ div.col-3.tuit-image-override {
 
 .fa-inverse.inverse-color-override {
     color: #c6c6c6;
+}
+
+.btn-primary.follow-button-color-override {
+    background-color: white;
+    color: rgb(72, 74, 76);
+    font-weight: bold;
+    border: 0;
 }
