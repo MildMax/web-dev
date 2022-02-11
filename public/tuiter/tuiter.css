@@ -22,6 +22,10 @@
     border-color: rgb(47, 51, 54);
 }
 
+.wd-light-gray-color {
+    color: lightgray;
+}
+
 /* padding & margins */
 
 .wd-content-padding-left-right-16 {

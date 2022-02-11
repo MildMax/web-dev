@@ -32,7 +32,7 @@
 }
 
 .wd-tuit-text-content-container {
-    height: 70px;
+    height: 62px;
 }
 
 .wd-tuit-count-container {
@@ -78,10 +78,6 @@
 
 .wd-very-dark-grey-fill {
     background-color: rgb(33, 33, 36);
-}
-
-.wd-sub-text-color {
-    color: rgb(110, 118, 125);
 }
 
 /* padding & margins */
