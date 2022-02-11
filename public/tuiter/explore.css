@@ -82,6 +82,10 @@
     font-weight: bold;
 }
 
+.wd-normal-font {
+    font-weight: normal;
+}
+
 .wd-font-13 {
     font-size: 14px;
 }
@@ -186,12 +190,6 @@
 
 div.col-3.tuit-image-override {
     width: 98px;
-}
-
-.col-4.button-override {
-    padding-left: calc(var(--bs-gutter-x) * .3);
-    padding-right: calc(var(--bs-gutter-x) * .1);
-    width: 27%;
 }
 
 /* media query */
@@ -314,6 +312,10 @@ div.col-3.tuit-image-override {
 
     .disappear-content-s {
         display: none;
+    }
+
+    div.col-sm-10.sm-content-override {
+        width: 81.33%
     }
 
     .me-3.search-bar-override {
