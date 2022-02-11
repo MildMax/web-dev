@@ -3,180 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
-    <link href="tuiter.css" rel="stylesheet"/>
+
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
     <link href="explore.css" rel="stylesheet"/>
 </head>
-<body class="wd-bg-color-black wd-tuit-body-content-margin wd-explore-page-min-width">
-<!-- black background for all elements via body tag-->
+<body>
 
-<div class="wd-left-right-page-borders wd-explore-page-border-margins wd-border-color-very-dark-grey wd-explore-page-min-width"></div>
+<div class="container-xxl container-xl container-lg container-md container-sm mt-2 ">
 
+    <div class="row justify-content-center">
+        <!-- left sidebar -->
+        <div class="col-xxl-2 xxl-width-override col-xl-2 xl-width-override col-lg col-lg-1 col-md-2 col-sm-2">
+            <div class="list-group wd-font-13">
+                <i class="list-group-item fab fa-twitter"></i>
+                <a href="home.html" class="list-group-item">
+                    <i class="fa fa-home"></i>
+                    <span class="disappear-content-lg disappear-content-m disappear-content-s">Home</span>
+                </a>
+                <a href="explore.html" class="list-group-item active">
+                    <i class="fa fa-hashtag"></i>
+                    <span class="disappear-content-lg disappear-content-m disappear-content-s">Explore</span>
+                </a>
+                <a href="notifications.html" class="list-group-item">
+                    <i class="fa fa-bell"></i>
+                    <span class="disappear-content-lg disappear-content-m disappear-content-s">Notifications</span>
+                </a>
+                <a href="messages.html" class="list-group-item">
+                    <i class="fa fa-envelope"></i>
+                    <span class="disappear-content-lg disappear-content-m disappear-content-s">Messages</span>
+                </a>
+                <a href="bookmarks.html" class="list-group-item">
+                    <i class="fa fa-bookmark"></i>
+                    <span class="disappear-content-lg disappear-content-m disappear-content-s">Bookmarks</span>
+                </a>
+                <a href="lists.html" class="list-group-item">
+                    <i class="fa fa-list-ul"></i>
+                    <span class="disappear-content-lg disappear-content-m disappear-content-s">Lists</span>
+                </a>
+                <a href="profile.html" class="list-group-item">
+                    <i class="fa fa-user"></i>
+                    <span class="disappear-content-lg disappear-content-m disappear-content-s">Profile</span>
+                </a>
+                <a href="#" class="list-group-item">
+                    <span class="fa-stack overlap-override">
+                        <i class="fa fa-stack-1x wd-1-point-5-x fa-circle "></i>
+                        <i class="fa fa-stack-1x fa-ellipsis-h  fa-inverse"></i>
+                    </span>
+                    <span class="disappear-content-lg disappear-content-m disappear-content-s">More</span>
+                </a>
+            </div>
+            <button type="button" class="btn btn-primary col-12 rounded-pill mt-2">Tuit</button>
+        </div>
 
-<div class="wd-padding-left-16-right-12">
-    <div class="wd-hide-extended-text-nowrap wd-dark-grey-fill wd-rounded-box wd-search-input-padding wd-float-left wd-fill-horizontal-width wd-search-input-right-margin">
-        <label for="tuiter-explore-search">
-            &#128269
-        </label>
-        <input type="text"
-               id="tuiter-explore-search"
-               class="wd-explore-input-negative-shift-1 wd-padding-left-16 wd-internal-explore-input-width wd-dark-grey-fill wd-faded-white-placeholder-text wd-solid-white-text wd-input-outline-hider wd-disappear-input-border wd-tuiter-font"
-               placeholder="Search Tuiter"/>
-    </div>
-    <div class="wd-float-right wd-gear-dimensions">
-        <a href="explore-settings.html"
-           class="wd-solid-baby-blue-text-color wd-gear-link wd-remove-link-underline">&#9881</a>
-    </div>
-    <div class="wd-float-done"></div>
-</div>
-<div class="wd-justify-space-between wd-link-box">
-    <div class="wd-hide-extended-text-nowrap wd-flex-link wd-outer-link-padding wd-align-text-center wd-tuiter-font wd-bold-font">
-        <a href="#"
-           class="wd-remove-link-underline wd-block-display wd-link-bottom-padding  wd-solid-baby-blue-text-color">
-            <p class="wd-0-margin wd-ellipsis-extended-text wd-size-15-font">
-                For you
-            </p>
-            <span class="wd-topic-link-bottom-border"></span>
-        </a>
-    </div>
-    <div class="wd-hide-extended-text-nowrap wd-flex-link wd-outer-link-padding wd-align-text-center wd-tuiter-font wd-bold-font">
-        <a href="#" class="wd-link-bottom-padding wd-block-display wd-remove-link-underline wd-grey-text-color">
-            <p class="wd-0-margin wd-ellipsis-extended-text wd-size-15-font">
-                Trending
-            </p>
-        </a>
-    </div>
-    <div class="wd-hide-extended-text-nowrap wd-flex-link wd-outer-link-padding wd-align-text-center wd-tuiter-font wd-bold-font">
-        <a href="#" class="wd-link-bottom-padding wd-block-display wd-remove-link-underline wd-grey-text-color">
-            <p class="wd-0-margin wd-ellipsis-extended-text wd-size-15-font">
-                COVID-19
-            </p>
-        </a>
-    </div>
-    <div class="wd-hide-extended-text-nowrap wd-flex-link wd-outer-link-padding wd-align-text-center wd-tuiter-font wd-bold-font">
-        <a href="#" class="wd-link-bottom-padding wd-block-display wd-remove-link-underline wd-grey-text-color">
-            <p class="wd-0-margin wd-ellipsis-extended-text wd-size-15-font">
-                News
-            </p>
-        </a>
-    </div>
-    <div class="wd-hide-extended-text-nowrap wd-flex-link wd-outer-link-padding wd-align-text-center wd-tuiter-font wd-bold-font">
-        <a href="#" class="wd-link-bottom-padding wd-block-display wd-remove-link-underline wd-grey-text-color">
-            <p class="wd-0-margin wd-ellipsis-extended-text wd-size-15-font">
-                Sports
-            </p>
-        </a>
-    </div>
-    <div class="wd-hide-extended-text-nowrap wd-outer-link-padding wd-align-text-center wd-tuiter-font wd-bold-font">
-        <a href="#" class="wd-link-bottom-padding wd-block-display wd-remove-link-underline wd-grey-text-color">
-            <p class="wd-0-margin wd-ellipsis-extended-text wd-size-15-font">
-                Entertainment
-            </p>
-        </a>
-    </div>
-</div>
-<div class="wd-link-box-separator wd-very-dark-grey-fill wd-border-color-dark-grey wd-border-color-very-dark-grey wd-content-border-bottom"></div>
-<div></div>
-<div class="wd-border-color-very-dark-grey wd-content-padding-left-right-16 wd-tuiter-font wd-padding-top-bottom-12 wd-tuit-text-content-container wd-content-border-bottom">
-    <div>
-        <p class="wd-0-margin wd-hide-extended-text-nowrap wd-size-13-font wd-light-gray-color">
-            Trending - Sports
-        </p>
-    </div>
-    <div class="wd-content-text-container-short wd-content-text-position wd-solid-white-text wd-bold-font">
-        <p class="wd-0-margin wd-ellipsis-extended-text">
-            New York Jets: The worst team in football? Probably.
-        </p>
-    </div>
-    <div class="wd-tuit-count-container wd-size-13-font wd-light-gray-color">1,256 Tuits</div>
-</div>
-<div class="wd-content-photo-container wd-padding-top-bottom-12  wd-border-color-very-dark-grey wd-content-padding-left-right-16 wd-tuiter-font wd-content-border-bottom">
-    <div class="wd-float-left wd-fill-horizontal-width">
-        <div class="wd-0-margin wd-hide-extended-text-nowrap">
-            <img src="images/google_logo.png" class="wd-circle-border-radius wd-tuit-suggested-icon wd-float-left"/>
-            <span class="wd-hide-extended-text-nowrap wd-size-13-font wd-solid-white-text wd-bold-font wd-display-inline-block">A Frustrated Programmer &#9745</span>
-            <span class="wd-hide-extended-text-nowrap wd-size-13-font wd-light-gray-color wd-display-inline-block"> - Yesterday</span>
+        <!-- main content -->
+        <div class="col-xxl-6 xxl-width-override col-xl-6 col-lg-7 col-md-10 col-sm">
+            <div class="wd-display-flex wd-tuiter-search-row-container align-middle">
+                <div class="wd-full-width ps-3 me-3 search-bar-override border wd-full-height rounded-pill wd-display-flex align-middle">
+                    <a href="search.html">
+                        <i class="fa fa-search wd-float-left wd-search-icon-line-height wd-hide-border wd-fg-color-black"></i>
+                    </a>
+                    <input class="wd-tuiter-search wd-float-left wd-hide-border" type="text" placeholder="Search Tuiter"/>
+                </div>
+                <div class="wd-fixed-gear-icon gear-padding-override wd-display-inline-block">
+                    <a href="explore-settings.html" class="wd-a-href-position-compensator ps-0 pe-0 pt-0 pb-0 wd-0-border wd-font-30">
+                        <i class="fa fa-cog wd-fg-bootstrap-blue wd-font-30"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-2 ms-0 me-0">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="for-you.html" class="nav-link active">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="trending.html" class="nav-link">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sports.html" class="nav-link">Sports</a>
+                    </li>
+                    <li class="nav-item disappear-content-s">
+                        <a href="entertainment.html" class="nav-link">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row mt-2 ms-0 me-0 position-relative">
+                <img src="images/spacex-starship.jpg" class="img-fluid ps-0 pe-0 pt-0 pb-0">
+                <span class="wd-text-overlay wd-fg-color-white">SpaceX's Starship</span>
+            </div>
+            <div class="row border ms-0 me-0 mt-0 mb-0 rounded">
+                <div class="row ms-0 me-0 ps-2 pe-2 pt-2 pb-2 wd-bottom-border">
+                    <div class="col wd-font-16">
+                        <div class="row ps-2 pe-2 wd-fg-color-grey">Web Development</div>
+                        <div class="row wd-bold-font ps-2 pe-2">
+                            <p class="ms-0 me-0 mt-0 mb-0 ps-0 pe-0 pt-0 pb-0">
+                                ReactJS
+                                <i class="fa fa-check-circle"></i>
+                                - 2h
+                            </p>
+                        </div>
+                        <div class="row wd-bold-font ps-2 pe-2">
+                            <p class="ps-0 pe-0 pt-0 pb-0 ms-0 me-0 mt-0 mb-0 wd-tuit-line-height">
+                                React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-2">
+                        <img src="images/react-logo.jpg" class="wd-tuit-border-radius wd-tuit-image-size"/>
+                    </div>
+                </div>
+                <div class="row ms-0 me-0 ps-2 pe-2 pt-2 pb-2 wd-bottom-border">
+                    <div class="col wd-font-16">
+                        <div class="row wd-bold-font ps-2 pe-2">
+                            <p class="ms-0 me-0 mt-0 mb-0 ps-0 pe-0 pt-0 pb-0">
+                                JavaScript
+                                <i class="fa fa-check-circle"></i>
+                                - 2h
+                            </p>
+                        </div>
+                        <div class="row wd-bold-font ps-2 pe-2">
+                            <p class="ms-0 me-0 mt-0 mb-0 ps-0 pe-0 pt-0 pb-0 wd-tuit-line-height">
+                                Javascript is a programming language that can run on browsers as well as desktops
+                            </p>
+                        </div>
+                        <div class="row ps-2 pe-2 wd-fg-color-grey">123K Tuits</div>
+                    </div>
+                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-2">
+                        <img src="images/javascript-logo.png" class="wd-tuit-border-radius wd-tuit-image-size"/>
+                    </div>
+                </div>
+                <div class="row ms-0 me-0 ps-2 pe-2 pt-2 pb-2 wd-bottom-border">
+                    <div class="col wd-font-16">
+                        <div class="row ps-2 pe-2 wd-fg-color-grey">Web Development</div>
+                        <div class="row wd-bold-font ps-2 pe-2">
+                            <p class="ms-0 me-0 mt-0 mb-0 ps-0 pe-0 pt-0 pb-0">
+                                jQuery
+                            </p>
+                        </div>
+                        <div class="row ps-2 pe-2 wd-fg-color-grey">123K Tuits</div>
+                    </div>
+                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-2">
+                        <img src="images/jquery-logo.png" class="wd-tuit-border-radius wd-tuit-image-size"/>
+                    </div>
+                </div>
+                <div class="row ms-0 me-0 ps-2 pe-2 pt-2 pb-2 wd-bottom-border">
+                    <div class="col wd-font-16">
+                        <div class="row ps-2 pe-2 wd-fg-color-grey">Web Development</div>
+                        <div class="row wd-bold-font ps-2 pe-2">
+                            <p class="ms-0 me-0 mt-0 mb-0 ps-0 pe-0 pt-0 pb-0">
+                                NodeJS
+                                <i class="fa fa-check-circle"></i>
+                                - 2h
+                            </p>
+                        </div>
+                        <div class="row ps-2 pe-2 wd-fg-color-grey">123K Tuits</div>
+                    </div>
+                    <div class="col-3 tuit-image-override pe-1 ps-1 ms-2">
+                        <img src="images/nodejs-logo.jpg" class="wd-tuit-border-radius wd-tuit-image-size"/>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="wd-content-text-container-tall wd-size-16-font wd-solid-white-text wd-bold-font">
-            <p class="wd-0-margin wd-hide-wrapping-text wd-height-100-percent">
-                Dear Google, why won't you recruit me? I've said please and everything.
-            </p>
-        </div>
-    </div>
-    <div class="wd-float-right wd-margin-left-10">
-        <img class="wd-content-photo" src="images/google_logo.png"/>
-    </div>
-    <div class="wd-float-done"></div>
-</div>
 
-<div class="wd-content-photo-container wd-padding-top-bottom-12 wd-border-color-very-dark-grey wd-content-padding-left-right-16 wd-tuiter-font wd-content-border-bottom">
-    <div class="wd-float-left wd-fill-horizontal-width">
-        <div>
-            <p class="wd-0-margin wd-hide-extended-text-nowrap wd-size-13-font wd-light-gray-color">
-                COVID-19 - 2 days ago
-            </p>
+        <!-- right sidebar -->
+        <div class="col-xxl-3 xxl-width-override col-xl-3 xl-width-override col-lg-4 l-width-override col-md col-sm disappear-content-m disappear-content-s">
+            <ul class="list-group wd-font-13">
+                <li class="list-group-item padding-top-bottom-override">
+                    <p class="ms-0 me-0 mt-0 mb-0 wd-bold-font">Who to follow</p>
+                </li>
+                <li class="list-group-item padding-top-bottom-override">
+                    <div class="row follow-row-override">
+                        <div class="col-2 image-override">
+                            <img src="images/java.png" class="wd-sidebar-images"/>
+                        </div>
+                        <div class="col-7 follow-handle-override wd-visible-overflow">
+                            <div class="row wd-fill-height-half">
+                                <p class="col ms-0 me-0 mt-0 mb-0 wd-bold-font">
+                                    Java
+                                    <i class="col fa fa-check-circle"></i>
+                                </p>
+                            </div>
+                            <div class="row wd-fill-height-half">
+                                <p class="ms-0 me-0 mt-0 mb-0">@Java</p>
+                            </div>
+                        </div>
+                        <div class="col-4 float-right button-override text-center align-items-center wd-follow-button-container">
+                            <button type="button" class="btn follow-button-override btn-primary rounded-pill wd-font-13">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item padding-top-bottom-override">
+                    <div class="row follow-row-override">
+                        <div class="col-2 image-override">
+                            <img src="images/relativity_space.png" class="wd-sidebar-images"/>
+                        </div>
+                        <div class="col-7 follow-handle-override wd-visible-overflow">
+                            <div class="row wd-fill-height-half">
+                                <p class="col ms-0 me-0 mt-0 mb-0 wd-bold-font">
+                                    Relativity Space
+                                    <i class="col fa fa-check-circle"></i>
+                                </p>
+                            </div>
+                            <div class="row wd-fill-height-half">
+                                <p class="ms-0 me-0 mt-0 mb-0">@relativityspace</p>
+                            </div>
+                        </div>
+                        <div class="col-4 button-override text-center align-items-center wd-follow-button-container">
+                            <button type="button" class="btn follow-button-override btn-primary rounded-pill wd-font-13">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item padding-top-bottom-override">
+                    <div class="row follow-row-override">
+                        <div class="col-2 image-override">
+                            <img src="images/virgin.png" class="wd-sidebar-images"/>
+                        </div>
+                        <div class="col-7 follow-handle-override wd-visible-overflow">
+                            <div class="row wd-fill-height-half">
+                                <p class="col ms-0 me-0 mt-0 mb-0 wd-bold-font">
+                                    Virgin Galactic
+                                    <i class="col fa fa-check-circle"></i>
+                                </p>
+                            </div>
+                            <div class="row wd-fill-height-half">
+                                <p class="ms-0 me-0 mt-0 mb-0">@virgingalactic</p>
+                            </div>
+                        </div>
+                        <div class="col-4 button-override text-center align-items-center wd-follow-button-container">
+                            <button type="button" class="btn follow-button-override btn-primary rounded-pill wd-font-13">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item padding-top-bottom-override">
+                    <div class="row follow-row-override">
+                        <div class="col-2 image-override">
+                            <img src="images/nasa_logo.png" class="wd-sidebar-images"/>
+                        </div>
+                        <div class="col-7 follow-handle-override wd-visible-overflow">
+                            <div class="row wd-fill-height-half">
+                                <p class="col ms-0 me-0 mt-0 mb-0 wd-bold-font">
+                                    NASA
+                                    <i class="col fa fa-check-circle"></i>
+                                </p>
+                            </div>
+                            <div class="row wd-fill-height-half">
+                                <p class="ms-0 me-0 mt-0 mb-0">@NASA</p>
+                            </div>
+                        </div>
+                        <div class="col-4 button-override text-center align-items-center wd-follow-button-container">
+                            <button type="button" class="btn follow-button-override btn-primary rounded-pill wd-font-13">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item padding-top-bottom-override">
+                    <div class="row follow-row-override">
+                        <div class="col-2 image-override">
+                            <img src="images/tesla_logo.png" class="wd-sidebar-images"/>
+                        </div>
+                        <div class="col-7 follow-handle-override wd-visible-overflow">
+                            <div class="row wd-fill-height-half">
+                                <p class="col ms-0 me-0 mt-0 mb-0 wd-bold-font">
+                                    Tesla
+                                    <i class="col fa fa-check-circle"></i>
+                                </p>
+                            </div>
+                            <div class="row wd-fill-height-half">
+                                <p class="ms-0 me-0 mt-0 mb-0">@Tesla</p>
+                            </div>
+                        </div>
+                        <div class="col-4 button-override text-center align-items-center wd-follow-button-container">
+                            <button type="button" class="btn follow-button-override btn-primary rounded-pill wd-font-13">Follow</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="wd-content-text-container-tall wd-size-16-font wd-solid-white-text wd-bold-font">
-            <p class="wd-0-margin wd-hide-wrapping-text wd-height-100-percent">
-                OMG, are you still here?
-            </p>
-        </div>
-    </div>
-    <div class="wd-float-right wd-margin-left-10">
-        <img class="wd-content-photo" src="images/covid.jpg"/>
-    </div>
-    <div class="wd-float-done"></div>
-</div>
 
-<div class="wd-border-color-very-dark-grey wd-content-padding-left-right-16 wd-tuiter-font wd-padding-top-bottom-12 wd-tuit-text-content-container wd-content-border-bottom">
-    <div>
-        <p class="wd-0-margin wd-hide-extended-text-nowrap wd-size-13-font wd-light-gray-color">
-            Trending - Gaming
-        </p>
     </div>
-    <div class="wd-content-text-container-short wd-solid-white-text wd-bold-font wd-size-16-font">
-        <p class="wd-0-margin wd-ellipsis-extended-text">
-            EA is still a terrible company
-        </p>
-    </div>
-    <div class="wd-tuit-count-container wd-size-13-font wd-light-gray-color">9,123 Tuits</div>
-</div>
-
-<div class="wd-content-photo-container wd-padding-top-bottom-12 wd-border-color-very-dark-grey wd-content-padding-left-right-16 wd-tuiter-font wd-content-border-bottom">
-    <div class="wd-float-left wd-fill-horizontal-width">
-        <div class="wd-0-margin wd-hide-extended-text-nowrap">
-            <img src="images/clipart_square_icon.jpg" class="wd-circle-border-radius wd-tuit-suggested-icon wd-float-left"/>
-            <span class="wd-hide-extended-text-nowrap wd-size-13-font wd-solid-white-text wd-bold-font wd-display-inline-block">UnhelpfulFriend &#9745</span>
-            <span class="wd-hide-extended-text-nowrap wd-size-13-font wd-light-gray-color wd-display-inline-block"> - Yesterday</span>
-        </div>
-        <div class="wd-content-text-container-tall wd-size-16-font wd-solid-white-text wd-bold-font">
-            <p class="wd-0-margin wd-hide-wrapping-text wd-height-100-percent">
-                Tired of being unhappy? Have you tried just not being sad?
-            </p>
-        </div>
-    </div>
-    <div class="wd-float-right wd-margin-left-10">
-        <img class="wd-content-photo" src="images/depressed_guy.jpg"/>
-    </div>
-    <div class="wd-float-done"></div>
-</div>
-
-<div class="wd-content-photo-container wd-padding-top-bottom-12 wd-border-color-very-dark-grey wd-content-padding-left-right-16 wd-tuiter-font wd-content-border-bottom">
-    <div class="wd-float-left wd-fill-horizontal-width">
-        <div>
-            <p class="wd-0-margin wd-hide-extended-text-nowrap wd-size-13-font wd-light-gray-color">
-                Elder Scrolls - Today
-            </p>
-        </div>
-        <div class="wd-content-text-container-tall wd-size-16-font wd-solid-white-text wd-bold-font">
-            <p class="wd-0-margin wd-hide-wrapping-text wd-height-100-percent">
-                Please, for the love of all that is good, please make Elder Scrolls 6
-            </p>
-        </div>
-    </div>
-    <div class="wd-float-right wd-margin-left-10">
-        <img class="wd-content-photo" src="images/bethesda.jpg"/>
-    </div>
-    <div class="wd-float-done"></div>
 </div>
 
 </body>
