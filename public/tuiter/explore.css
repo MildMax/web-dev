@@ -2,9 +2,8 @@
 
 .wd-sidebar-images {
     border-radius: 50%;
-    width: 37px;
-    height: 37px;
-    margin-top: 2px;
+    width: 36px;
+    height: 36px;
 }
 
 .wd-follow-button-container {
@@ -39,6 +38,10 @@
 
 .wd-full-width {
     width: 100%
+}
+
+.wd-fill-follow-tags-width {
+    width: calc(100% - 104px);
 }
 
 /* padding & margins */
@@ -126,8 +129,17 @@
     display: flex;
 }
 
+.wd-display-items-middle-vertical {
+    align-items: center;
+    vertical-align: middle;
+}
+
 .wd-float-left {
     float: left;
+}
+
+.wd-float-right {
+    float: right;
 }
 
 .wd-visible-overflow{
@@ -188,6 +200,10 @@
     height: 45px;
 }
 
+.list-group-item.list-group-follow-override {
+    height: 45px;
+}
+
 div.col-3.tuit-image-override {
     width: 98px;
 }
@@ -225,6 +241,10 @@ div.col-3.tuit-image-override {
         padding-left: calc(var(--bs-gutter-x) * .3);
         width: 18%;
     }
+
+    div.wd-follow-tag-padding {
+        padding-left: 1rem!important;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -256,6 +276,10 @@ div.col-3.tuit-image-override {
         width: 20%;
     }
 
+    div.wd-follow-tag-padding {
+        padding-left: 0.5rem!important;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -276,6 +300,10 @@ div.col-3.tuit-image-override {
 
     div.col-lg-4.l-width-override {
         width: 28%;
+    }
+
+    div.wd-follow-tag-padding {
+        padding-left: 0;
     }
 
     .disappear-content-lg {
