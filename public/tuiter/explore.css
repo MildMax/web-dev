@@ -163,6 +163,10 @@
     line-height: 1.4;
 }
 
+.wd-line-height-1-point-15 {
+    line-height: 1.15;
+}
+
 .wd-position-relative {
     position: relative;
 }
