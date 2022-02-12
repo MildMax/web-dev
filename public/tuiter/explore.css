@@ -2,8 +2,8 @@
 
 .wd-sidebar-images {
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
 }
 
 .wd-follow-button-container {
@@ -159,7 +159,7 @@
     top: -5px;
 }
 
-.wd-tuit-line-height {
+.wd-line-height-1-point-4 {
     line-height: 1.4;
 }
 
@@ -174,8 +174,8 @@
 }
 
 .list-group-item.padding-top-bottom-override {
-    padding-bottom: 0.35rem;
-    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 .col-2.image-override {
@@ -201,7 +201,7 @@
 }
 
 .list-group-item.list-group-follow-override {
-    height: 45px;
+    height: 52px;
 }
 
 div.col-3.tuit-image-override {
@@ -299,7 +299,7 @@ div.col-3.tuit-image-override {
     }
 
     div.col-lg-4.l-width-override {
-        width: 28%;
+        width: 28.5%;
     }
 
     div.wd-follow-tag-padding {
