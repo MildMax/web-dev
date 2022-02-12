@@ -112,11 +112,7 @@
 
 /* borders */
 
-.wd-bookmarks-page-border-margins {
-    width: calc(100% - 20px);
-    margin-left: 9px;
-    margin-right: 9px;
-}
+
 
 .wd-article-image-border {
     border-width: 1px 1px 0px 1px;
