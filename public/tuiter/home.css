@@ -1,0 +1,14 @@
+/* overrides */
+
+.wd-avatar-col {
+    width: 60px;
+    display: inline-block;
+}
+
+div.wd-ellipses-line-height {
+    line-height: 0;
+}
+
+div.wd-ellipses-line-height > i {
+    line-height: 0.5;
+}

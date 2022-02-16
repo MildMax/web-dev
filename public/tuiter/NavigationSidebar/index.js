@@ -3,11 +3,11 @@ const NavigationSidebar = () => {
             <div class="list-group">
                 <a class="list-group-item" href="/">
                     <i class="fab fa-twitter"></i></a>
-                <a class="list-group-item" href="home.html">
+                <a class="list-group-item" href="../HomeScreen/home.html">
                     <i class="fa fa-home"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s disappear-content-xs">Home</span>
                 </a>
-                <a href="explore.html" class="list-group-item active">
+                <a href="../ExploreScreen/explore.html" class="list-group-item active">
                     <i class="fa fa-hashtag"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s disappear-content-xs">Explore</span>
                 </a>

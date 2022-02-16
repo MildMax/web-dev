@@ -1,7 +1,7 @@
 const PostSummaryItem = (post) => {
     return (`
         <li class="list-group-item">
-            <div class="row ">
+            <div class="row">
                 <div class="col wd-font-16">
                     <div class="row ps-2 pe-2 wd-fg-color-grey-summary-item">${post.topic}</div>
                     <div class="row wd-bold-font ps-2 pe-2">
