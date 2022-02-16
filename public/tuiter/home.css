@@ -1,7 +1,7 @@
 /* overrides */
 
 .wd-avatar-col {
-    width: 60px;
+    width: 56px;
     display: inline-block;
 }
 
@@ -11,4 +11,33 @@ div.wd-ellipses-line-height {
 
 div.wd-ellipses-line-height > i {
     line-height: 0.5;
+}
+
+.col.wd-post-width-override {
+    width: calc(100% - 68px)!important;
+}
+
+.wd-ellipses-width {
+    width: 26px;
+}
+
+.col.wd-name-handle-width-override {
+    width: calc(100% - 34px)!important;
+}
+
+.col-3.wd-icon-col-override {
+    width: 27%!important;
+}
+
+a.wd-highlight-border-on-hover:hover > i {
+    -webkit-text-stroke-color: #2a9fd6!important;
+    -webkit-text-stroke-width: 1px;
+}
+
+.list-group-item.wd-transparent-background-override {
+    background-color: transparent;
+}
+
+.wd-align-text-center {
+    text-align: center;
 }
