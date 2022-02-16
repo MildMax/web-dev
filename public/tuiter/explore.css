@@ -60,7 +60,7 @@
 }
 
 .wd-search-icon-line-height {
-    line-height: 2;
+    line-height: 2!important;
 }
 
 /* fonts and font styling */
@@ -87,12 +87,24 @@
 
 /* colors */
 
+.wd-bg-color-white {
+    background-color: white;
+}
+
 .wd-fg-color-greyish-white {
     color: #c6c6c6;
 }
 
-.wd-fg-color-greyish-white::placeholder {
-    color: rgba(198, 198, 198, 0.5);
+.wd-fg-color-grey-search {
+    color: rgb(120, 120, 120);
+}
+
+.wd-fg-color-grey-search::placeholder {
+    color: rgb(120, 120, 120);
+}
+
+.wd-fg-color-greyish-white {
+    color: #c6c6c6;
 }
 
 .wd-fg-color-greyish-white > i {
@@ -123,6 +135,10 @@
     background-color: black;
 }
 
+.wd-fg-color-black {
+    color: black;
+}
+
 .wd-bg-color-grey {
     background-color: rgb(110,118,125);
 }
@@ -133,6 +149,14 @@
 
 .wd-bg-color-darker-grey > li {
     background-color: rgb(72, 74, 76);
+}
+
+.wd-fg-color-grey-summary-item {
+    color: #727272;
+}
+
+.wd-fg-color-grey-main-image-text {
+    color: #202020;
 }
 
 /* display */
@@ -174,8 +198,8 @@
     line-height: 1.4;
 }
 
-.wd-line-height-1-point-15 {
-    line-height: 1.15;
+.wd-line-height-1-point-3 {
+    line-height: 1.3;
 }
 
 /* overrides */
@@ -205,8 +229,8 @@ div.col-3.tuit-image-override {
     span.wd-text-overlay {
         position: absolute;
         width: 400px;
-        top: 366px;
-        font-size: 32px;
+        top: 354px;
+        font-size: 42px;
         font-weight: bold;
     }
 
@@ -231,9 +255,9 @@ div.col-3.tuit-image-override {
 
     span.wd-text-overlay {
         position: absolute;
-        width: 300px;
-        top: calc(100% - 48px);
-        font-size: 32px;
+        width: 350px;
+        top: calc(100% - 52px);
+        font-size: 38px;
         font-weight: bold;
     }
 
@@ -386,9 +410,7 @@ div.col-3.tuit-image-override {
 }
 
 .btn-primary.follow-button-color-override {
-    background-color: white;
-    color: rgb(72, 74, 76);
-    font-weight: bold;
+    height: 32px;
     border: 0;
 }
 
@@ -408,6 +430,6 @@ div.col-3.tuit-image-override {
 }
 
 .border.tuit-content-border-color-style-override {
-    border: 1px solid rgb(145,145,145,0.5)!important;
+    border: 1px solid #282828!important;
 }
 
