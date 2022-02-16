@@ -2,13 +2,8 @@
 
 .wd-sidebar-images {
     border-radius: 50%;
-    width: 38px;
-    height: 38px;
-}
-
-.wd-follow-button-container {
-    display: flex;
-    justify-content: center;
+    width: 42px;
+    height: 42px;
 }
 
 .wd-tuiter-search {
@@ -26,48 +21,24 @@
     height: 100%;
 }
 
+.wd-full-width {
+    width: 100%
+}
+
 .wd-tuit-image-size {
     height: 90px;
     width: 90px;
-}
-
-.wd-fixed-gear-icon {
-    width: 30px;
-    height: 100%;
-}
-
-.wd-full-width {
-    width: 100%
 }
 
 .wd-fill-follow-tags-width {
     width: calc(100% - 104px);
 }
 
-/* padding & margins */
-
-.wd-fill-height-half {
+.wd-fill-height-45-percent {
     height: 45%;
 }
 
-.wd-bootstrap-padding-as-margins {
-    margin-right: calc(var(--bs-gutter-x) * .5);
-    margin-left: calc(var(--bs-gutter-x) * .5);
-}
-
 /* borders */
-
-.wd-0-border {
-    border: 0;
-}
-
-.wd-bottom-border-0 {
-    border-bottom: 0;
-}
-
-.wd-bottom-border {
-    border-bottom: 1px solid #dee2e6!important;
-}
 
 .wd-grey-bottom-border {
     border-bottom: 1px solid rgb(145,145,145,0.5)!important;
@@ -79,7 +50,7 @@
 
 /* sizing */
 
-.wd-1-point-5-x {
+.wd-1-point-5-em {
     font-size: 1.5em;
 }
 
@@ -111,20 +82,52 @@
 
 /* colors */
 
-.wd-fg-color-black {
-    color: black;
+.wd-fg-color-greyish-white {
+    color: #c6c6c6;
 }
 
-.wd-fg-bootstrap-blue {
-    color: #0d6efd;
+.wd-fg-color-greyish-white::placeholder {
+    color: rgba(198, 198, 198, 0.5);
+}
+
+.wd-fg-color-greyish-white > i {
+    color: #c6c6c6;
+}
+
+.wd-fg-color-greyish-white > a {
+    color: #c6c6c6;
 }
 
 .wd-fg-color-white {
     color: white;
 }
 
-.wd-fg-color-grey {
-    color: grey;
+.wd-fg-color-white > li {
+    color: white;
+}
+
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-bg-color-black > i {
+    background-color: black;
+}
+
+.wd-bg-color-black > a {
+    background-color: black;
+}
+
+.wd-bg-color-grey {
+    background-color: rgb(110,118,125);
+}
+
+.wd-fg-color-darker-grey {
+    color: rgb(72, 74, 76);
+}
+
+.wd-bg-color-darker-grey > li {
+    background-color: rgb(72, 74, 76);
 }
 
 /* display */
@@ -162,11 +165,6 @@
     outline: none!important;
 }
 
-.wd-a-href-position-compensator {
-    position: relative;
-    top: -5px;
-}
-
 .wd-line-height-1-point-4 {
     line-height: 1.4;
 }
@@ -175,30 +173,10 @@
     line-height: 1.15;
 }
 
-.wd-position-relative {
-    position: relative;
-}
-
 /* overrides */
 
 .fa-stack.overlap-override {
     width: 1.5em;
-}
-
-.list-group-item.padding-top-bottom-override {
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-}
-
-.col-2.image-override {
-    padding-left: calc(var(--bs-gutter-x) * .3);
-    width: 18%;
-}
-
-.col-4.button-override {
-    padding-left: calc(var(--bs-gutter-x) * .3);
-    padding-right: calc(var(--bs-gutter-x) * .1);
-    width: 27%;
 }
 
 .btn.follow-button-override {
@@ -206,10 +184,6 @@
     padding-bottom: 0.3rem;
     height: 30px;
     line-height: 0.5;
-}
-
-.row.follow-row-override {
-    height: 45px;
 }
 
 .list-group-item.list-group-follow-override {
@@ -243,17 +217,6 @@ div.col-3.tuit-image-override {
         width: 15.5%;
     }
 
-    div.col-7.follow-handle-override {
-        padding-left: 0;
-        padding-right: 0;
-        width: 55%;
-    }
-
-    div.col-2.image-override {
-        padding-left: calc(var(--bs-gutter-x) * .3);
-        width: 18%;
-    }
-
     div.wd-follow-tag-padding {
         padding-left: 1rem!important;
     }
@@ -264,7 +227,7 @@ div.col-3.tuit-image-override {
     span.wd-text-overlay {
         position: absolute;
         width: 300px;
-        top: 314px;
+        top: calc(100% - 48px);
         font-size: 32px;
         font-weight: bold;
     }
@@ -275,17 +238,6 @@ div.col-3.tuit-image-override {
 
     div.col-xl-2.xl-width-override {
         width: 14%;
-    }
-
-    div.col-7.follow-handle-override {
-        padding-left: 0;
-        padding-right: 0;
-        width: 49%;
-    }
-
-    div.col-2.image-override {
-        padding-left: calc(var(--bs-gutter-x) * .3);
-        width: 20%;
     }
 
     div.wd-follow-tag-padding {
@@ -299,15 +251,9 @@ div.col-3.tuit-image-override {
     span.wd-text-overlay {
         position: absolute;
         width: 300px;
-        top: 309px;
+        top: calc(100% - 48px);
         font-size: 32px;
         font-weight: bold;
-    }
-
-    div.col-7.follow-handle-override {
-        padding-left: 0;
-        padding-right: 0;
-        width: 47%;
     }
 
     div.col-lg-4.l-width-override {
@@ -329,7 +275,7 @@ div.col-3.tuit-image-override {
     span.wd-text-overlay {
         position: absolute;
         width: 300px;
-        top: 338px;
+        top: calc(100% - 44px);
         font-size: 30px;
         font-weight: bold;
     }
@@ -345,7 +291,7 @@ div.col-3.tuit-image-override {
     span.wd-text-overlay {
         position: absolute;
         width: 300px;
-        top: 234px;
+        top: calc(100% - 42px);
         font-size: 28px;
         font-weight: bold;
     }
@@ -363,64 +309,30 @@ div.col-3.tuit-image-override {
     }
 }
 
+@media (max-width: 575px) {
+
+    span.wd-text-overlay {
+        position: absolute;
+        width: 300px;
+        top: calc(100% - 42px);
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    div.xs-small-min-width {
+        min-width: 400px;
+    }
+
+    .disappear-content-xs {
+        display: none;
+    }
+}
+
 /* dark mode overrides */
-
-.wd-fg-color-greyish-white {
-    color: #c6c6c6;
-}
-
-.wd-fg-color-greyish-white::placeholder {
-    color: rgba(198, 198, 198, 0.5);
-}
-
-.wd-fg-color-greyish-white > i {
-    color: #c6c6c6;
-}
-
-.wd-fg-color-greyish-white > a {
-    color: #c6c6c6;
-}
-
-.wd-fg-color-greyish-white > li {
-    color: #c6c6c6;
-}
-
-.wd-fg-color-white > i {
-    color: white;
-}
-
-.wd-fg-color-white > a {
-    color: white;
-}
-
-.wd-fg-color-white > li {
-    color: white;
-}
-
-.wd-bg-color-black {
-    background-color: black;
-}
-.wd-bg-color-black > i {
-    background-color: black;
-}
-
-.wd-bg-color-black > a {
-    background-color: black;
-}
 
 .active.navigation-override {
     background-color: black;
     font-weight: bold;
-}
-.active.borderless-navigation-override {
-    background-color: black;
-    font-weight: bold;
-    border: 0!important;
-}
-
-
-.list-group-item.active.active-color-override {
-    color: #c6c6c6;
 }
 
 .list-group.border-override {
@@ -432,22 +344,12 @@ div.col-3.tuit-image-override {
     border-color: rgb(145,145,145,0.5)!important;
 }
 
-.list-group-item.borderless-override {
-    border: 0!important;
-}
-
 .btn-primary.bright-override {
     background-color: #10aeff;
     border-color: #10aeff;
 }
 
-.wd-border-color-grey {
-    border-color: rgb(110,118,125);
-}
 
-.wd-bg-color-grey {
-    background-color: rgb(110,118,125);
-}
 
 .list-group-item.grey-border-override {
     border-color: rgb(145,145,145,0.5);
@@ -461,14 +363,6 @@ div.col-3.tuit-image-override {
     border-color: rgb(145,145,145,0.5);
 }
 
-.wd-fg-color-darker-grey {
-    color: rgb(72, 74, 76);
-}
-
-
-.wd-bg-color-grey > li {
-    background-color: rgb(72, 74, 76);
-}
 
 .fa.fa-icon-override {
     color: transparent;
@@ -497,26 +391,6 @@ div.col-3.tuit-image-override {
     border-color: black!important;
 }
 
-.nav-tabs.navigation-style-override {
-    border: 0;
-    justify-content: space-between;
-}
-
-
-.nav-tabs.navigation-style-override > li > a {
-    background-color: transparent;
-    color: rgb(110,118,125);
-    border: 0;
-    padding: 0.5rem 0rem;
-}
-
-.nav-link.active.active-navigation-style-override {
-    background-color: black;
-    color: #c6c6c6;
-    font-weight: bold;
-    border-bottom: 5px solid #10aeff;
-}
-
 .nav-link.active.borderless-active-navigation-style-override {
     background-color: black;
     color: white;
@@ -528,29 +402,7 @@ div.col-3.tuit-image-override {
     color: #c6c6c6;
 }
 
-.wd-image-border {
-    border-width: 1px;
-    border-style: solid;
-}
-
-.border.tuit-content-border-style-override {
-    border-left: 1px solid rgb(110,118,125)!important;
-    border-right: 1px solid rgb(110,118,125)!important;
-    border-top: 0!important;
-    border-bottom: 0!important;
-    border-radius: 0!important;
-}
-
 .border.tuit-content-border-color-style-override {
     border: 1px solid rgb(145,145,145,0.5)!important;
 }
 
-.main-content-border-override {
-    position: absolute;
-    top: -8px;
-    z-index: -1;
-    border-left: 1px solid rgb(110,118,125)!important;
-    border-right: 1px solid rgb(110,118,125)!important;
-    width: calc(100% - 24px);
-    height: 100vh;
-}
