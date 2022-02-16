@@ -22,21 +22,31 @@ const PostList = (post) => {
                         </p>
                     </div>
                     <div class="row ps-3 pe-3 wd-top-padding-12">
-                        <img src=${post.mainImage}
-                             class="ps-0 pe-0 img-fluid wd-article-image-border wd-article-image-border-radius wd-border-color-very-dark-grey">
-                        <div class="wd-border-color-very-dark-grey wd-article-description-border-radius wd-padding-12 wd-0-margin wd-article-content-border-bottom">
-                            <div class="wd-solid-white-text wd-bold-font wd-ellipsis-extended-text wd-padding-right-100">
-                                ${post.imageTitle}
+                        ${ post.imageTitle === undefined && post.imageDescription === undefined && post.externalLink === undefined ? 
+                        `
+                            <img src=${post.mainImage}
+                                 class="ps-0 pe-0 img-fluid wd-article-image-border wd-article-description-border-radius wd-article-image-border-radius wd-border-color-very-dark-grey">
+                        ` 
+                        :
+                        `
+                            <img src=${post.mainImage}
+                                 class="ps-0 pe-0 img-fluid wd-article-image-border wd-article-image-border-radius wd-border-color-very-dark-grey">
+                            <div class="wd-border-color-very-dark-grey wd-article-description-border-radius wd-padding-12 wd-0-margin wd-article-content-border-bottom">
+                                <div class="wd-solid-white-text wd-bold-font wd-ellipsis-extended-text wd-padding-right-100">
+                                    ${post.imageTitle}
+                                </div>
+                                <p class="wd-0-margin wd-light-gray-color wd-margin-top-2">
+                                    ${post.imageDescription}
+                                </p>
+                                <div class="wd-margin-top-2">
+                                    <a href="#" class="wd-0-margin wd-light-gray-color wd-remove-link-underline">
+                                        ${post.externalLink}
+                                    </a>
+                                </div>
                             </div>
-                            <p class="wd-0-margin wd-light-gray-color wd-margin-top-2">
-                                ${post.imageDescription}
-                            </p>
-                            <div class="wd-margin-top-2">
-                                <a href="#" class="wd-0-margin wd-light-gray-color wd-remove-link-underline">
-                                    ${post.externalLink}
-                                </a>
-                            </div>
-                        </div>
+                        `
+                        }
+                        
                         <div class="row pt-2">
                             <div class="col-3 wd-icon-col-override wd-tuiter-font">
                                 <a href="#" class="wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
