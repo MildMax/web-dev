@@ -26,7 +26,7 @@ div.wd-ellipses-line-height > i {
 }
 
 .col-3.wd-icon-col-override {
-    width: 27%!important;
+    width: 27.5%!important;
 }
 
 a.wd-highlight-border-on-hover:hover > i {
@@ -40,4 +40,8 @@ a.wd-highlight-border-on-hover:hover > i {
 
 .wd-align-text-center {
     text-align: center;
+}
+
+.wd-font-14 {
+    font-size: 14px;
 }
