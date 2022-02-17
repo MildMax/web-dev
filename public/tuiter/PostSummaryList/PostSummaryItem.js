@@ -7,7 +7,7 @@ const PostSummaryItem = (post) => {
                     <div class="row wd-bold-font ps-2 pe-2">
                         <p class="ms-0 me-0 mt-0 mb-0 ps-0 pe-0 pt-0 pb-0 wd-fg-color-white">
                             ${post.userName}
-                            <i class="fa fa-check-circle"> </i>
+                            <i class="fa fa-check-circle me-1"> </i>
                             <span class="wd-fg-color-grey-summary-item wd-normal-font"> - ${post.time} </span>
                         </p>
                     </div>

@@ -40,7 +40,7 @@ const PostList = (post) => {
                                 </p>
                                 <div class="wd-margin-top-2">
                                     <a href="#" class="wd-0-margin wd-light-gray-color wd-remove-link-underline">
-                                        ${post.externalLink}
+                                        <i class="fa fa-link me-1"></i>${post.externalLink}
                                     </a>
                                 </div>
                             </div>
@@ -78,5 +78,5 @@ const PostList = (post) => {
             </div>
         </li>
     `)
-}
+};
 export default PostList

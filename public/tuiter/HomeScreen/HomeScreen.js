@@ -1,6 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import HomeComponent from "./HomeComponent.js";
-import WhoToFollowList from "../WhoToFollowList/index.js";
+import PostSummaryList from "../PostSummaryList/index.js";
 
 (function ($) {
     $('#wd-home').append(`
@@ -12,7 +12,7 @@ import WhoToFollowList from "../WhoToFollowList/index.js";
             ${HomeComponent()}
         </div>
         <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-            ${WhoToFollowList()}
+            ${PostSummaryList()}
         </div>
         </div>
     `);

@@ -1,4 +1,27 @@
 export default [
-    {avatarIcon:'../images/nasa_logo.png', userName: 'Joe', handle: 'MAMA', time: '2h', description: ' Yo mama', mainImage:'../images/classroom_2.jpg', imageTitle: 'MAMA', imageDescription: 'a picture of yo mama', externalLink: 'yomama.com', commentCount: 234, retuitCount: 69, likeCount: 234},
-    {avatarIcon:'../images/nasa_logo.png', userName: 'Joe', handle: 'MAMA', time: '2h', description: ' Yo mama', mainImage:'../images/classroom_2.jpg', commentCount: 234, retuitCount: 69, likeCount: 234},
+    {
+        avatarIcon:'../images/nasa_logo.png',
+        userName: 'Elon Musk',
+        handle: 'elonmusk',
+        time: '23h',
+        description: 'Amazing show about @Inspiration4x mission!',
+        mainImage:'../images/classroom_2.jpg',
+        imageTitle: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
+        imageDescription: 'From training to launch to landing, this all-access docusseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...',
+        externalLink: 'netflix.com',
+        commentCount: '4.2K',
+        retuitCount: '3.5K',
+        likeCount: '37.5K'
+    },
+    {
+        avatarIcon:'../images/nasa_logo.png',
+        userName: 'New York Post',
+        handle: '@nypost',
+        time: '23h',
+        description: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk trib.al/nx2Gfaq',
+        mainImage:'../images/classroom_2.jpg',
+        commentCount: 965,
+        retuitCount: '2.4K',
+        likeCount: '4K'
+    },
 ]
