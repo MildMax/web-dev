@@ -10,9 +10,36 @@
     margin-right: 15px;
 }
 
+.wd-avatar-image {
+    width: 48px;
+    height: 48px;
+}
+
+.wd-tuit-image-size {
+    height: 90px;
+    width: 90px;
+}
+
+.wd-fill-follow-tags-width {
+    width: calc(100% - 104px);
+}
+
+.wd-fill-height-45-percent {
+    height: 45%;
+}
+
+
 /* colors */
 
 .wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-bg-color-black > i {
+    background-color: black;
+}
+
+.wd-bg-color-black > a {
     background-color: black;
 }
 
@@ -30,6 +57,34 @@
 
 .wd-light-gray-color {
     color: lightgray;
+}
+
+.wd-fg-color-greyish-white {
+    color: #c6c6c6;
+}
+
+.wd-fg-color-greyish-white {
+    color: #c6c6c6;
+}
+
+.wd-fg-color-greyish-white > i {
+    color: #c6c6c6;
+}
+
+.wd-fg-color-greyish-white > a {
+    color: #c6c6c6;
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+
+.wd-fg-color-white > li {
+    color: white;
+}
+
+.wd-fg-color-grey-summary-item {
+    color: #727272;
 }
 
 /* padding & margins */
@@ -77,6 +132,30 @@
     overflow: hidden;
 }
 
+.wd-article-image-border {
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+}
+
+.wd-slight-top-border-radius {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.wd-slight-bottom-border-radius {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.wd-solid-bottom-border {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.wd-tuit-border-radius {
+    border-radius: 10px;
+}
+
 /* font & text formatting */
 
 .wd-bold-font {
@@ -104,6 +183,18 @@
 .wd-hide-extended-text-nowrap {
     overflow: hidden;
     white-space: nowrap;
+}
+
+.wd-normal-font {
+    font-weight: normal;
+}
+
+.wd-font-15 {
+    font-size: 15px;
+}
+
+.wd-font-16 {
+    font-size: 16px;
 }
 
 /* flex & float */
@@ -146,7 +237,7 @@
     text-align: left;
 }
 
-/* html element manipulation */
+/* display */
 
 .wd-remove-link-underline {
     text-decoration: none;
@@ -158,4 +249,58 @@
 
 .wd-display-inline-block {
     display: inline-block;
+}
+
+.wd-display-flex {
+    display: flex;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-display-items-middle-vertical {
+    align-items: center;
+    vertical-align: middle;
+}
+
+.wd-visible-overflow{
+    overflow: visible;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+/* tag manip */
+
+.wd-line-height-1-point-4 {
+    line-height: 1.4;
+}
+
+/* overrides */
+
+.list-group-item.list-group-follow-override {
+    height: 56px;
+}
+
+div.col-3.tuit-image-override {
+    width: 98px;
+}
+
+.fa.fa-icon-override {
+    color: transparent;
+    -webkit-text-stroke-color: #c6c6c6;
+    -webkit-text-stroke-width: 1px;
+}
+
+.btn-primary.follow-button-color-override {
+    height: 32px;
+    border: 0;
+}
+
+.border.tuit-content-border-color-style-override {
+    border: 1px solid #282828!important;
 }

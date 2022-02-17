@@ -25,13 +25,13 @@ const PostList = (post) => {
                         ${ post.imageTitle === undefined && post.imageDescription === undefined && post.externalLink === undefined ? 
                         `
                             <img src=${post.mainImage}
-                                 class="ps-0 pe-0 img-fluid wd-article-image-border wd-article-description-border-radius wd-article-image-border-radius wd-border-color-very-dark-grey">
+                                 class="ps-0 pe-0 img-fluid wd-article-image-border wd-slight-bottom-border-radius wd-slight-top-border-radius wd-border-color-very-dark-grey">
                         ` 
                         :
                         `
                             <img src=${post.mainImage}
-                                 class="ps-0 pe-0 img-fluid wd-article-image-border wd-article-image-border-radius wd-border-color-very-dark-grey">
-                            <div class="wd-border-color-very-dark-grey wd-article-description-border-radius pt-2 wd-article-content-border-bottom">
+                                 class="ps-0 pe-0 img-fluid wd-article-image-border wd-slight-top-border-radius wd-border-color-very-dark-grey">
+                            <div class="wd-border-color-very-dark-grey wd-slight-bottom-border-radius pt-2 wd-solid-bottom-border">
                                 <div class="wd-solid-white-text wd-bold-font wd-ellipsis-extended-text">
                                     ${post.imageTitle}
                                 </div>

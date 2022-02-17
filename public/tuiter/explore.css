@@ -6,11 +6,6 @@
     height: 42px;
 }
 
-.wd-follow-button-container {
-    display: flex;
-    justify-content: center;
-}
-
 .wd-tuiter-search {
     border: 0;
     width: calc(100% - 45px);
@@ -30,27 +25,10 @@
     width: 100%
 }
 
-.wd-tuit-image-size {
-    height: 90px;
-    width: 90px;
-}
-
-.wd-fill-follow-tags-width {
-    width: calc(100% - 104px);
-}
-
-.wd-fill-height-45-percent {
-    height: 45%;
-}
-
 /* borders */
 
 .wd-grey-bottom-border {
     border-bottom: 1px solid rgb(145,145,145,0.5)!important;
-}
-
-.wd-tuit-border-radius {
-    border-radius: 10px;
 }
 
 /* sizing */
@@ -65,22 +43,6 @@
 
 /* fonts and font styling */
 
-.wd-bold-font {
-    font-weight: bold;
-}
-
-.wd-normal-font {
-    font-weight: normal;
-}
-
-.wd-font-15 {
-    font-size: 15px;
-}
-
-.wd-font-16 {
-    font-size: 16px;
-}
-
 .wd-font-30 {
     font-size: 30px;
 }
@@ -91,48 +53,12 @@
     background-color: white;
 }
 
-.wd-fg-color-greyish-white {
-    color: #c6c6c6;
-}
-
 .wd-fg-color-grey-search {
     color: rgb(120, 120, 120);
 }
 
 .wd-fg-color-grey-search::placeholder {
     color: rgb(120, 120, 120);
-}
-
-.wd-fg-color-greyish-white {
-    color: #c6c6c6;
-}
-
-.wd-fg-color-greyish-white > i {
-    color: #c6c6c6;
-}
-
-.wd-fg-color-greyish-white > a {
-    color: #c6c6c6;
-}
-
-.wd-fg-color-white {
-    color: white;
-}
-
-.wd-fg-color-white > li {
-    color: white;
-}
-
-.wd-bg-color-black {
-    background-color: black;
-}
-
-.wd-bg-color-black > i {
-    background-color: black;
-}
-
-.wd-bg-color-black > a {
-    background-color: black;
 }
 
 .wd-fg-color-black {
@@ -143,59 +69,18 @@
     background-color: rgb(110,118,125);
 }
 
-.wd-fg-color-darker-grey {
-    color: rgb(72, 74, 76);
-}
-
 .wd-bg-color-darker-grey > li {
     background-color: rgb(72, 74, 76);
-}
-
-.wd-fg-color-grey-summary-item {
-    color: #727272;
 }
 
 .wd-fg-color-grey-main-image-text {
     color: #202020;
 }
 
-/* display */
-
-.wd-display-inline-block {
-    display: inline-block;
-}
-
-.wd-display-flex {
-    display: flex;
-}
-
-.wd-display-items-middle-vertical {
-    align-items: center;
-    vertical-align: middle;
-}
-
-.wd-float-left {
-    float: left;
-}
-
-.wd-float-right {
-    float: right;
-}
-
-.wd-visible-overflow{
-    overflow: visible;
-    white-space: nowrap;
-    z-index: 1;
-}
-
 /* tag manip */
 
 .wd-hide-border:focus {
     outline: none!important;
-}
-
-.wd-line-height-1-point-4 {
-    line-height: 1.4;
 }
 
 .wd-line-height-1-point-3 {
@@ -213,14 +98,6 @@
     padding-bottom: 0.3rem;
     height: 30px;
     line-height: 0.5;
-}
-
-.list-group-item.list-group-follow-override {
-    height: 56px;
-}
-
-div.col-3.tuit-image-override {
-    width: 98px;
 }
 
 /* media query */
@@ -378,8 +255,6 @@ div.col-3.tuit-image-override {
     border-color: #10aeff;
 }
 
-
-
 .list-group-item.grey-border-override {
     border-color: rgb(145,145,145,0.5);
 }
@@ -392,13 +267,6 @@ div.col-3.tuit-image-override {
     border-color: rgb(145,145,145,0.5);
 }
 
-
-.fa.fa-icon-override {
-    color: transparent;
-    -webkit-text-stroke-color: #c6c6c6;
-    -webkit-text-stroke-width: 1px;
-}
-
 .fa.fa-icon-gear-override {
     color: transparent;
     -webkit-text-stroke-color: #c6c6c6;
@@ -407,11 +275,6 @@ div.col-3.tuit-image-override {
 
 .fa-inverse.inverse-color-override {
     color: #c6c6c6;
-}
-
-.btn-primary.follow-button-color-override {
-    height: 32px;
-    border: 0;
 }
 
 .border.search-bar-border-override {
@@ -428,8 +291,3 @@ div.col-3.tuit-image-override {
 .nav-link.borderless-navigation-style-override {
     color: #c6c6c6;
 }
-
-.border.tuit-content-border-color-style-override {
-    border: 1px solid #282828!important;
-}
-

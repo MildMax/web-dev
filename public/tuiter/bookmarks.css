@@ -4,11 +4,6 @@
     min-width: 598px;
 }
 
-.wd-avatar-image {
-    width: 48px;
-    height: 48px;
-}
-
 .wd-tuit-bookmark-content-container {
     position: relative;
     height: 533px;
@@ -107,31 +102,6 @@
 
 .wd-padding-right-88 {
     padding-right: 88px;
-}
-
-
-/* borders */
-
-
-
-.wd-article-image-border {
-    border-width: 1px 1px 0px 1px;
-    border-style: solid;
-}
-
-.wd-article-image-border-radius {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-.wd-article-description-border-radius {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.wd-article-content-border-bottom {
-    border-style: solid;
-    border-width: 1px;
 }
 
 /* fonts & text formatting */
