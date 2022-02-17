@@ -17,11 +17,11 @@ const PostList = (post) => {
                         </a>
                     </div>
                     <div class="row ps-3 pe-3">
-                        <p class=" ps-0 wd-solid-white-text wd-size-15-font wd-0-margin">
+                        <p class=" ps-0 wd-solid-white-text wd-size-15-font mb-0">
                             ${post.description}
                         </p>
                     </div>
-                    <div class="row ps-3 pe-3 wd-top-padding-12">
+                    <div class="row ps-3 pe-3 pt-2">
                         ${ post.imageTitle === undefined && post.imageDescription === undefined && post.externalLink === undefined ? 
                         `
                             <img src=${post.mainImage}
@@ -31,15 +31,15 @@ const PostList = (post) => {
                         `
                             <img src=${post.mainImage}
                                  class="ps-0 pe-0 img-fluid wd-article-image-border wd-article-image-border-radius wd-border-color-very-dark-grey">
-                            <div class="wd-border-color-very-dark-grey wd-article-description-border-radius wd-padding-12 wd-0-margin wd-article-content-border-bottom">
-                                <div class="wd-solid-white-text wd-bold-font wd-ellipsis-extended-text wd-padding-right-100">
+                            <div class="wd-border-color-very-dark-grey wd-article-description-border-radius pt-2 wd-article-content-border-bottom">
+                                <div class="wd-solid-white-text wd-bold-font wd-ellipsis-extended-text">
                                     ${post.imageTitle}
                                 </div>
-                                <p class="wd-0-margin wd-light-gray-color wd-margin-top-2">
+                                <p class="mb-1 mt-1 wd-light-gray-color ">
                                     ${post.imageDescription}
                                 </p>
-                                <div class="wd-margin-top-2">
-                                    <a href="#" class="wd-0-margin wd-light-gray-color wd-remove-link-underline">
+                                <div class="mt-1 mb-2">
+                                    <a href="#" class="wd-light-gray-color wd-remove-link-underline">
                                         <i class="fa fa-link me-1"></i>${post.externalLink}
                                     </a>
                                 </div>
