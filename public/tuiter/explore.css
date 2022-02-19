@@ -40,12 +40,36 @@
 
 /* borders */
 
-.wd-grey-bottom-border {
-    border-bottom: 1px solid rgb(145,145,145,0.5)!important;
-}
-
 .wd-tuit-border-radius {
     border-radius: 10px;
+}
+
+.wd-topic-link-bottom-border {
+    position: absolute;
+    display: block;
+    top: 0px;
+    box-sizing: border-box;
+    border-bottom: #10aeff solid 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.wd-main-content-border {
+    position: absolute;
+    top: -8px;
+    z-index: -1;
+    border-left: 1px solid rgb(110,118,125)!important;
+    border-right: 1px solid rgb(110,118,125)!important;
+    width: calc(100% - 24px);
+    height: 100vh;
+}
+
+.wd-image-content-border {
+    border: 1px solid rgb(110,118,125)!important;
+}
+
+.wd-transparent-border {
+    border: transparent!important;
 }
 
 /* sizing */
@@ -200,7 +224,7 @@ div.col-3.tuit-image-override {
     span.wd-text-overlay {
         position: absolute;
         width: 400px;
-        top: 366px;
+        top: calc(100% - 50px);
         font-size: 32px;
         font-weight: bold;
     }
@@ -233,7 +257,7 @@ div.col-3.tuit-image-override {
     }
 
     div.col-xl-3.xl-width-override {
-        width: 27%;
+        width: 30%;
     }
 
     div.col-xl-2.xl-width-override {
@@ -333,6 +357,7 @@ div.col-3.tuit-image-override {
 .active.navigation-override {
     background-color: black;
     font-weight: bold;
+    border: transparent;
 }
 
 .list-group.border-override {
@@ -341,28 +366,13 @@ div.col-3.tuit-image-override {
 }
 
 .list-group-item.border-override {
-    border-color: rgb(145,145,145,0.5)!important;
+    border: transparent;
 }
 
 .btn-primary.bright-override {
     background-color: #10aeff;
     border-color: #10aeff;
 }
-
-
-
-.list-group-item.grey-border-override {
-    border-color: rgb(145,145,145,0.5);
-}
-
-.nav-tabs.grey-border-override {
-    border-color: rgb(145,145,145,0.5);
-}
-
-.nav-link.active.grey-border-override {
-    border-color: rgb(145,145,145,0.5);
-}
-
 
 .fa.fa-icon-override {
     color: transparent;
@@ -401,8 +411,3 @@ div.col-3.tuit-image-override {
 .nav-link.borderless-navigation-style-override {
     color: #c6c6c6;
 }
-
-.border.tuit-content-border-color-style-override {
-    border: 1px solid rgb(145,145,145,0.5)!important;
-}
-
