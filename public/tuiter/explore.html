@@ -16,7 +16,9 @@
         <!-- left sidebar -->
         <div class="col-xxl-2 xxl-width-override col-xl-2 xl-width-override col-lg-1 col-md-2 col-sm-2 disappear-content-xs">
             <div class="list-group wd-bg-color-black wd-fg-color-greyish-white wd-font-15">
-                <i class="list-group-item fab fa-twitter"></i>
+                <a href="#" class="list-group-item highlight-hover-override">
+                    <i class="fab fa-twitter"></i>
+                </a>
                 <a href="home.html" class="list-group-item highlight-hover-override">
                     <i class="fa fa-icon-override fa-home"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">Home</span>
@@ -46,9 +48,9 @@
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">Profile</span>
                 </a>
                 <a href="#" class="list-group-item highlight-hover-override">
-                    <span class="fa-stack overlap-override">
-                        <i class="fa fa-icon-override fa-stack-1x wd-1-point-5-em fa-circle "></i>
-                        <i class="fa  fa-stack-1x fa-ellipsis-h fa-inverse inverse-color-override"></i>
+                    <span class="fa-stack overlap-override more-icon-parent-override">
+                        <i class="fa fa-icon-override fa-stack-1x wd-1-point-5-em fa-circle more-icon-circle-override"></i>
+                        <i class="fa  fa-stack-1x fa-ellipsis-h fa-inverse inverse-color-override more-icon-ellipsis-override"></i>
                     </span>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s">More</span>
                 </a>
@@ -58,8 +60,7 @@
 
         <!-- main content -->
         <div class="col-xxl-6 xxl-width-override col-xl-6 col-lg-7 col-md-10 col-sm-10 sm-content-override xs-small-min-width position-relative">
-            <div class="wd-main-content-border"></div>
-            <div class="wd-display-flex wd-tuiter-search-row-container align-middle ms-0 me-0 ps-3 pe-3">
+            <div class="wd-display-flex wd-tuiter-search-row-container align-middle ms-0 me-0">
                 <div class="wd-float-left wd-full-width wd-full-height wd-bg-color-grey ps-3 me-3 search-bar-override search-bar-border-override border rounded-pill wd-display-flex align-middle white-outline-on-focus">
                     <a href="search.html">
                         <i class="fa fa-search wd-float-left wd-search-icon-line-height wd-hide-border wd-fg-color-greyish-white"></i>
@@ -71,30 +72,29 @@
                 </a>
             </div>
             <div class="row mt-2 ms-0 me-0">
-                <ul class="nav pe-3 ps-3 justify-content-between">
+                <ul class="nav nav-tabs wd-grey-solid-border-bottom">
                     <li class="nav-item position-relative">
-                        <a href="for-you.html" class="nav-link highlight-hover-override active pb-3 ps-0 pe-0 borderless-active-navigation-style-override">For You</a>
-                        <span class="wd-topic-link-bottom-border"></span>
+                        <a href="for-you.html" class="nav-link wd-grey-solid-border wd-grey-solid-border-hover active borderless-active-navigation-style-override">For You</a>
                     </li>
                     <li class="nav-item">
-                        <a href="trending.html" class="nav-link highlight-hover-override pb-3 ps-0 pe-0 borderless-navigation-style-override">Trending</a>
+                        <a href="trending.html" class="nav-link wd-grey-solid-border-hover borderless-navigation-style-override">Trending</a>
                     </li>
                     <li class="nav-item">
-                        <a href="news.html" class="nav-link highlight-hover-override pb-3 ps-0 pe-0 borderless-navigation-style-override">News</a>
+                        <a href="news.html" class="nav-link wd-grey-solid-border-hover borderless-navigation-style-override">News</a>
                     </li>
                     <li class="nav-item">
-                        <a href="sports.html" class="nav-link highlight-hover-override pb-3 ps-0 pe-0 borderless-navigation-style-override">Sports</a>
+                        <a href="sports.html" class="nav-link wd-grey-solid-border-hover borderless-navigation-style-override">Sports</a>
                     </li>
                     <li class="nav-item disappear-content-s disappear-content-xs">
-                        <a href="entertainment.html" class="nav-link highlight-hover-override pb-3 ps-0 pe-0 borderless-navigation-style-override">Entertainment</a>
+                        <a href="entertainment.html" class="nav-link wd-grey-solid-border-hover borderless-navigation-style-override">Entertainment</a>
                     </li>
                 </ul>
             </div>
-            <div class="row ms-0 me-0 wd-image-content-border position-relative">
+            <div class="row ms-0 me-0 mt-2 position-relative">
                 <img src="images/spacex-starship.jpg" class="img-fluid ps-0 pe-0 pt-0 pb-0">
                 <span class="wd-text-overlay wd-fg-color-white ps-0 pe-0 ms-2">SpaceX's Starship</span>
             </div>
-            <div class="row border wd-transparent-border ms-0 me-0 mt-0 mb-0 rounded">
+            <div class="row wd-grey-solid-border wd-grey-solid-border-bottom border ms-0 me-0 mt-0 mb-0 rounded">
                 <div class="row ms-0 me-0 ps-2 pe-2 pt-2 pb-2">
                     <div class="col wd-font-16">
                         <div class="row ps-2 pe-2 wd-fg-color-greyish-white">Web Development</div>
@@ -171,10 +171,10 @@
         <!-- right sidebar -->
         <div class="col-xxl-3 xxl-width-override col-xl-3 xl-width-override col-lg-4 l-width-override col-md col-sm disappear-content-m disappear-content-s disappear-content-xs">
             <ul class="list-group wd-font-15 wd-bg-color-darker-grey wd-fg-color-white">
-                <li class="list-group-item border-override">
+                <li class="list-group-item">
                     <p class="ms-0 me-0 mt-0 mb-0 wd-bold-font">Who to follow</p>
                 </li>
-                <li class="list-group-item border-override list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
+                <li class="list-group-item list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
                     <img src="images/java.png" class="wd-float-left wd-sidebar-images"/>
                     <div class="wd-float-left wd-display-inline-block wd-fill-follow-tags-width wd-follow-tag-padding wd-visible-overflow wd-line-height-1-point-4">
                         <div class="row wd-fill-height-45-percent">
@@ -190,7 +190,7 @@
                     <button type="button" class="btn follow-button-override btn-primary follow-button-color-override rounded-pill wd-font-15 wd-float-right">Follow</button>
 
                 </li>
-                <li class="list-group-item border-override list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
+                <li class="list-group-item list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
                     <img src="images/relativity_space.png" class="wd-float-left wd-sidebar-images"/>
                     <div class="wd-float-left wd-display-inline-block wd-fill-follow-tags-width wd-follow-tag-padding wd-visible-overflow wd-line-height-1-point-4">
                         <div class="row wd-fill-height-45-percent">
@@ -205,7 +205,7 @@
                     </div>
                     <button type="button" class="btn follow-button-override btn-primary follow-button-color-override rounded-pill wd-font-15 wd-float-right">Follow</button>
                 </li>
-                <li class="list-group-item border-override list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
+                <li class="list-group-item list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
                     <img src="images/virgin.png" class="wd-float-left wd-sidebar-images"/>
                     <div class="wd-float-left wd-display-inline-block wd-fill-follow-tags-width wd-follow-tag-padding wd-visible-overflow wd-line-height-1-point-4">
                         <div class="row wd-fill-height-45-percent">
@@ -220,7 +220,7 @@
                     </div>
                     <button type="button" class="btn follow-button-override btn-primary follow-button-color-override rounded-pill wd-font-15 wd-float-right">Follow</button>
                 </li>
-                <li class="list-group-item border-override list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
+                <li class="list-group-item list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
                     <img src="images/nasa_logo.png" class="wd-float-left wd-sidebar-images"/>
                     <div class="wd-float-left wd-display-inline-block wd-fill-follow-tags-width wd-follow-tag-padding wd-visible-overflow wd-line-height-1-point-4">
                         <div class="row wd-fill-height-45-percent">
@@ -235,7 +235,7 @@
                     </div>
                     <button type="button" class="btn follow-button-override btn-primary follow-button-color-override rounded-pill wd-font-15 wd-float-right">Follow</button>
                 </li>
-                <li class="list-group-item border-override list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
+                <li class="list-group-item list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
                     <img src="images/tesla_logo.png" class="wd-float-left wd-sidebar-images"/>
                     <div class="wd-float-left wd-display-inline-block wd-fill-follow-tags-width wd-follow-tag-padding wd-visible-overflow wd-line-height-1-point-4">
                         <div class="row wd-fill-height-45-percent">

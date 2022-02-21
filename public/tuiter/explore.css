@@ -44,28 +44,22 @@
     border-radius: 10px;
 }
 
-.wd-topic-link-bottom-border {
-    position: absolute;
-    display: block;
-    top: 44px;
-    box-sizing: border-box;
-    border-bottom: #10aeff solid 4px;
-    width: 100%;
-    height: 4px;
-}
-
-.wd-main-content-border {
-    position: absolute;
-    top: -8px;
-    z-index: -1;
-    border-left: 1px solid rgb(110,118,125)!important;
-    border-right: 1px solid rgb(110,118,125)!important;
-    width: calc(100% - 24px);
-    height: 100vh;
-}
-
-.wd-image-content-border {
+.wd-grey-solid-border {
     border: 1px solid rgb(110,118,125)!important;
+}
+
+.wd-grey-solid-border-bottom > div {
+    border-bottom: 1px solid rgb(110,118,125)!important;
+}
+
+.nav-tabs.wd-grey-solid-border-bottom {
+    border-bottom: 1px solid rgb(110,118,125)!important;
+}
+
+.nav-link.wd-grey-solid-border-hover:hover {
+    border: 1px solid rgb(110,118,125)!important;
+    color: white;
+    font-weight: bold;
 }
 
 .wd-transparent-border {
@@ -154,6 +148,10 @@
     background-color: rgb(72, 74, 76);
 }
 
+.wd-bg-color-darker-grey > div {
+    background-color: rgb(72, 74, 76);
+}
+
 /* display */
 
 .wd-display-inline-block {
@@ -219,7 +217,7 @@
 }
 
 div.white-outline-on-focus:focus-within {
-    outline: white solid 1px;
+    outline: white solid 2px;
 }
 
 .list-group-item.list-group-follow-override {
@@ -293,7 +291,7 @@ div.col-3.tuit-image-override {
     }
 
     div.col-lg-4.l-width-override {
-        width: 30.1%;
+        width: 30.5%;
     }
 
     div.wd-follow-tag-padding {
@@ -414,7 +412,7 @@ div.col-3.tuit-image-override {
 }
 
 .nav-link.active.borderless-active-navigation-style-override {
-    background-color: black;
+    background-color: #10aeff;
     color: white;
     font-weight: bold;
     border-bottom-color: black;
@@ -424,10 +422,6 @@ div.col-3.tuit-image-override {
     color: #c6c6c6;
 }
 
-.nav-link.highlight-hover-override:hover {
-    font-weight: bold;
-    color: white;
-}
 
 .list-group-item.highlight-hover-override:hover{
     font-weight: bold;
@@ -446,4 +440,18 @@ div.col-3.tuit-image-override {
 
 a.gear-white-fill-hover-override:hover > i {
     color: white!important;
+}
+
+span.more-icon-parent-override {
+    height: 1.3em;
+}
+
+i.more-icon-circle-override {
+    line-height: 1;
+    font-size: 20px;
+}
+
+i.more-icon-ellipsis-override {
+    line-height: 1.6;
+    font-size: 12px;
 }
