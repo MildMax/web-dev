@@ -104,7 +104,7 @@
     color: #c6c6c6;
 }
 
-.wd-fg-color-greyish-white::placeholder {
+.wd-fg-color-greyish-white-placeholder::placeholder {
     color: rgba(198, 198, 198, 0.5);
 }
 
@@ -290,6 +290,14 @@ div.col-3.tuit-image-override {
         font-weight: bold;
     }
 
+    div.col-lg-1.l-width-override {
+        width: 9%;
+    }
+
+    button.tweet-button-display-override {
+        width: fit-content;
+    }
+
     div.col-lg-4.l-width-override {
         width: 30.5%;
     }
@@ -336,6 +344,10 @@ div.col-3.tuit-image-override {
 
     div.col-sm-10.sm-content-override {
         width: 81.33%
+    }
+
+    button.tweet-button-display-override {
+        width: fit-content;
     }
 
     .me-3.search-bar-override {
