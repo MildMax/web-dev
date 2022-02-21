@@ -412,8 +412,8 @@ div.col-3.tuit-image-override {
 }
 
 .nav-link.active.borderless-active-navigation-style-override {
-    background-color: #10aeff;
-    color: white;
+    background-color: white;
+    color: rgb(72, 74, 76);
     font-weight: bold;
     border-bottom-color: black;
 }
