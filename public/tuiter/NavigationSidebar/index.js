@@ -11,23 +11,23 @@ const NavigationSidebar = (active) => {
                     <i class="fa fa-hashtag"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s disappear-content-xs">Explore</span>
                 </a>
-                <a href="notifications.html" class="list-group-item ${active === "notifications" ? "active" : ""}">
+                <a href="../notifications.html" class="list-group-item ${active === "notifications" ? "active" : ""}">
                     <i class="fa fa-bell"></i> 
                     <span class="disappear-content-lg disappear-content-m disappear-content-s disappear-content-xs">Notifications</span>
                 </a>
-                <a href="messages.html" class="list-group-item ${active === "messages" ? "active" : ""}">
+                <a href="../messages.html" class="list-group-item ${active === "messages" ? "active" : ""}">
                     <i class="fa fa-envelope"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s disappear-content-xs">Messages</span>
                 </a>
-                <a href="bookmarks.html" class="list-group-item ${active === "bookmarks" ? "active" : ""}">
+                <a href="../bookmarks.html" class="list-group-item ${active === "bookmarks" ? "active" : ""}">
                     <i class="fa fa-bookmark"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s disappear-content-xs">Bookmarks</span>
                 </a>
-                <a href="lists.html" class="list-group-item ${active === "lists" ? "active" : ""}">
+                <a href="../lists.html" class="list-group-item ${active === "lists" ? "active" : ""}">
                     <i class="fa fa-list-ul"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s disappear-content-xs">Lists</span>
                 </a>
-                <a href="profile.html" class="list-group-item ${active === "home" ? "profile" : ""}">
+                <a href="../profile.html" class="list-group-item ${active === "profile" ? "active" : ""}">
                     <i class="fa fa-user"></i>
                     <span class="disappear-content-lg disappear-content-m disappear-content-s disappear-content-xs">Profile</span>
                 </a>

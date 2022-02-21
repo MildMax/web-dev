@@ -296,8 +296,8 @@ div.col-3.tuit-image-override {
     -webkit-text-stroke-width: 1px;
 }
 
-.btn-primary.follow-button-color-override {
-    height: 32px;
+.btn-primary.follow-button-dims-override {
+    height: 34px;
     border: 0;
 }
 

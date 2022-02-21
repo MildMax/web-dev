@@ -8,7 +8,7 @@ const ExploreComponent = () => {
                         <a href="search.html">
                             <i class="fa fa-search wd-float-left wd-search-icon-line-height wd-hide-border wd-fg-color-grey-search"></i>
                         </a>
-                        <input class="wd-tuiter-search wd-bg-color-white wd-fg-color-grey-search wd-fg-color-black wd-float-left wd-hide-border" type="text" placeholder="Search Tuiter"/>
+                        <input class="wd-tuiter-search wd-bg-color-white wd-fg-color-grey-search wd-fg-color-black wd-float-left wd-hide-border" type="text" placeholder="Search Twitter"/>
                     </div>
                     <a href="explore-settings.html" class="wd-float-right ps-0 pe-0 pt-0 pb-0 wd-font-30 wd-line-height-1-point-3">
                         <i class="fa fa-cog"></i>
@@ -34,7 +34,7 @@ const ExploreComponent = () => {
            </ul>
            <div class="row mt-2 mb-2 ms-0 me-0 position-relative border tuit-content-border-color-style-override">
                 <img src="../images/spacex-starship.jpg" class="img-fluid ps-0 pe-0 pt-0 pb-0">
-                <span class="wd-text-overlay wd-fg-color-grey-main-image-text ps-0 pe-0 ms-2">SpaceX's Starship</span>
+                <span class="wd-text-overlay wd-fg-color-white ps-0 pe-0 ms-2">SpaceX's Starship</span>
            </div>
            ${PostSummaryList()}
     `);
