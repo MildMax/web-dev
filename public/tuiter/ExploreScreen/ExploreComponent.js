@@ -4,7 +4,7 @@ const ExploreComponent = () => {
     return(`
             <div class="row mb-2">
                 <div class="wd-display-flex wd-tuiter-search-row-container align-middle ms-0 me-0">
-                    <div class="wd-float-left wd-full-width wd-full-height wd-bg-color-white ps-3 me-4 search-bar-override search-bar-border-override border rounded-pill wd-display-flex align-middle">
+                    <div class="wd-float-left wd-full-width wd-full-height wd-bg-color-white ps-3 me-4 search-bar-override wd-search-bar-border-override border rounded-pill wd-display-flex align-middle">
                         <a href="search.html">
                             <i class="fa fa-search wd-float-left wd-search-icon-line-height wd-hide-border wd-fg-color-grey-search"></i>
                         </a>
@@ -28,11 +28,11 @@ const ExploreComponent = () => {
                 <li class="nav-item">
                     <a href="sports.html" class="nav-link">Sports</a>
                 </li>
-                <li class="nav-item disappear-content-s disappear-content-xs">
+                <li class="nav-item wd-disappear-content-s wd-disappear-content-xs">
                     <a href="entertainment.html" class="nav-link">Entertainment</a>
                 </li>
            </ul>
-           <div class="row mt-2 mb-2 ms-0 me-0 position-relative border tuit-content-border-color-style-override">
+           <div class="row mt-2 mb-2 ms-0 me-0 position-relative border wd-tuit-content-border-color-style-override">
                 <img src="../images/spacex-starship.jpg" class="img-fluid ps-0 pe-0 pt-0 pb-0">
                 <span class="wd-text-overlay wd-fg-color-white ps-0 pe-0 ms-2">SpaceX's Starship</span>
            </div>

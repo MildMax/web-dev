@@ -282,25 +282,25 @@
 
 /* overrides */
 
-.list-group-item.list-group-follow-override {
+.list-group-item.wd-list-group-follow-override {
     height: 56px;
 }
 
-div.col-3.tuit-image-override {
+div.col-3.wd-tuit-image-override {
     width: 98px;
 }
 
-.fa.fa-icon-override {
+.fa.wd-fa-icon-override {
     color: transparent;
     -webkit-text-stroke-color: #c6c6c6;
     -webkit-text-stroke-width: 1px;
 }
 
-.btn-primary.follow-button-dims-override {
+.btn-primary.wd-follow-button-dims-override {
     height: 34px;
     border: 0;
 }
 
-.border.tuit-content-border-color-style-override {
+.border.wd-tuit-content-border-color-style-override {
     border: 1px solid #282828!important;
 }
