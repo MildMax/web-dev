@@ -25,10 +25,6 @@ div.wd-ellipses-line-height > i {
     width: calc(100% - 34px)!important;
 }
 
-.col-3.wd-icon-col-override {
-    width: 27.5%!important;
-}
-
 a.wd-highlight-border-on-hover:hover > i {
     -webkit-text-stroke-color: #2a9fd6!important;
     -webkit-text-stroke-width: 1px;
@@ -44,4 +40,8 @@ a.wd-highlight-border-on-hover:hover > i {
 
 .wd-font-14 {
     font-size: 14px;
+}
+
+.pt-2.wd-icon-padding-top-override {
+    padding-top: 0.8rem!important;
 }

@@ -2,7 +2,7 @@ export default [
     {
         avatarIcon:'../images/elon_musk_avatar.jpg',
         userName: 'Elon Musk',
-        handle: 'elonmusk',
+        handle: '@elonmusk',
         time: '23h',
         description: 'Amazing show about <a href="#">@Inspiration4x</a> mission!',
         mainImage:'../images/inspirationx_article_image.jpg',
@@ -18,7 +18,7 @@ export default [
         userName: 'New York Post',
         handle: '@nypost',
         time: '23h',
-        description: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk <a href="#">trib.al/nx2Gfaq</a>',
+        description: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk <a href="trib.al/nx2Gfaq">trib.al/nx2Gfaq</a>',
         mainImage:'../images/grimes_karl_marx.jpg',
         commentCount: '965',
         retuitCount: '2.4K',

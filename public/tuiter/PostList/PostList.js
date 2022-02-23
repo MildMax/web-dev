@@ -23,12 +23,12 @@ const PostList = (post) => {
                     </div>
                     <div class="row ps-3 pe-3 pt-2">
                         ${post.imageTitle === undefined && post.imageDescription === undefined && post.externalLink === undefined ?
-        `
+                        `
                             <img src=${post.mainImage}
                                  class="ps-0 pe-0 img-fluid wd-article-image-border wd-slight-bottom-border-radius wd-slight-top-border-radius wd-border-color-very-dark-grey">
                         `
-        :
-        `
+                        :
+                        `
                             <img src=${post.mainImage}
                                  class="ps-0 pe-0 img-fluid wd-article-image-border wd-slight-top-border-radius wd-border-color-very-dark-grey">
                             <div class="wd-border-color-very-dark-grey wd-slight-bottom-border-radius pt-2 wd-solid-bottom-border">
@@ -45,32 +45,32 @@ const PostList = (post) => {
                                 </div>
                             </div>
                         `
-    }
-                        <div class="row pt-2">
-                            <div class="col-3 ps-0 pe-0 wd-icon-col-override wd-tuiter-font wd-font-14">
-                                <a href="#" class="wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
-                                    <i class="fa wd-fa-icon-override fa-comment"></i>
-                                    <span class="ms-2">${post.commentCount}</span>
-                                </a>
-                            </div>
-                            <div class="col-3 ps-0 pe-0 wd-icon-col-override wd-tuiter-font wd-font-14">
-                                <a href="#" class="wd-float-left wd-remove-link-underline wd-light-gray-color">
-                                    <i class="fa fa-retweet"></i>
-                                    <span class="ms-2">${post.retuitCount}</span>
-                                </a>
-            
-                            </div>
-                            <div class="col-3 ps-0 pe-0 wd-icon-col-override wd-tuiter-font wd-font-14">
-                                <a href="#" class="wd-float-left wd-highlight-border-on-hover wd-light-gray-color wd-remove-link-underline">
-                                    <i class="fa wd-fa-icon-override fa-heart"></i>
-                                    <span class="ms-2">${post.likeCount}</span>
-                                </a>
-                            </div>
-                            <div class="col-2 ps-0 pe-0 wd-tuiter-font wd-line-height-1-point-4 wd-font-14">
-                                <a href="#" class="wd-remove-link-underline wd-light-gray-color wd-bold-font">
-                                    <i class="fa fa-upload"></i>
-                                </a>
-                            </div>
+                        }
+                    </div>
+                    <div class="row pt-2 wd-icon-padding-top-override pb-1 ps-3 pe-0">
+                        <div class="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
+                            <a href="#" class="wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
+                                <i class="fa wd-fa-icon-override fa-comment"></i>
+                                <span class="ms-2">${post.commentCount}</span>
+                            </a>
+                        </div>
+                        <div class="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
+                            <a href="#" class="wd-float-left wd-remove-link-underline wd-light-gray-color">
+                                <i class="fa fa-retweet"></i>
+                                <span class="ms-2">${post.retuitCount}</span>
+                            </a>
+        
+                        </div>
+                        <div class="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
+                            <a href="#" class="wd-float-left wd-highlight-border-on-hover wd-light-gray-color wd-remove-link-underline">
+                                <i class="fa wd-fa-icon-override fa-heart"></i>
+                                <span class="ms-2">${post.likeCount}</span>
+                            </a>
+                        </div>
+                        <div class="col-3 ps-0 pe-0 wd-tuiter-font wd-line-height-1-point-4 wd-font-14">
+                            <a href="#" class="wd-remove-link-underline wd-light-gray-color wd-bold-font">
+                                <i class="fa fa-upload"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
