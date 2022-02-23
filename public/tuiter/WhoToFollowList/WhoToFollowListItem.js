@@ -6,7 +6,7 @@ const WhoToFollowListItem = (who) => {
                 <div class="row wd-fill-height-45-percent">
                     <p class="col ms-0 me-0 mt-0 mb-0 wd-bold-font">
                         ${who.userName}
-                        <i class="col fa fa-circle"></i>
+                        <i class="col fa fa-check-circle"></i>
                     </p>
                 </div>
                 <div class="row wd-fill-height-45-percent">

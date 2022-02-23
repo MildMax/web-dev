@@ -291,3 +291,7 @@
 .nav-link.borderless-navigation-style-override {
     color: #c6c6c6;
 }
+
+.list-group-item.wd-top-bottom-border-override {
+    border-color: #282828 transparent;
+}

@@ -1,6 +1,6 @@
 const PostList = (post) => {
     return(`
-        <li class="list-group-item wd-transparent-background-override">
+        <li class="list-group-item wd-top-bottom-border-override wd-transparent-background-override">
             <div class="row">
                 <div class="wd-avatar-col ps-3 pe-0">
                     <img class="wd-avatar-image wd-circle-border-radius" src=${post.avatarIcon}/>
