@@ -197,30 +197,30 @@
     width: 1.5em;
 }
 
-.btn.follow-button-override {
+.btn.wd-follow-button-override {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     height: 34px;
     line-height: 0.5;
 }
 
-.btn.follow-button-override:hover {
+.btn.wd-follow-button-override:hover {
     outline: rgb(255, 255, 255, 0.5) solid 2px;
 }
 
-.btn.tuit-button-outline-override:hover {
+.btn.wd-tuit-button-outline-override:hover {
     outline: white solid 2px;
 }
 
-div.white-outline-on-focus:focus-within {
+div.wd-white-outline-on-focus:focus-within {
     outline: white solid 2px;
 }
 
-.list-group-item.list-group-follow-override {
+.list-group-item.wd-list-group-follow-override {
     height: 56px;
 }
 
-div.col-3.tuit-image-override {
+div.col-3.wd-tuit-image-override {
     width: 98px;
 }
 
@@ -235,15 +235,15 @@ div.col-3.tuit-image-override {
         font-weight: bold;
     }
 
-    div.col-xxl-6.xxl-width-override {
+    div.col-xxl-6.wd-xxl-width-override {
         width: 49%;
     }
 
-    div.col-xxl-3.xxl-width-override {
+    div.col-xxl-3.wd-xxl-width-override {
         width: 30%;
     }
 
-    div.col-xxl-2.xxl-width-override {
+    div.col-xxl-2.wd-xxl-width-override {
         width: 15.5%;
     }
 
@@ -262,11 +262,11 @@ div.col-3.tuit-image-override {
         font-weight: bold;
     }
 
-    div.col-xl-3.xl-width-override {
+    div.col-xl-3.wd-xl-width-override {
         width: 30%;
     }
 
-    div.col-xl-2.xl-width-override {
+    div.col-xl-2.wd-xl-width-override {
         width: 15%;
     }
 
@@ -286,15 +286,15 @@ div.col-3.tuit-image-override {
         font-weight: bold;
     }
 
-    div.col-lg-1.l-width-override {
+    div.col-lg-1.wd-l-width-override {
         width: 9%;
     }
 
-    button.tweet-button-display-override {
+    button.wd-tweet-button-display-override {
         width: fit-content;
     }
 
-    div.col-lg-4.l-width-override {
+    div.col-lg-4.wd-l-width-override {
         width: 30.5%;
     }
 
@@ -302,7 +302,7 @@ div.col-3.tuit-image-override {
         padding-left: 0;
     }
 
-    .disappear-content-lg {
+    .wd-disappear-content-lg {
         display: none;
     }
 
@@ -318,7 +318,7 @@ div.col-3.tuit-image-override {
         font-weight: bold;
     }
 
-    .disappear-content-m {
+    .wd-disappear-content-m {
         display: none;
     }
 
@@ -334,19 +334,19 @@ div.col-3.tuit-image-override {
         font-weight: bold;
     }
 
-    .disappear-content-s {
+    .wd-disappear-content-s {
         display: none;
     }
 
-    div.col-sm-10.sm-content-override {
+    div.col-sm-10.wd-sm-content-override {
         width: 81.33%
     }
 
-    button.tweet-button-display-override {
+    button.wd-tweet-button-display-override {
         width: fit-content;
     }
 
-    .me-3.search-bar-override {
+    .me-3.wd-search-bar-override {
         margin-right: 6px!important;
     }
 }
@@ -361,65 +361,65 @@ div.col-3.tuit-image-override {
         font-weight: bold;
     }
 
-    div.xs-small-min-width {
+    div.wd-xs-small-min-width {
         min-width: 400px;
     }
 
-    .disappear-content-xs {
+    .wd-disappear-content-xs {
         display: none;
     }
 }
 
 /* dark mode overrides */
 
-.active.navigation-override {
+.active.wd-navigation-override {
     background-color: black;
     font-weight: bold;
     border: transparent;
 }
 
-.list-group.border-override {
+.list-group.wd-border-override {
     border: 0!important;
     border-radius: 1.25rem!important;
 }
 
-.list-group-item.border-override {
+.list-group-item.wd-border-override {
     border: transparent;
 }
 
-.btn-primary.bright-override {
+.btn-primary.wd-bright-override {
     background-color: #10aeff;
     border-color: #10aeff;
 }
 
-.fa.fa-icon-override {
+.fa.wd-fa-icon-override {
     color: transparent;
     -webkit-text-stroke-color: #c6c6c6;
     -webkit-text-stroke-width: 1px;
 }
 
-.fa.fa-icon-gear-override {
+.fa.wd-fa-icon-gear-override {
     color: transparent;
     -webkit-text-stroke-color: #c6c6c6;
     -webkit-text-stroke-width: 2px;
 }
 
-.fa-inverse.inverse-color-override {
+.fa-inverse.wd-inverse-color-override {
     color: #c6c6c6;
 }
 
-.btn-primary.follow-button-color-override {
+.btn-primary.wd-follow-button-color-override {
     background-color: white;
     color: rgb(72, 74, 76);
     font-weight: bold;
     border: 0;
 }
 
-.border.search-bar-border-override {
+.border.wd-search-bar-border-override {
     border-color: black!important;
 }
 
-.nav-link.active.active-borderless-override {
+.nav-link.active.wd-active-borderless-override {
     background-color: transparent;
     color: white;
     font-weight: bold;
@@ -429,7 +429,7 @@ div.col-3.tuit-image-override {
     border-bottom: 4px solid #10aeff!important;
 }
 
-.nav-link.hover-border-override:hover {
+.nav-link.wd-hover-border-override:hover {
     color: white;
     font-weight: bold;
     border-top: 0!important;
@@ -438,47 +438,47 @@ div.col-3.tuit-image-override {
     border-bottom: 4px solid #10aeff!important;
 }
 
-.nav-link.transition-override {
+.nav-link.wd-transition-override {
     transition: none!important;
 }
 
-.nav-link.borderless-navigation-style-override {
+.nav-link.wd-borderless-navigation-style-override {
     color: #c6c6c6;
 }
 
-.nav-tabs.bottom-border-override {
+.nav-tabs.wd-bottom-border-override {
     border: 0;
 }
 
-.list-group-item.highlight-hover-override:hover{
+.list-group-item.wd-highlight-hover-override:hover{
     font-weight: bold;
     color: white;
 }
 
-.list-group-item.highlight-hover-override:hover > i {
+.list-group-item.wd-highlight-hover-override:hover > i {
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 2px;
 }
 
-.list-group-item.highlight-hover-override:hover > span > i {
+.list-group-item.wd-highlight-hover-override:hover > span > i {
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 2px;
 }
 
-a.gear-white-fill-hover-override:hover > i {
+a.wd-gear-white-fill-hover-override:hover > i {
     color: white!important;
 }
 
-span.more-icon-parent-override {
+span.wd-more-icon-parent-override {
     height: 1.3em;
 }
 
-i.more-icon-circle-override {
+i.wd-more-icon-circle-override {
     line-height: 1;
     font-size: 20px;
 }
 
-i.more-icon-ellipsis-override {
+i.wd-more-icon-ellipsis-override {
     line-height: 1.6;
     font-size: 12px;
 }
