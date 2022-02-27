@@ -3,7 +3,7 @@ const PostList = (post) => {
         <li class="list-group-item wd-top-bottom-border-override wd-transparent-background-override">
             <div class="row">
                 <div class="wd-avatar-col ps-3 pe-0">
-                    <img class="wd-avatar-image wd-circle-border-radius" src=${post.avatarIcon}/>
+                    <img class="wd-avatar-image wd-circle-border-radius" src="${post.avatarIcon}"/>
                 </div>
                 <div class="col wd-post-width-override">
                     <div class="row ps-3 pe-3">
