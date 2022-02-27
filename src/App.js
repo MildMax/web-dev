@@ -22,7 +22,6 @@ function App() {
 
             <div className="container">
                 <Redirect from="/:url*(/+)" to={adjustedPath} />
-
                 <Route path="/hello" exact={true}>
                     <HelloWorld/>
                 </Route>
