@@ -10,7 +10,7 @@ const WhoToFollowListItem = (who) => {
                     </p>
                 </div>
                 <div class="row wd-fill-height-45-percent">
-                    <p class="wd-fg-color-greyish-white ms-0 me-0 mt-0 mb-0">@${who.handle}</p>
+                    <p class="wd-fg-color-white ms-0 me-0 mt-0 mb-0">@${who.handle}</p>
                 </div>
             </div>
             <button type="button" class="btn btn-primary wd-follow-button-dims-override rounded-pill wd-font-15 wd-float-right">Follow</button>
