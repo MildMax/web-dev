@@ -7,7 +7,7 @@ const PostListItem = ({
         "handle" : "@elonmusk",
         "time" : "23h",
         "description" : "Amazing show about <a href='#'>@Inspiration4x</a> mission!",
-        "mainImage" :"tuiter/images/inspirationx_article_image.jpg",
+        "mainImage" :"/images/inspirationx_article_image.jpg",
         "imageTitle" : "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
         "imageDescription" : "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
         "externalLink" : "netflix.com",

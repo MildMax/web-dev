@@ -33,7 +33,7 @@ const ExploreComponent = () => {
                 </li>
            </ul>
            <div class="row mt-2 mb-2 ms-0 me-0 position-relative border wd-tuit-content-border-color-style-override">
-                <img src="../images/spacex-starship.jpg" class="img-fluid ps-0 pe-0 pt-0 pb-0">
+                <img src="../../images/spacex-starship.jpg" class="img-fluid ps-0 pe-0 pt-0 pb-0">
                 <span class="wd-text-overlay wd-fg-color-white ps-0 pe-0 ms-2">SpaceX's Starship</span>
            </div>
            ${PostSummaryList()}

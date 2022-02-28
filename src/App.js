@@ -12,7 +12,8 @@ import './styling/tuiter.css';
 import {Route, Redirect, useLocation} from "react-router-dom";
 import HelloWorld from "./components/HelloWorld";
 import Labs from "./components/Labs";
-import Tuiter from "./components/Tuiter";
+import HomeScreen from "./components/Tuiter/HomeScreen/HomeScreen";
+import ExploreScreen from "./components/Tuiter/ExploreScreen/ExploreScreen";
 
 function App() {
     const { pathname } = useLocation();
@@ -31,8 +32,11 @@ function App() {
             <Route path={["/", "/labs"]} exact={true}>
                 <Labs/>
             </Route>
-            <Route path="/tuiter" exact={true}>
-                <Tuiter/>
+            <Route path="/tuiter/home" exact={true}>
+                <HomeScreen/>
+            </Route>
+            <Route path="/tuiter/explore" exact={true}>
+                <ExploreScreen/>
             </Route>
         </div>
     );
