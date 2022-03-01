@@ -26,7 +26,7 @@ const PostListItem = ({
                     <div className="row ps-3 pe-3">
                         <p className="mb-0 ps-0 col wd-name-handle-width-override wd-float-left wd-ellipsis-extended-text">
                             <span className="wd-solid-white-text wd-bold-font">{post.userName} </span>
-                            <i className="fa fa-check-circle"> </i>
+                            <i className="fa fa-check-circle"/>
                             <span className="ms-1 wd-light-gray-color">{post.handle} - {post.time}</span>
                         </p>
                         <a href="#" className="wd-align-text-center wd-light-gray-color wd-ellipses-line-height wd-ellipses-width ps-0 pe-0 wd-float-right">
@@ -34,9 +34,7 @@ const PostListItem = ({
                         </a>
                     </div>
                     <div className="row ps-3 pe-3">
-                        <p className=" ps-0 wd-solid-white-text wd-size-15-font mb-0" dangerouslySetInnerHTML={{__html: post.description}}>
-
-                        </p>
+                        <p className=" ps-0 wd-solid-white-text wd-size-15-font mb-0" dangerouslySetInnerHTML={{__html: post.description}}/>
                     </div>
                     <div className="row ps-3 pe-3 pt-2">
                         {post.imageTitle === undefined && post.imageDescription === undefined && post.externalLink === undefined ?
@@ -50,11 +48,11 @@ const PostListItem = ({
                                     <div className="wd-solid-white-text wd-bold-font wd-ellipsis-extended-text">
                                         {post.imageTitle}
                                     </div>
-                                    <p className="mb-1 mt-1 wd-light-gray-color" dangerouslySetInnerHTML={{__html: post.imageDescription}}>
-                                    </p>
+                                    <p className="mb-1 mt-1 wd-light-gray-color" dangerouslySetInnerHTML={{__html: post.imageDescription}}/>
                                     <div className="mt-1 mb-2">
                                         <a href="#" className="wd-light-gray-color wd-remove-link-underline">
-                                            <i className="fa fa-link me-1"></i>{post.externalLink}
+                                            <i className="fa fa-link me-1"/>
+                                            {post.externalLink}
                                         </a>
                                     </div>
                                 </div>
