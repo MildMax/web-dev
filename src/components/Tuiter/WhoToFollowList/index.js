@@ -1,5 +1,5 @@
 import WhoToFollowListItem from "./WhoToFollowListItem";
-import who from "./who"
+import who from "./who.json"
 import React from "react";
 
 const WhoToFollowList = () => {
@@ -16,5 +16,6 @@ const WhoToFollowList = () => {
                 })
             }
         </ul>
-); }
+    );
+}
 export default WhoToFollowList;

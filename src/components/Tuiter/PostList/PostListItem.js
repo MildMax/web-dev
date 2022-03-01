@@ -90,6 +90,6 @@ const PostListItem = ({
                 </div>
             </div>
         </li>
-    )
+    );
 };
 export default PostListItem;

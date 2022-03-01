@@ -8,7 +8,7 @@ const Tuiter = () => {
             <ExploreScreen/>
             <HomeScreen/>
         </>
-    )
+    );
 };
 
 export default Tuiter;

@@ -23,6 +23,6 @@ const WhoToFollowListItem = ({
             </div>
             <button type="button" className="btn btn-primary wd-follow-button-dims-override rounded-pill wd-font-15 wd-float-right">Follow</button>
         </li>
-    )
+    );
 }
 export default WhoToFollowListItem;

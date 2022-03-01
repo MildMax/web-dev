@@ -17,6 +17,6 @@ const ExploreScreen = () => {
                 <WhoToFollowList/>
             </div>
         </div>
-    )
+    );
 }
 export default ExploreScreen;
