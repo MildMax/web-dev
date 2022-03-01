@@ -1,10 +1,12 @@
+import React from "react";
+
 const TodoItem = ({
-          todo = {
-              done: true,
-              title: 'Buy milk',
-              status: 'COMPLETED'
-          }
-      }) => {
+    todo = {
+        done: true,
+        title: 'Buy milk',
+        status: 'COMPLETED'
+    }
+}) => {
     return(
         <li>
             <input type="checkbox"

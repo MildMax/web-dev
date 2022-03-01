@@ -18,6 +18,7 @@ import ExploreScreen from "./components/Tuiter/ExploreScreen/ExploreScreen";
 function App() {
     const { pathname } = useLocation();
 
+    // corrects issue where occasionally react adds addition "/" char at end of url string
     let adjustedPath = pathname;
     if (pathname.charAt(pathname.length - 1) === "/") {
         adjustedPath = pathname.slice(0, pathname.length - 1);
