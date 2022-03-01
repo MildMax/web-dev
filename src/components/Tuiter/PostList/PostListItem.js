@@ -25,7 +25,7 @@ const PostListItem = ({
                 <div className="col wd-post-width-override">
                     <div className="row ps-3 pe-3">
                         <p className="mb-0 ps-0 col wd-name-handle-width-override wd-float-left wd-ellipsis-extended-text">
-                            <span className="wd-solid-white-text wd-bold-font">{post.userName}</span>
+                            <span className="wd-solid-white-text wd-bold-font">{post.userName} </span>
                             <i className="fa fa-check-circle"> </i>
                             <span className="ms-1 wd-light-gray-color">{post.handle} - {post.time}</span>
                         </p>

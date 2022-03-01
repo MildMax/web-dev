@@ -13,8 +13,8 @@ const WhoToFollowListItem = ({
             <div className="wd-float-left wd-display-inline-block wd-fill-follow-tags-width wd-follow-tag-padding wd-visible-overflow wd-line-height-1-point-4">
                 <div className="row wd-fill-height-45-percent">
                     <p className="col ms-0 me-0 mt-0 mb-0 wd-bold-font">
-                        {who.userName}
-                        <i className="col fa fa-check-circle"></i>
+                        <span>{who.userName} </span>
+                        <i className="col fa fa-check-circle"/>
                     </p>
                 </div>
                 <div className="row wd-fill-height-45-percent">
