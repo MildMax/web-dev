@@ -8,12 +8,12 @@ const ExploreComponent = () => {
                 <div className="wd-display-flex wd-tuiter-search-row-container align-middle ms-0 me-0">
                     <div className="wd-float-left wd-full-width wd-full-height wd-bg-color-white ps-3 me-4 search-bar-override wd-search-bar-border-override border rounded-pill wd-display-flex align-middle">
                         <a href="search.html">
-                            <i className="fa fa-search wd-float-left wd-search-icon-line-height wd-hide-border wd-fg-color-grey-search"></i>
+                            <i className="fa fa-search wd-float-left wd-search-icon-line-height wd-hide-border wd-fg-color-grey-search"/>
                         </a>
                         <input className="wd-tuiter-search wd-bg-color-white wd-fg-color-grey-search wd-fg-color-black wd-float-left wd-hide-border" type="text" placeholder="Search Twitter"/>
                     </div>
                     <a href="explore-settings.html" className="wd-float-right ps-0 pe-0 pt-0 pb-0 wd-font-30 wd-line-height-1-point-3">
-                        <i className="fa fa-cog"></i>
+                        <i className="fa fa-cog"/>
                     </a>
                 </div>
            </div>

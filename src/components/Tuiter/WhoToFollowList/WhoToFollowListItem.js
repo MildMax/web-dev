@@ -1,12 +1,12 @@
 import React from "react";
 
 const WhoToFollowListItem = ({
-         who = {
-             "avatarIcon" : "/images/nasa.png",
-             "userName" : "NASA",
-             "handle" : "NASA",
-         }
-    }) => {
+    who = {
+        "avatarIcon" : "/images/nasa.png",
+        "userName" : "NASA",
+        "handle" : "NASA",
+    }
+}) => {
     return (
         <li className="list-group-item  wd-list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
             <img src={who.avatarIcon} className="wd-float-left wd-sidebar-images"/>

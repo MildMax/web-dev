@@ -15,7 +15,7 @@ const PostListItem = ({
         "retuitCount" : "3.5K",
         "likeCount" : "37.5K"
     }
-} ) => {
+}) => {
     return(
         <li className="list-group-item wd-top-bottom-border-override wd-transparent-background-override">
             <div className="row">

@@ -4,9 +4,8 @@ import React from "react";
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
-import './styling/bookmarks.css';
-import './styling/explore.css';
-import './styling/home.css';
+
+
 import './styling/tuiter.css';
 
 import {Route, Redirect, useLocation} from "react-router-dom";

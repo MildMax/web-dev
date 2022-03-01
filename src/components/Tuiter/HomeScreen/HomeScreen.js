@@ -2,6 +2,7 @@ import React from "react";
 import NavigationSidebar from "../NavigationSidebar";
 import HomeComponent from "./HomeComponent";
 import PostSummaryList from "../PostSummaryList";
+import '../../../styling/home.css';
 
 const HomeScreen = () => {
     return (
