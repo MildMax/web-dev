@@ -18,23 +18,23 @@ const NavigationSidebar = ({
                     <i className="fa fa-hashtag"/>
                     <span className="wd-disappear-content-lg wd-disappear-content-m wd-disappear-content-s"> Explore</span>
                 </Link>
-                <Link to="/tuiter/notifications.html" className={`list-group-item ${active === "notifications" ? "active" : ""}`}>
+                <Link to="/tuiter/notifications" className={`list-group-item ${active === "notifications" ? "active" : ""}`}>
                     <i className="fa fa-bell"/>
                     <span className="wd-disappear-content-lg wd-disappear-content-m wd-disappear-content-s"> Notifications</span>
                 </Link>
-                <Link to="/tuiter/messages.html" className={`list-group-item ${active === "messages" ? "active" : ""}`}>
+                <Link to="/tuiter/messages" className={`list-group-item ${active === "messages" ? "active" : ""}`}>
                     <i className="fa fa-envelope"/>
                     <span className="wd-disappear-content-lg wd-disappear-content-m wd-disappear-content-s"> Messages</span>
                 </Link>
-                <Link to="/tuiter/bookmarks.html" className={`list-group-item ${active === "bookmarks" ? "active" : ""}`}>
+                <Link to="/tuiter/bookmarks" className={`list-group-item ${active === "bookmarks" ? "active" : ""}`}>
                     <i className="fa fa-bookmark"/>
                     <span className="wd-disappear-content-lg wd-disappear-content-m wd-disappear-content-s"> Bookmarks</span>
                 </Link>
-                <Link to="/tuiter/lists.html" className={`list-group-item ${active === "lists" ? "active" : ""}`}>
+                <Link to="/tuiter/lists" className={`list-group-item ${active === "lists" ? "active" : ""}`}>
                     <i className="fa fa-list-ul"/>
                     <span className="wd-disappear-content-lg wd-disappear-content-m wd-disappear-content-s"> Lists</span>
                 </Link>
-                <Link to="/tuiter/profile.html" className={`list-group-item ${active === "profile" ? "active" : ""}`}>
+                <Link to="/tuiter/profile" className={`list-group-item ${active === "profile" ? "active" : ""}`}>
                     <i className="fa fa-user"/>
                     <span className="wd-disappear-content-lg wd-disappear-content-m wd-disappear-content-s"> Profile</span>
                 </Link>
@@ -44,7 +44,7 @@ const NavigationSidebar = ({
                 </Link>
             </div>
             <div className="d-grid mt-2">
-                <Link to="/tuiter/tweet.html" className="btn btn-primary btn-block rounded-pill">
+                <Link to="/tuiter/tweet" className="btn btn-primary btn-block rounded-pill">
                     Tweet
                 </Link>
             </div>
