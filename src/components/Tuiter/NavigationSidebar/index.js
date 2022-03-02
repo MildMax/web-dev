@@ -38,7 +38,7 @@ const NavigationSidebar = ({
                     <i className="fa fa-user"/>
                     <span className="wd-disappear-content-lg wd-disappear-content-m wd-disappear-content-s"> Profile</span>
                 </Link>
-                <Link to="#" className={`list-group-item ${active === "more" ? "active" : ""}`}>
+                <Link to="/tuiter/more" className={`list-group-item ${active === "more" ? "active" : ""}`}>
                     <i className="fa fa-circle"/>
                     <span className="wd-disappear-content-lg wd-disappear-content-m wd-disappear-content-s"> More</span>
                 </Link>

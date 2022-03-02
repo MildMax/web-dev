@@ -6,7 +6,7 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './styling/tuiter.css';
 
-import {Route,BrowserRouter} from "react-router-dom";
+import {Route,BrowserRouter,Redirect} from "react-router-dom";
 import HelloWorld from "./components/HelloWorld";
 import Labs from "./components/Labs";
 import HomeScreen from "./components/Tuiter/HomeScreen/HomeScreen";
@@ -29,6 +29,8 @@ const App = () => {
                 <Route path="/tuiter/explore" exact={true}>
                     <ExploreScreen/>
                 </Route>
+                {/*handles non-existent pages implemented in the assignment*/}
+                <Redirect from="*" to="/"/>
             </div>
         </BrowserRouter>
     );
