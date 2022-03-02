@@ -43,25 +43,25 @@ const PostListItem = ({
                     </div>
                     <div className="row pt-2 wd-icon-padding-top-override pb-1 ps-3 pe-0">
                         <div className="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
-                            <button className="btn wd-button-icon-override wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
+                            <button className="btn wd-focus-override wd-button-icon-override wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
                                 <i className="fa wd-fa-icon-override fa-comment"/>
                                 <span className="ms-2">{post.commentCount}</span>
                             </button>
                         </div>
                         <div className="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
-                            <button className="btn wd-button-icon-fill-on-hover wd-button-icon-override wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
+                            <button className="btn wd-focus-override wd-text-color-on-hover wd-button-icon-fill-on-hover wd-button-icon-override wd-float-left wd-remove-link-underline wd-light-gray-color">
                                 <i className="fa fa-retweet"/>
                                 <span className="ms-2">{post.retuitCount}</span>
                             </button>
                         </div>
                         <div className="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
-                            <button className="btn wd-button-icon-override wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
+                            <button className="btn wd-focus-override wd-button-icon-override wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
                                 <i className="fa wd-fa-icon-override fa-heart"/>
                                 <span className="ms-2">{post.likeCount}</span>
                             </button>
                         </div>
                         <div className="col-3 ps-0 pe-0 wd-tuiter-font wd-line-height-1-point-4 wd-font-14">
-                            <button className="btn wd-button-icon-fill-on-hover wd-button-icon-override wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
+                            <button className="btn wd-focus-override wd-button-icon-fill-on-hover wd-button-icon-override wd-float-left wd-remove-link-underline wd-light-gray-color">
                                 <i className="fa fa-upload"/>
                             </button>
                         </div>

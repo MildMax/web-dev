@@ -30,7 +30,16 @@ button.wd-button-icon-override {
     padding: 0;
 }
 
+.btn.wd-focus-override:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
 button.wd-button-icon-fill-on-hover:hover > i {
+    color: #2a9fd6!important;
+}
+
+button.wd-text-color-on-hover:hover > span {
     color: #2a9fd6!important;
 }
 
