@@ -6,7 +6,7 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './styling/tuiter.css';
 
-import {Route,BrowserRouter,Switch} from "react-router-dom";
+import {Route,BrowserRouter} from "react-router-dom";
 import HelloWorld from "./components/HelloWorld";
 import Labs from "./components/Labs";
 import HomeScreen from "./components/Tuiter/HomeScreen/HomeScreen";
@@ -17,20 +17,18 @@ const App = () => {
     return (
         <BrowserRouter>
             <div className="container">
-                <Switch>
-                    <Route path="/hello" exact={true}>
-                        <HelloWorld/>
-                    </Route>
-                    <Route path={["/", "/labs"]} exact={true}>
-                        <Labs/>
-                    </Route>
-                    <Route path="/tuiter/home" exact={true}>
-                        <HomeScreen/>
-                    </Route>
-                    <Route path="/tuiter/explore" exact={true}>
-                        <ExploreScreen/>
-                    </Route>
-                </Switch>
+                <Route path="/hello" exact={true}>
+                    <HelloWorld/>
+                </Route>
+                <Route path={["/", "/labs"]} exact={true}>
+                    <Labs/>
+                </Route>
+                <Route path="/tuiter/home" exact={true}>
+                    <HomeScreen/>
+                </Route>
+                <Route path="/tuiter/explore" exact={true}>
+                    <ExploreScreen/>
+                </Route>
             </div>
         </BrowserRouter>
     );
