@@ -25,9 +25,23 @@ div.wd-ellipses-line-height > i {
     width: calc(100% - 34px)!important;
 }
 
-a.wd-highlight-border-on-hover:hover > i {
+button.wd-button-icon-override {
+    font-size: 14px;
+    padding: 0;
+}
+
+button.wd-button-icon-fill-on-hover:hover > i {
+    color: #2a9fd6!important;
+}
+
+button.wd-highlight-border-on-hover:hover > i {
     -webkit-text-stroke-color: #2a9fd6!important;
     -webkit-text-stroke-width: 1px;
+}
+
+button.wd-highlight-border-on-hover:hover > span {
+    color: #2a9fd6!important;
+    font-weight: normal;
 }
 
 .list-group-item.wd-transparent-background-override {
