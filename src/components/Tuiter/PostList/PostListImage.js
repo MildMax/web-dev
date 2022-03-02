@@ -11,12 +11,14 @@ const PostListImage = ({
     if (post.imageTitle === undefined && post.imageDescription === undefined && post.externalLink === undefined) {
         return (
             <img src={post.mainImage}
+                 alt=""
                  className="ps-0 pe-0 img-fluid wd-article-image-border wd-slight-bottom-border-radius wd-slight-top-border-radius wd-border-color-very-dark-grey"/>
         );
     } else {
         return (
             <>
                 <img src={post.mainImage}
+                     alt=""
                      className="ps-0 pe-0 img-fluid wd-article-image-border wd-slight-top-border-radius wd-border-color-very-dark-grey"/>
                 <div
                     className="wd-border-color-very-dark-grey wd-slight-bottom-border-radius pt-2 wd-solid-bottom-border">
@@ -26,7 +28,7 @@ const PostListImage = ({
                     <p className="mb-1 mt-1 wd-light-gray-color"
                        dangerouslySetInnerHTML={{__html: post.imageDescription}}/>
                     <div className="mt-1 mb-2">
-                        <a href="#" className="wd-light-gray-color wd-remove-link-underline">
+                        <a href={"https://" + post.externalLink} className={"wd-light-gray-color wd-remove-link-underline"}>
                             <i className="fa fa-link me-1"/>
                             {post.externalLink}
                         </a>

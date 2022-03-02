@@ -21,7 +21,7 @@ const PostListItem = ({
         <li className="list-group-item wd-top-bottom-border-override wd-transparent-background-override">
             <div className="row">
                 <div className="wd-avatar-col ps-3 pe-0">
-                    <img className="wd-avatar-image wd-circle-border-radius" src={post.avatarIcon}/>
+                    <img className="wd-avatar-image wd-circle-border-radius" alt="" src={post.avatarIcon}/>
                 </div>
                 <div className="col wd-post-width-override">
                     <div className="row ps-3 pe-3">
