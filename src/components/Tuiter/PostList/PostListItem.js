@@ -1,4 +1,5 @@
 import React from "react";
+import PostListImage from "./PostListImage";
 
 const PostListItem = ({
     post = {
@@ -37,51 +38,31 @@ const PostListItem = ({
                         <p className=" ps-0 wd-solid-white-text wd-size-15-font mb-0" dangerouslySetInnerHTML={{__html: post.description}}/>
                     </div>
                     <div className="row ps-3 pe-3 pt-2">
-                        {post.imageTitle === undefined && post.imageDescription === undefined && post.externalLink === undefined ?
-                            <img src={post.mainImage}
-                                 className="ps-0 pe-0 img-fluid wd-article-image-border wd-slight-bottom-border-radius wd-slight-top-border-radius wd-border-color-very-dark-grey"/>
-                        :
-                            <>
-                                <img src={post.mainImage}
-                                     className="ps-0 pe-0 img-fluid wd-article-image-border wd-slight-top-border-radius wd-border-color-very-dark-grey"/>
-                                <div className="wd-border-color-very-dark-grey wd-slight-bottom-border-radius pt-2 wd-solid-bottom-border">
-                                    <div className="wd-solid-white-text wd-bold-font wd-ellipsis-extended-text">
-                                        {post.imageTitle}
-                                    </div>
-                                    <p className="mb-1 mt-1 wd-light-gray-color" dangerouslySetInnerHTML={{__html: post.imageDescription}}/>
-                                    <div className="mt-1 mb-2">
-                                        <a href="#" className="wd-light-gray-color wd-remove-link-underline">
-                                            <i className="fa fa-link me-1"/>
-                                            {post.externalLink}
-                                        </a>
-                                    </div>
-                                </div>
-                            </>
-                        }
+                        <PostListImage post={post}/>
                     </div>
                     <div className="row pt-2 wd-icon-padding-top-override pb-1 ps-3 pe-0">
                         <div className="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
                             <a href="#" className="wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
-                                <i className="fa wd-fa-icon-override fa-comment"></i>
+                                <i className="fa wd-fa-icon-override fa-comment"/>
                                 <span className="ms-2">{post.commentCount}</span>
                             </a>
                         </div>
                         <div className="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
                             <a href="#" className="wd-float-left wd-remove-link-underline wd-light-gray-color">
-                                <i className="fa fa-retweet"></i>
+                                <i className="fa fa-retweet"/>
                                 <span className="ms-2">{post.retuitCount}</span>
                             </a>
         
                         </div>
                         <div className="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
                             <a href="#" className="wd-float-left wd-highlight-border-on-hover wd-light-gray-color wd-remove-link-underline">
-                                <i className="fa wd-fa-icon-override fa-heart"></i>
+                                <i className="fa wd-fa-icon-override fa-heart"/>
                                 <span className="ms-2">{post.likeCount}</span>
                             </a>
                         </div>
                         <div className="col-3 ps-0 pe-0 wd-tuiter-font wd-line-height-1-point-4 wd-font-14">
                             <a href="#" className="wd-remove-link-underline wd-light-gray-color wd-bold-font">
-                                <i className="fa fa-upload"></i>
+                                <i className="fa fa-upload"/>
                             </a>
                         </div>
                     </div>
