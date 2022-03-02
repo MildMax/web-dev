@@ -9,7 +9,7 @@ const WhoToFollowListItem = ({
 }) => {
     return (
         <li className="list-group-item  wd-list-group-follow-override wd-display-flex wd-display-items-middle-vertical">
-            <img src={who.avatarIcon} className="wd-float-left wd-sidebar-images"/>
+            <img src={who.avatarIcon} alt="" className="wd-float-left wd-sidebar-images"/>
             <div className="wd-float-left wd-display-inline-block wd-fill-follow-tags-width wd-follow-tag-padding wd-visible-overflow wd-line-height-1-point-4">
                 <div className="row wd-fill-height-45-percent">
                     <p className="col ms-0 me-0 mt-0 mb-0 wd-bold-font">

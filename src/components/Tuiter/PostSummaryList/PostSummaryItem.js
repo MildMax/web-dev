@@ -28,7 +28,7 @@ const PostSummaryItem = ({
                     </div>
                 </div>
                 <div className="col-3 wd-tuit-image-override pe-1 ps-1 ms-2">
-                    <img src={post.image} className="wd-tuit-border-radius wd-tuit-image-size"/>
+                    <img src={post.image} alt="" className="wd-tuit-border-radius wd-tuit-image-size"/>
                 </div>
             </div>
         </li>
