@@ -6,7 +6,7 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './styling/tuiter.css';
 
-import {Route,BrowserRouter,Redirect,Switch} from "react-router-dom";
+import {Route,BrowserRouter,Switch} from "react-router-dom";
 import HelloWorld from "./components/HelloWorld";
 import Labs from "./components/Labs";
 import HomeScreen from "./components/Tuiter/HomeScreen/HomeScreen";
