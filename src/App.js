@@ -15,7 +15,7 @@ import ExploreScreen from "./components/Tuiter/ExploreScreen/ExploreScreen";
 const App = () => {
 
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter>
             <div className="container">
                 <Route path="/hello" exact={true}>
                     <HelloWorld/>
