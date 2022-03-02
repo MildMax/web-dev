@@ -49,28 +49,27 @@ const PostList = (post) => {
                     </div>
                     <div class="row pt-2 wd-icon-padding-top-override pb-1 ps-3 pe-0">
                         <div class="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
-                            <a href="#" class="wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
+                            <button class="btn wd-focus-override wd-button-icon-override wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
                                 <i class="fa wd-fa-icon-override fa-comment"></i>
                                 <span class="ms-2">${post.commentCount}</span>
-                            </a>
+                            </button>
                         </div>
                         <div class="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
-                            <a href="#" class="wd-float-left wd-remove-link-underline wd-light-gray-color">
+                            <button class="btn wd-focus-override wd-text-color-on-hover wd-button-icon-fill-on-hover wd-button-icon-override wd-float-left wd-remove-link-underline wd-light-gray-color">
                                 <i class="fa fa-retweet"></i>
                                 <span class="ms-2">${post.retuitCount}</span>
-                            </a>
-        
+                            </button>
                         </div>
                         <div class="col-3 ps-0 pe-0 wd-tuiter-font wd-font-14">
-                            <a href="#" class="wd-float-left wd-highlight-border-on-hover wd-light-gray-color wd-remove-link-underline">
+                            <button class="btn wd-focus-override wd-button-icon-override wd-float-left wd-highlight-border-on-hover wd-remove-link-underline wd-light-gray-color">
                                 <i class="fa wd-fa-icon-override fa-heart"></i>
                                 <span class="ms-2">${post.likeCount}</span>
-                            </a>
+                            </button>
                         </div>
                         <div class="col-3 ps-0 pe-0 wd-tuiter-font wd-line-height-1-point-4 wd-font-14">
-                            <a href="#" class="wd-remove-link-underline wd-light-gray-color wd-bold-font">
+                            <button class="btn wd-focus-override wd-button-icon-fill-on-hover wd-button-icon-override wd-float-left wd-remove-link-underline wd-light-gray-color">
                                 <i class="fa fa-upload"></i>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
