@@ -17,18 +17,10 @@ const App = () => {
     return (
         <BrowserRouter>
             <div className="container">
-                <Route path="/hello" exact={true}>
-                    <HelloWorld/>
-                </Route>
-                <Route path={["/", "/labs"]} exact={true}>
-                    <Labs/>
-                </Route>
-                <Route path="/tuiter/home" exact={true}>
-                    <HomeScreen/>
-                </Route>
-                <Route path="/tuiter/explore" exact={true}>
-                    <ExploreScreen/>
-                </Route>
+                <Route path="/hello" exact={true} component={HelloWorld}/>
+                <Route path={["/", "/labs"]} exact={true} component={Labs}/>
+                <Route path="/tuiter/home" exact={true} component={HomeScreen}/>
+                <Route path="/tuiter/explore" exact={true} component={ExploreScreen}/>
             </div>
         </BrowserRouter>
     );
