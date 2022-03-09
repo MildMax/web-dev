@@ -2,16 +2,19 @@ import React from "react";
 import PostSummaryItem from './PostSummaryItem';
 import explorePosts from './posts.json';
 
-const PostSummaryList = () => {
+const PostSummaryList = ({title = "What's happening"}) => {
     return (
         <ul className="list-group border wd-tuit-content-border-color-style-override ms-0 me-0 mt-0 mb-0 rounded">
-        {
-            explorePosts.map(post => {
-                return (
-                    <PostSummaryItem post={post}/>
-                );
-            })
-        }
+            <li className="list-group-item">
+                <h5 className="fw-bold">{title}</h5>
+            </li>
+            {
+                explorePosts.map(post => {
+                    return (
+                        <PostSummaryItem post={post}/>
+                    );
+                })
+            }
         </ul>
     );
 }

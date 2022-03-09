@@ -5,20 +5,12 @@
     display: inline-block;
 }
 
-div.wd-ellipses-line-height {
-    line-height: 0;
-}
-
-div.wd-ellipses-line-height > i {
-    line-height: 0.5;
-}
-
 .col.wd-post-width-override {
     width: calc(100% - 64px)!important;
 }
 
-.wd-ellipses-width {
-    width: 26px;
+.wd-x-width {
+    width: 14px;
 }
 
 .col.wd-name-handle-width-override {
@@ -35,24 +27,6 @@ button.wd-button-icon-override {
     box-shadow: none!important;
 }
 
-button.wd-button-icon-fill-on-hover:hover > i {
-    color: #2a9fd6!important;
-}
-
-button.wd-text-color-on-hover:hover > span {
-    color: #2a9fd6!important;
-}
-
-button.wd-highlight-border-on-hover:hover > i {
-    -webkit-text-stroke-color: #2a9fd6!important;
-    -webkit-text-stroke-width: 1px;
-}
-
-button.wd-highlight-border-on-hover:hover > span {
-    color: #2a9fd6!important;
-    font-weight: normal;
-}
-
 .list-group-item.wd-transparent-background-override {
     background-color: transparent;
 }
@@ -67,4 +41,45 @@ button.wd-highlight-border-on-hover:hover > span {
 
 .pt-2.wd-icon-padding-top-override {
     padding-top: 0.8rem!important;
+}
+
+.wd-transparent-border {
+    border: transparent;
+}
+
+.wd-no-focus:focus {
+    outline: none;
+}
+
+.wd-disable-textarea-resize {
+    resize: none;
+}
+
+.wd-tuit-text-area-bottom-border {
+    border-bottom: rgb(47, 51, 54) solid 1px;
+}
+
+.wd-tuit-text-area-tweet-button-dims {
+    width: 80px;
+}
+
+.wd-inline-flex-container {
+    display: inline-flex;
+}
+
+.wd-tuit-text-area-icons-dims {
+    width: 110px;
+    height: 20px;
+}
+
+.wd-tuit-text-area-icon-color {
+    color: #2a9fd6;
+}
+
+.col-2.wd-whats-happening-icon-override {
+    width: 14%;
+}
+
+.col-10.wd-whats-happening-text-area-override {
+    width: 86%
 }

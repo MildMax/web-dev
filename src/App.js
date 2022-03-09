@@ -3,7 +3,7 @@ import React from "react";
 
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
-import './vendors/fontawesome/css/all.min.css';
+import './vendors/fontawesome/css/all.css';
 import './tuiter.css';
 
 import {Route,BrowserRouter} from "react-router-dom";
@@ -16,12 +16,8 @@ const App = () => {
     return (
         <BrowserRouter>
             <div className="container">
-                <Route path="/hello" exact={true}>
-                    <HelloWorld/>
-                </Route>
-                <Route path={["/", "/labs"]} exact={true}>
-                    <Labs/>
-                </Route>
+                <Route path="/hello" exact={true} component={HelloWorld}/>
+                <Route path={["/", "/labs"]} exact={true} component={Labs}/>
                 <Tuiter/>
             </div>
         </BrowserRouter>

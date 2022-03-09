@@ -1,7 +1,8 @@
 import React from "react";
 import NavigationSidebar from "../NavigationSidebar";
 import PostSummaryList from "../PostSummaryList";
-import PostList from "../PostList";
+import TuitList from "../TuitList";
+import WhatsHappening from "../WhatsHappening";
 import './home.css';
 
 const HomeScreen = () => {
@@ -11,11 +12,14 @@ const HomeScreen = () => {
                 <NavigationSidebar active={"home"}/>
             </div>
             <div
-                className="col-xxl-6 wd-xxl-width-override col-xl-6 col-lg-7 col-md-10 col-sm-10 wd-sm-content-override wd-xs-small-min-width wd-xs-main-content-margins">
-                <PostList/>
+                className="col-xxl-6 wd-xxl-width-override col-xl-6 col-lg-7 col-md-10 col-sm-10 wd-sm-content-override wd-xs-small-min-width wd-xs-main-content-margins"
+                style={{"position":"relative"}}
+            >
+                <WhatsHappening/>
+                <TuitList/>
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 wd-xs-small-min-width">
-                <PostSummaryList/>
+                <PostSummaryList title="What's happening"/>
             </div>
         </div>
     );
