@@ -9,8 +9,7 @@ import './tuiter.css';
 import {Route,BrowserRouter} from "react-router-dom";
 import HelloWorld from "./components/HelloWorld";
 import Labs from "./components/Labs";
-import HomeScreen from "./components/Tuiter/HomeScreen/HomeScreen";
-import ExploreScreen from "./components/Tuiter/ExploreScreen/ExploreScreen";
+import Tuiter from "./components/Tuiter";
 
 const App = () => {
 
@@ -23,12 +22,7 @@ const App = () => {
                 <Route path={["/", "/labs"]} exact={true}>
                     <Labs/>
                 </Route>
-                <Route path="/tuiter/home" exact={true}>
-                    <HomeScreen/>
-                </Route>
-                <Route path="/tuiter/explore" exact={true}>
-                    <ExploreScreen/>
-                </Route>
+                <Tuiter/>
             </div>
         </BrowserRouter>
     );
