@@ -1,13 +1,19 @@
 export default [
-    {   title: 'Buy milk',
+    {
+        _id: 123,
+        title: 'Buy milk',
         status: 'CANCELED',
         done: true,
     },
-    {   title: 'Pickup the kids',
+    {
+        _id: 124,
+        title: 'Pickup the kids',
         status: 'IN PROGRESS',
         done: false,
     },
-    {   title: 'Walk the dog',
+    {
+        _id: 125,
+        title: 'Walk the dog',
         status: 'DEFERRED',
         done: false,
     },];
