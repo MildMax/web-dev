@@ -11,7 +11,7 @@ const PostSummaryList = ({title = "What's happening"}) => {
             {
                 explorePosts.map(post => {
                     return (
-                        <PostSummaryItem post={post}/>
+                        <PostSummaryItem key={post._id} post={post}/>
                     );
                 })
             }

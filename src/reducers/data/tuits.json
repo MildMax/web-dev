@@ -5,13 +5,14 @@
         "userName" : "Elon Musk",
         "handle" : "@elonmusk",
         "time" : "23h",
-        "description" : "Amazing show about <a href='https://twitter.com/inspiration4x?lang=en'>@Inspiration4x</a> mission!",
+        "tuit" : "Amazing show about <a href='https://twitter.com/inspiration4x?lang=en'>@Inspiration4x</a> mission!",
         "mainImage" :"/images/inspirationx_article_image.jpg",
         "imageTitle" : "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
         "imageDescription" : "From training to launch to landing, this all-access docusseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
         "externalLink" : "netflix.com",
+        "liked": false,
         "stats": {
-            "comments" : 4200,
+            "replies" : 4200,
             "retuits" : 3500,
             "likes" : 37599
         }
@@ -22,12 +23,13 @@
         "userName" : "New York Post",
         "handle" : "@nypost",
         "time" : "23h",
-        "description" : "Grimes seen reading Karl Marx following split with world's richest man Elon Musk <a href='https://trib.al/nx2Gfaq'>trib.al/nx2Gfaq</a>",
+        "tuit" : "Grimes seen reading Karl Marx following split with world's richest man Elon Musk <a href='https://trib.al/nx2Gfaq'>trib.al/nx2Gfaq</a>",
         "mainImage" :"/images/grimes_karl_marx.jpg",
+        "liked": true,
         "stats": {
-            "comments" : 965,
+            "replies" : 965,
             "retuits" : 2400,
-            "likes" : 4000
+            "likes" : 4001
         }
     }
 ]

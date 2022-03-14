@@ -4,7 +4,7 @@ import Classes from "./Classes";
 import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 import TodoList from "./ToDo/TodoList";
-import ReduxExamples from "./reduxExamples";
+import ReduxExamples from "./ReduxExamples";
 
 const Labs = () => {
 

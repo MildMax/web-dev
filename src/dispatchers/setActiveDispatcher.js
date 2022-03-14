@@ -1,8 +1,12 @@
 import {useDispatch} from "react-redux";
+import {useEffect} from "react";
 
 const useSetActiveDispatch = active => {
     const dispatch = useDispatch();
-    dispatch({type: "update-active", active: active})
+    useEffect(() => {
+        dispatch({type: "update-active", active: active});
+    })
+
 }
 
 export default useSetActiveDispatch;

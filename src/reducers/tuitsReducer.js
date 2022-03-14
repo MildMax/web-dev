@@ -29,13 +29,13 @@ const tuitsReducer = (state = tuits, action) => {
                 "verified": false,
                 "handle": "ReactJS",
                 "time": "2h",
-                "description": action.tuit,
+                "tuit": action.tuit,
                 "avatarIcon": "/images/react-logo.jpg",
                 "mainImage": "/images/doom_banner_alt.jpg",
                 "stats": {
-                    "comments": 123,
-                    "retuits": 234,
-                    "likes": 345
+                    "replies": 111,
+                    "retuits": 222,
+                    "likes": 333
                 },
             };
             return ([
@@ -44,7 +44,7 @@ const tuitsReducer = (state = tuits, action) => {
                 ]
             );
         default:
-            return(state);
+            return tuits;
     }
 
 };

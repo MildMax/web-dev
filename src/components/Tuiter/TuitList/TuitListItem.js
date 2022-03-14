@@ -42,11 +42,11 @@ const TuitListItem = ({
                         </p>
                         <button onClick={deleteTuitClickHandler}
                                 className="btn wd-transparent-background-override wd-light-gray-color wd-x-width ps-0 pe-0 pt-0 pb-0 wd-float-right">
-                            <i className="fa fa-remove float-right"/>
+                            <i className="fas fa-remove fa-pull-right"/>
                         </button>
                     </div>
                     <div className="row ps-3 pe-3">
-                        <p className=" ps-0 wd-solid-white-text wd-size-15-font mb-0" dangerouslySetInnerHTML={{__html: tuit.description}}/>
+                        <p className=" ps-0 wd-solid-white-text wd-size-15-font mb-0" dangerouslySetInnerHTML={{__html: tuit.tuit}}/>
                     </div>
                     <div className="row ps-3 pe-3 pt-2">
                         <TuitListImage tuit={tuit}/>

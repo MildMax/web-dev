@@ -6,7 +6,7 @@ import useSetActiveDispatch from "../../../dispatchers/setActiveDispatcher";
 
 const ExploreScreen = () => {
 
-    useSetActiveDispatch("explore")
+    useSetActiveDispatch("explore");
 
     return (
         <>

@@ -14,7 +14,7 @@ const WhoToFollowList = () => {
             {
                 who.map(who => {
                     return(
-                        <WhoToFollowListItem who={who} />
+                        <WhoToFollowListItem key={who._id} who={who} />
                     );
                 })
             }

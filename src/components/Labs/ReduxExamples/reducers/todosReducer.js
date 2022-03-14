@@ -11,7 +11,7 @@ const data = [
     },
 ];
 
-const todos = (state = data, action) => {
+const todosReducer = (state = data, action) => {
     switch (action.type) {
         case 'update-todo':
             const newTodos = state.map(todo => {
@@ -21,11 +21,11 @@ const todos = (state = data, action) => {
             return newTodos;
 
         case 'delete-todo':
-            return state.filter(todo => todo !== action.todo);
+            return state.filter(todo => todo._id !== action.todo._id);
         case 'create-todo':
             const newTodo = {
                 ...action.todo,
-                _id: (new Date()).getDate() + ""
+                _id: (new Date()).getTime() + ""
             };
             return [
                 ...state,
@@ -38,4 +38,4 @@ const todos = (state = data, action) => {
 }
 
 
-export default todos;
+export default todosReducer;
