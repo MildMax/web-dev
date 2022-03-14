@@ -12,7 +12,7 @@ const ProfileScreen = () => {
     return (
         <>
             {!editProfile && <Profile setEditProfile={setEditProfile}/>}
-            {editProfile && <EditProfile/>}
+            {editProfile && <EditProfile setEditProfile={setEditProfile}/>}
         </>
     );
 }
