@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import TuitListImage from "./TuitListImage";
 import {useDispatch} from "react-redux";
 import TuitStats from "../TuitStats";
