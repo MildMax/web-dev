@@ -1,15 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import useSetActiveDispatch from "../../../dispatchers/setActiveDispatcher";
-import './profile.css';
-import {Link} from "react-router-dom";
 import Profile from "./Profile";
+import EditProfile from "./EditProfile";
 
 const ProfileScreen = () => {
+
+    const [editProfile, setEditProfile] = useState(false);
 
     useSetActiveDispatch("profile");
 
     return (
-        <Profile/>
+        <>
+            {!editProfile && <Profile setEditProfile={setEditProfile}/>}
+            {editProfile && <EditProfile/>}
+        </>
     );
 }
 export default ProfileScreen;
