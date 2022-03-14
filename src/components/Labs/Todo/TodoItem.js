@@ -2,6 +2,7 @@ import React from "react";
 
 const TodoItem = ({
     todo = {
+        _id: 1,
         done: true,
         title: 'Buy milk',
         status: 'COMPLETED'

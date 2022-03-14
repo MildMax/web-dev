@@ -8,7 +8,7 @@ const PostSummaryList = () => {
         {
             explorePosts.map(post => {
                 return (
-                    <PostSummaryItem post={post}/>
+                    <PostSummaryItem key={post._id} post={post}/>
                 );
             })
         }
