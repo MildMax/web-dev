@@ -31,8 +31,8 @@ const Profile = () => {
                     <p className="wd-font-14 mb-0 wd-line-height-1-point-2">{formatTuits(profileData.tuits)} Tweets</p>
                 </div>
             </div>
-            <img className="img-fluid wd-full-width wd-profile-banner-height wd-border-color-very-dark-grey wd-thin-border" src={profileData.banner} alt=""/>
-            <img className="img-fluid wd-circle-border-radius wd-profile-avatar-dimensions wd-profile-avatar-position wd-border-black" src={profileData.avatar} alt=""/>
+            <img className="img-fluid wd-full-width wd-profile-banner-height wd-border-color-very-dark-grey wd-thin-border" src={profileData.bannerPicture} alt=""/>
+            <img className="img-fluid wd-circle-border-radius wd-profile-avatar-dimensions wd-profile-avatar-position wd-border-black" src={profileData.profilePicture} alt=""/>
             <button to="/tuiter/" className="btn rounded-pill wd-edit-button wd-bold-font wd-font-14 wd-float-right mt-2 me-2">Edit profile</button>
             <div className="wd-profile-data-break"/>
             <div className="ps-3">
@@ -48,8 +48,8 @@ const Profile = () => {
                     <span className="ms-1">Joined {profileData.joined}</span>
                 </div>
                 <div className="mb-3">
-                    <span className="wd-fg-color-white wd-bold-font">{profileData.following}</span> Following
-                    <span className="ms-4 wd-fg-color-white wd-bold-font">{profileData.followers}</span> Followers
+                    <span className="wd-fg-color-white wd-bold-font">{profileData.followingCount}</span> Following
+                    <span className="ms-4 wd-fg-color-white wd-bold-font">{profileData.followersCount}</span> Followers
                 </div>
             </div>
 
