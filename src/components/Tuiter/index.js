@@ -8,8 +8,9 @@ import tuitsReducer from "../../reducers/tuitsReducer";
 import whoReducer from "../../reducers/whoReducer";
 import activeReducer from "../../reducers/activeReducer";
 import {Provider} from "react-redux";
+import profileReducer from "../../reducers/profileReducer";
 
-const reducer = combineReducers({tuits: tuitsReducer, who: whoReducer, active: activeReducer})
+const reducer = combineReducers({tuits: tuitsReducer, who: whoReducer, active: activeReducer, profileData: profileReducer})
 const store = createStore(reducer);
 
 const Tuiter = () => {
