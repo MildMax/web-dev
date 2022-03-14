@@ -1,8 +1,13 @@
 import React from "react";
+import './explore.css';
 import {Link} from "react-router-dom";
 import PostSummaryList from "../PostSummaryList";
+import useSetActiveDispatch from "../../../dispatchers/setActiveDispatcher";
 
-const ExploreComponent = () => {
+const ExploreScreen = () => {
+
+    useSetActiveDispatch("explore")
+
     return (
         <>
             <div className="row mb-2">
@@ -17,8 +22,8 @@ const ExploreComponent = () => {
                         <i className="fa fa-cog"/>
                     </Link>
                 </div>
-           </div>
-           <ul className="nav mb-2 nav-tabs">
+            </div>
+            <ul className="nav mb-2 nav-tabs">
                 <li className="nav-item">
                     <Link to="/tuiter/for-you" className="nav-link active ">For You</Link>
                 </li>
@@ -34,13 +39,13 @@ const ExploreComponent = () => {
                 <li className="nav-item wd-disappear-content-s wd-disappear-content-xs">
                     <Link to="/tuiter/entertainment" className="nav-link">Entertainment</Link>
                 </li>
-           </ul>
-           <div className="row mt-2 mb-2 ms-0 me-0 position-relative border wd-tuit-content-border-color-style-override">
-               <img src={"/images/spacex-starship.jpg"} alt="" className="img-fluid ps-0 pe-0 pt-0 pb-0"/>
+            </ul>
+            <div className="row mt-2 mb-2 ms-0 me-0 position-relative border wd-tuit-content-border-color-style-override">
+                <img src={"/images/spacex-starship.jpg"} alt="" className="img-fluid ps-0 pe-0 pt-0 pb-0"/>
                 <span className="wd-text-overlay wd-fg-color-white ps-0 pe-0 ms-2">SpaceX's Starship</span>
-           </div>
-           <PostSummaryList/>
+            </div>
+            <PostSummaryList/>
         </>
     );
 }
-export default ExploreComponent;
+export default ExploreScreen;

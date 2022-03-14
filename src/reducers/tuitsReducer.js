@@ -1,6 +1,6 @@
-import posts from './data/tuits.json';
+import tuits from './data/tuits.json';
 
-const tuits = (state = posts, action) => {
+const tuitsReducer = (state = tuits, action) => {
     switch (action.type) {
         case 'like-tuit':
             return state.map(tuit => {
@@ -49,4 +49,4 @@ const tuits = (state = posts, action) => {
 
 };
 
-export default tuits;
+export default tuitsReducer;
