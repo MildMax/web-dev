@@ -39,6 +39,11 @@
     background-clip: border-box;
 }
 
+.wd-edit-border-transparent {
+    border: transparent solid 4px;
+    background-clip: border-box;
+}
+
 .wd-relative-position {
     position: relative;
 }
@@ -130,4 +135,47 @@
 
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
+}
+
+.wd-edit-profile-image-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,.25);
+    overflow: hidden;
+}
+
+.wd-position-relative {
+    position: relative;
+}
+
+.wd-edit-profile-overlay-button {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.wd-edit-profile-overlay-button:hover {
+    outline: none;
+    color: lightgrey;
+}
+
+.wd-edit-profile-picture-button {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 16px);
+}
+
+.wd-edit-profile-banner-button {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 40px);
+}
+
+.wd-edit-profile-remove-banner-button {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% + 10px);
 }

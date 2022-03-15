@@ -43,8 +43,29 @@ const EditProfile = ({
                 </div>
                 <button onClick={() => saveProfileData()} className="btn rounded-pill wd-save-button wd-bold-font wd-font-14 wd-float-right">Save</button>
             </div>
-            <img className="img-fluid wd-full-width wd-profile-banner-height wd-border-color-very-dark-grey wd-thin-border" src={profileData.bannerPicture} alt=""/>
-            <img className="img-fluid wd-circle-border-radius wd-profile-avatar-dimensions wd-profile-avatar-position wd-border-black" src={profileData.profilePicture} alt=""/>
+            <div className="wd-position-relative">
+                <img className="img-fluid wd-full-width wd-profile-banner-height wd-border-color-very-dark-grey wd-thin-border"
+                     src={profileData.bannerPicture}
+                     alt=""
+                />
+                <div className="wd-edit-profile-image-filter"/>
+                <button className="wd-edit-profile-overlay-button wd-edit-profile-banner-button">
+                    <i className="fa fa-camera"/>
+                </button>
+                <button className="wd-edit-profile-overlay-button wd-edit-profile-remove-banner-button">
+                    <i className="fa fa-remove"/>
+                </button>
+            </div>
+            <div className="wd-profile-avatar-position wd-profile-avatar-dimensions">
+                <img className="img-fluid wd-circle-border-radius wd-profile-avatar-dimensions wd-border-black"
+                     src={profileData.profilePicture}
+                     alt=""
+                />
+                <div className="wd-edit-profile-image-filter wd-circle-border-radius wd-edit-border-transparent"/>
+                <button className="wd-edit-profile-overlay-button wd-edit-profile-picture-button">
+                    <i className="fa fa-camera"/>
+                </button>
+            </div>
             <div className="wd-profile-data-break"/>
             <div className="ps-3 pe-3 mt-2 mb-3">
                 <div className="wd-edit-profile-text-entry ps-2 pe-2 pt-1 pb-1">
