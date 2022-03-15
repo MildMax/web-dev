@@ -109,7 +109,7 @@ const Profile = ({
                         Followers
                     </span>
                 </div>
-                <a href={"https://" + profileData.website} target="_blank" className="wd-website-link-color">
+                <a href={"https://" + profileData.website} rel="noreferrer" target="_blank" className="wd-website-link-color">
                     <i className="fa fa-link me-2"/>
                     {profileData.website}
                 </a>
