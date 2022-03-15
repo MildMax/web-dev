@@ -9,17 +9,18 @@ const Labs = () => {
     return(
         <>
             <h1>Labs</h1>
+
+            <ConditionalOutput/>
+            <Styles/>
+            <Classes/>
+            <TodoList/>
+
             <Link to="/hello">
                 Hello
             </Link> |
             <Link to="/tuiter/home">
                 Tuiter
             </Link>
-
-            <ConditionalOutput/>
-            <Styles/>
-            <Classes/>
-            <TodoList/>
         </>
     )
 };
