@@ -4,7 +4,7 @@ import './profile.css';
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 
-const formatTuits = (tuits) => {
+const formatTuitsCount = (tuits) => {
     if (tuits > 1000) {
         const start = Math.floor(tuits / 1000);
         const end = tuits % 1000;
@@ -74,7 +74,7 @@ const Profile = ({
                 </Link>
                 <div className="ms-4 ps-4 wd-display-inline-block">
                     <p className="wd-bold-font wd-font-18 wd-fg-color-white mb-0">{profileData.name}</p>
-                    <p className="wd-font-12 mb-0 wd-line-height-0-point-5">{formatTuits(profileData.tuits)} Tweets</p>
+                    <p className="wd-font-12 mb-0 wd-line-height-0-point-5">{formatTuitsCount(profileData.tuits)} Tweets</p>
                 </div>
             </div>
             <img className="img-fluid wd-full-width wd-profile-banner-height wd-border-color-very-dark-grey wd-thin-border" src={profileData.bannerPicture} alt=""/>
@@ -86,16 +86,28 @@ const Profile = ({
                 <p className="wd-line-height-1-point-2 mb-2">@{profileData.handle}</p>
                 <p className="wd-fg-color-white wd-line-height-1-point-2 mb-2">{profileData.bio}</p>
                 <div className="mb-2">
-                    <i className="fa fa-location-dot"/>
-                    <span className="ms-1">{profileData.location}</span>
-                    <i className="fa fa-cake-candles ms-3"/>
-                    <span className="ms-1">{formatDOB(profileData.dob)}</span>
-                    <i className="fa fa-calendar-days ms-3"/>
-                    <span className="ms-1">Joined {formatJoinedDate(profileData.joined)}</span>
+                    <span className="wd-display-inline-block me-3">
+                        <i className="fa fa-location-dot"/>
+                        <span className="ms-1">{profileData.location}</span>
+                    </span>
+                    <span className="wd-display-inline-block me-3">
+                        <i className="fa fa-cake-candles me-1"/>
+                        <span>{formatDOB(profileData.dob)}</span>
+                    </span>
+                    <span className="wd-display-inline-block">
+                        <i className="fa fa-calendar-days me-1"/>
+                        <span>Joined {formatJoinedDate(profileData.joined)}</span>
+                    </span>
                 </div>
                 <div className="mb-2">
-                    <span className="wd-fg-color-white wd-bold-font">{profileData.followingCount}</span> Following
-                    <span className="ms-4 wd-fg-color-white wd-bold-font">{profileData.followersCount}</span> Followers
+                    <span className="wd-display-inline-block me-4">
+                        <span className="wd-fg-color-white wd-bold-font me-2">{profileData.followingCount}</span>
+                        Following
+                    </span>
+                    <span className="wd-display-inline-block">
+                        <span className="wd-fg-color-white wd-bold-font me-2">{profileData.followersCount}</span>
+                        Followers
+                    </span>
                 </div>
                 <a href={"https://" + profileData.website} target="_blank" className="wd-website-link-color">
                     <i className="fa fa-link me-2"/>
