@@ -17,15 +17,20 @@ const Labs = () => {
     return(
         <>
             <h1>Labs</h1>
+
+            {/*a7 labs*/}
+            <ReduxExamples/>
+
+            {/*navigation*/}
             <Link to="/hello">
                 Hello
             </Link> |
             <Link to="/tuiter">
                 Tuiter
             </Link>
-            {/*a7 labs*/}
-            <ReduxExamples/>
+
             {/*a6 labs*/}
+            <br/>
             <br/>
             {(() => {
                 if (hideA6) {

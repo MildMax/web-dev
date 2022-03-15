@@ -1,5 +1,3 @@
-/* overrides */
-
 .wd-avatar-col {
     width: 64px;
     display: inline-block;
@@ -43,43 +41,11 @@ button.wd-button-icon-override {
     padding-top: 0.8rem!important;
 }
 
-.wd-transparent-border {
-    border: transparent;
-}
 
-.wd-no-focus:focus {
-    outline: none;
-}
 
-.wd-disable-textarea-resize {
-    resize: none;
-}
 
-.wd-tuit-text-area-bottom-border {
-    border-bottom: rgb(47, 51, 54) solid 1px;
-}
 
-.wd-tuit-text-area-tweet-button-dims {
-    width: 80px;
-}
 
-.wd-inline-flex-container {
-    display: inline-flex;
-}
 
-.wd-tuit-text-area-icons-dims {
-    width: 110px;
-    height: 20px;
-}
 
-.wd-tuit-text-area-icon-color {
-    color: #2a9fd6;
-}
 
-.col-2.wd-whats-happening-icon-override {
-    width: 14%;
-}
-
-.col-10.wd-whats-happening-text-area-override {
-    width: 86%
-}
