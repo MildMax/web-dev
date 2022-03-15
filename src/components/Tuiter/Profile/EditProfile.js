@@ -81,7 +81,7 @@ const EditProfile = ({
                     <label htmlFor="bio" className="wd-font-12">Bio</label>
                     <textarea id="bio"
                               onChange={(event) => captureFieldChange(event, setBio)}
-                              rows={2}
+                              rows={3}
                               defaultValue={bio}
                     />
                 </div>

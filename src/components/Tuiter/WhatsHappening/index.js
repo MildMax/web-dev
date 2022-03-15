@@ -18,7 +18,7 @@ const WhatsHappening = () => {
     return(
         <div className="row ms-0 me-0">
             <div className="col-2 wd-whats-happening-icon-override pe-0">
-                <img src="/images/elon_musk_avatar.jpg" alt="" className="wd-avatar-image wd-circle-border-radius"/>
+                <img src="/images/doom_guy.jpg" alt="" className="wd-avatar-image wd-circle-border-radius"/>
             </div>
             <div className="col-10  ps-0 pe-0">
                 <div className="ms-0 me-0 pb-2 wd-tuit-text-area-bottom-border wd-full-width">

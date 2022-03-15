@@ -2,6 +2,7 @@ import React from "react";
 import useSetActiveDispatch from "../../../dispatchers/setActiveDispatcher";
 import './profile.css';
 import {useSelector} from "react-redux";
+import {Link} from "react-router-dom";
 
 const formatTuits = (tuits) => {
     if (tuits > 1000) {
@@ -11,6 +12,50 @@ const formatTuits = (tuits) => {
     } else {
         return tuits;
     }
+}
+
+const determineMonth = (month) => {
+    const numericMonth = parseInt(month);
+    switch (numericMonth) {
+        case 1:
+            return "January";
+        case 2:
+            return "February";
+        case 3:
+            return "March";
+        case 4:
+            return "April";
+        case 5:
+            return "May";
+        case 6:
+            return "June";
+        case 7:
+            return "July";
+        case 8:
+            return "August";
+        case 9:
+            return "September";
+        case 10:
+            return "October";
+        case 11:
+            return "November";
+        case 12:
+            return "December";
+        default:
+            return "";
+    }
+}
+
+const formatDOB = (date) => {
+    const dateVals = date.split("-");
+    const month = determineMonth(dateVals[1]);
+    return `${month} ${dateVals[2]}, ${dateVals[0]}`
+}
+
+const formatJoinedDate = (date) => {
+    const dateVals = date.split("-");
+    const month = determineMonth(dateVals[1]);
+    return `${month} ${dateVals[0]}`
 }
 
 const Profile = ({
@@ -24,9 +69,9 @@ const Profile = ({
     return (
         <div className="wd-relative-position wd-border-color-very-dark-grey wd-thin-border">
             <div className="wd-profile-header ps-3 pe-3 mb-1 mt-1">
-                <button className="btn ps-0 pe-0 pt-0 pb-0 wd-focus-override wd-profile-header-lead-button">
+                <Link to="/tuiter" className="btn ps-0 pe-0 pt-0 pb-0 wd-focus-override wd-profile-header-lead-button">
                     <i className="fa fa-arrow-left wd-fg-color-white wd-align-middle wd-grey-on-hover"/>
-                </button>
+                </Link>
                 <div className="ms-4 ps-4 wd-display-inline-block">
                     <p className="wd-bold-font wd-font-18 wd-fg-color-white mb-0">{profileData.name}</p>
                     <p className="wd-font-12 mb-0 wd-line-height-0-point-5">{formatTuits(profileData.tuits)} Tweets</p>
@@ -38,20 +83,24 @@ const Profile = ({
             <div className="wd-profile-data-break"/>
             <div className="ps-3 pe-3 mb-3">
                 <p className="mb-0 wd-fg-color-white wd-bold-font wd-font-20 wd-line-height-1-point-3">{profileData.name}</p>
-                <p className="wd-line-height-1-point-2 mb-3">@{profileData.handle}</p>
-                <p className="wd-fg-color-white wd-line-height-1-point-2 mb-3">{profileData.bio}</p>
-                <div className="mb-3">
+                <p className="wd-line-height-1-point-2 mb-2">@{profileData.handle}</p>
+                <p className="wd-fg-color-white wd-line-height-1-point-2 mb-2">{profileData.bio}</p>
+                <div className="mb-2">
                     <i className="fa fa-location-dot"/>
                     <span className="ms-1">{profileData.location}</span>
                     <i className="fa fa-cake-candles ms-3"/>
-                    <span className="ms-1">{profileData.dob}</span>
+                    <span className="ms-1">{formatDOB(profileData.dob)}</span>
                     <i className="fa fa-calendar-days ms-3"/>
-                    <span className="ms-1">Joined {profileData.joined}</span>
+                    <span className="ms-1">Joined {formatJoinedDate(profileData.joined)}</span>
                 </div>
-                <div>
+                <div className="mb-2">
                     <span className="wd-fg-color-white wd-bold-font">{profileData.followingCount}</span> Following
                     <span className="ms-4 wd-fg-color-white wd-bold-font">{profileData.followersCount}</span> Followers
                 </div>
+                <a href={"https://" + profileData.website} target="_blank" className="wd-website-link-color">
+                    <i className="fa fa-link me-2"/>
+                    {profileData.website}
+                </a>
             </div>
 
         </div>

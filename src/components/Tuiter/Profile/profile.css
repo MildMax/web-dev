@@ -114,6 +114,7 @@
     font-size: 14px;
     width: 100%;
     padding: 0;
+    overflow: hidden;
 }
 
 .wd-edit-profile-text-entry > textarea:focus {
@@ -178,4 +179,8 @@
     position: absolute;
     top: calc(50% - 20px);
     left: calc(50% + 10px);
+}
+
+.wd-website-link-color {
+    color: rgb(173,175,174);
 }
