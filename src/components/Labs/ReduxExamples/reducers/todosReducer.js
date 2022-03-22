@@ -21,7 +21,7 @@ const todosReducer = (state = data, action) => {
             return newTodos;
 
         case 'delete-todo':
-            return state.filter(todo => todo._id !== action.todo._id);
+            return state.filter(todo => todo !== action.todo);
         case 'create-todo':
             const newTodo = {
                 ...action.todo,
