@@ -23,19 +23,25 @@ const tuitsReducer = (state = tuits, action) => {
         case 'create-tuit':
             const tuit = {
                 _id: (new Date()).getTime() + '',
-                "liked": false,
-                "topic": "Web Development",
-                "userName": "ReactJS",
-                "verified": false,
-                "handle": "ReactJS",
-                "time": "2h",
-                "tuit": action.tuit,
-                "avatarIcon": "/images/react-logo.jpg",
-                "mainImage": "/images/doom_banner_alt.jpg",
-                "stats": {
-                    "replies": 111,
-                    "retuits": 222,
-                    "likes": 333
+                topic: "Web Development",
+                postedBy: {
+                    // placed username in quotes per assignment spec
+                    "username": "ReactJS"
+                },
+                liked: false,
+                verified: false,
+                handle: "ReactJS",
+                time: "2h",
+                tuit: action.tuit,
+                // placed avatar-image in quotes to prevent variable naming error
+                avatarImage: "/images/doom_guy.jpg",
+                attachments: {
+                    image: "/images/doom_banner_alt.jpg"
+                },
+                stats: {
+                    replies: 111,
+                    retuits: 222,
+                    likes: 333
                 },
             };
             return ([

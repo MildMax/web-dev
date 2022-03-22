@@ -1,5 +1,5 @@
 import React from "react";
-import TuitListImage from "./TuitListImage";
+import TuitListAttachment from "./TuitListAttachment";
 import {useDispatch} from "react-redux";
 import TuitStats from "../TuitStats";
 
@@ -30,14 +30,14 @@ const TuitListItem = ({
         <li className="list-group-item">
             <div className="row">
                 <div className="wd-avatar-col ps-3 pe-0">
-                    <img className="wd-avatar-image wd-circle-border-radius" alt="" src={tuit.avatarIcon}/>
+                    <img className="wd-avatar-image wd-circle-border-radius" alt="" src={tuit.avatarImage}/>
                 </div>
                 <div className="col wd-post-width-override">
                     <div className="row ps-3 pe-3">
                         <p className="mb-0 ps-0 col wd-name-handle-width-override wd-float-left wd-ellipsis-extended-text">
-                            <span className="wd-solid-white-text wd-bold-font">{tuit.userName} </span>
-                            <i className="fa fa-check-circle"/>
-                            <span className="ms-1 wd-light-gray-color">{tuit.handle} - {tuit.time}</span>
+                            <span className="wd-solid-white-text wd-bold-font">{tuit.postedBy.username}</span>
+                            {tuit.verified && <i className="fa fa-check-circle ms-1"/>}
+                            <span className="ms-1 wd-light-gray-color">@{tuit.handle} - {tuit.time}</span>
                         </p>
                         <button onClick={deleteTuitClickHandler}
                                 className="btn wd-transparent-background-override wd-light-gray-color wd-x-width ps-0 pe-0 pt-0 pb-0 wd-float-right">
@@ -47,9 +47,11 @@ const TuitListItem = ({
                     <div className="row ps-3 pe-3">
                         <p className=" ps-0 wd-solid-white-text wd-size-15-font mb-0" dangerouslySetInnerHTML={{__html: tuit.tuit}}/>
                     </div>
-                    <div className="row ps-3 pe-3 pt-2">
-                        <TuitListImage tuit={tuit}/>
-                    </div>
+                    {tuit.attachments !== undefined &&
+                        <div className="row ps-3 pe-3 pt-2">
+                            <TuitListAttachment tuit={tuit}/>
+                        </div>
+                    }
                     <TuitStats tuit={tuit}/>
                 </div>
             </div>
