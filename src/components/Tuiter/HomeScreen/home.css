@@ -1,3 +1,5 @@
+/* dimensions & containers */
+
 .wd-avatar-col {
     width: 64px;
     display: inline-block;
@@ -15,6 +17,20 @@
     width: calc(100% - 34px)!important;
 }
 
+/* fonts */
+
+.wd-font-14 {
+    font-size: 14px;
+}
+
+/* formatting */
+
+.wd-align-text-center {
+    text-align: center;
+}
+
+/* overrides */
+
 button.wd-button-icon-override {
     font-size: 14px;
     padding: 0;
@@ -27,14 +43,6 @@ button.wd-button-icon-override {
 
 .list-group-item.wd-transparent-background-override {
     background-color: transparent;
-}
-
-.wd-align-text-center {
-    text-align: center;
-}
-
-.wd-font-14 {
-    font-size: 14px;
 }
 
 .pt-2.wd-icon-padding-top-override {

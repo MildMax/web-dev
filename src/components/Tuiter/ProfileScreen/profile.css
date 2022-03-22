@@ -1,3 +1,5 @@
+/* dimensions & containers */
+
 .wd-profile-header {
     display: inline-block;
     position: relative;
@@ -15,10 +17,6 @@
     top: calc(50% - 15px);
 }
 
-.wd-grey-on-hover:hover {
-    color: lightgrey;
-}
-
 .wd-profile-banner-height {
     height: 200px;
 }
@@ -34,24 +32,6 @@
     left: 1rem;
 }
 
-.wd-border-black {
-    border: #060606 solid 4px;
-    background-clip: border-box;
-}
-
-.wd-edit-border-transparent {
-    border: transparent solid 4px;
-    background-clip: border-box;
-}
-
-.wd-relative-position {
-    position: relative;
-}
-
-.wd-display-inline-block {
-    display: inline-block;
-}
-
 .wd-profile-data-break {
     position: relative;
     width: 100%;
@@ -59,36 +39,11 @@
     z-index: -1;
 }
 
-.wd-line-height-1-point-2 {
-    line-height: 1.2;
-}
-
-.wd-line-height-0-point-5 {
-    line-height: 0.5;
-}
-
-.wd-font-20 {
-    font-size: 20px;
-}
-
-.wd-font-18 {
-    font-size: 18px;
-}
-
-.wd-font-12 {
-    font-size: 12px;
-}
-
 .wd-edit-button {
     height: 36px;
     color: white;
     border: #adafae solid 1px;
     background-color: transparent;
-}
-
-.wd-thin-border {
-    border-style: solid;
-    border-width: 1px;
 }
 
 .wd-save-button {
@@ -99,11 +54,6 @@
     color: black;
     background-color: white;
     line-height: 1.1;
-}
-
-.wd-edit-profile-text-entry {
-    border: #adafae solid 1px;
-    border-radius: 5px;
 }
 
 .wd-edit-profile-text-entry > textarea {
@@ -120,22 +70,6 @@
 .wd-edit-profile-text-entry > textarea:focus {
     outline: transparent;
 }
-.wd-edit-profile-text-entry > input {
-    background-color: transparent;
-    color: white;
-    border: none;
-}
-
-.wd-edit-profile-text-entry > input:focus {
-    background: transparent;
-    color: white;
-    outline: none;
-    box-shadow: none;
-}
-
-::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-}
 
 .wd-edit-profile-image-filter {
     position: absolute;
@@ -145,21 +79,6 @@
     height: 100%;
     background-color: rgb(0,0,0,.25);
     overflow: hidden;
-}
-
-.wd-position-relative {
-    position: relative;
-}
-
-.wd-edit-profile-overlay-button {
-    background: transparent;
-    border: none;
-    color: rgb(255,255,255,0.95);
-}
-
-.wd-edit-profile-overlay-button:hover {
-    outline: none;
-    color: lightgrey;
 }
 
 .wd-edit-profile-picture-button {
@@ -180,6 +99,96 @@
     left: calc(50% + 10px);
 }
 
+.wd-relative-position {
+    position: relative;
+}
+
+.wd-display-inline-block {
+    display: inline-block;
+}
+
+.wd-position-relative {
+    position: relative;
+}
+
+.wd-edit-profile-overlay-button {
+    background: transparent;
+    border: none;
+    color: rgb(255,255,255,0.95);
+}
+
+.wd-edit-profile-overlay-button:hover {
+    outline: none;
+    color: lightgrey;
+}
+
+/* colors */
+
+.wd-grey-on-hover:hover {
+    color: lightgrey;
+}
+
+.wd-edit-profile-text-entry > input {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.wd-edit-profile-text-entry > input:focus {
+    background: transparent;
+    color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 .wd-website-link-color {
     color: rgb(173,175,174);
+}
+
+/* borders */
+
+.wd-border-black {
+    border: #060606 solid 4px;
+    background-clip: border-box;
+}
+
+.wd-edit-border-transparent {
+    border: transparent solid 4px;
+    background-clip: border-box;
+}
+
+.wd-thin-border {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.wd-edit-profile-text-entry {
+    border: #adafae solid 1px;
+    border-radius: 5px;
+}
+
+/* font & text formatting */
+
+.wd-line-height-1-point-2 {
+    line-height: 1.2;
+}
+
+.wd-line-height-0-point-5 {
+    line-height: 0.5;
+}
+
+.wd-font-20 {
+    font-size: 20px;
+}
+
+.wd-font-18 {
+    font-size: 18px;
+}
+
+.wd-font-12 {
+    font-size: 12px;
 }
