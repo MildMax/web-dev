@@ -93,12 +93,12 @@
 
 .wd-save-button {
     position: absolute;
-    top: calc(50% - 12px);
+    top: calc(50% - 14px);
     left: calc(100% - 65px - 1rem);
-    height: 26px;
+    height: 28px;
     color: black;
     background-color: white;
-    line-height: 1;
+    line-height: 1.1;
 }
 
 .wd-edit-profile-text-entry {
@@ -154,7 +154,7 @@
 .wd-edit-profile-overlay-button {
     background: transparent;
     border: none;
-    color: white;
+    color: rgb(255,255,255,0.95);
 }
 
 .wd-edit-profile-overlay-button:hover {
@@ -164,8 +164,8 @@
 
 .wd-edit-profile-picture-button {
     position: absolute;
-    top: calc(50% - 10px);
-    left: calc(50% - 16px);
+    top: calc(50% - 12px);
+    left: calc(50% - 14px);
 }
 
 .wd-edit-profile-banner-button {

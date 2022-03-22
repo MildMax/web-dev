@@ -34,7 +34,7 @@ const tuitsReducer = (state = tuits, action) => {
                 time: "2h",
                 tuit: action.tuit,
                 // placed avatar-image in quotes to prevent variable naming error
-                avatarImage: "/images/doom_guy.jpg",
+                avatarImage: "/images/doom-guy-alt.png",
                 attachments: {
                     image: "/images/doom_banner_alt.jpg"
                 },
