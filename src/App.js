@@ -12,7 +12,8 @@ import Labs from "./components/Labs";
 import Tuiter from "./components/Tuiter";
 import HomeScreen from "./components/Tuiter/HomeScreen";
 import ExploreScreen from "./components/Tuiter/ExploreScreen";
-import ProfileScreen from "./components/Tuiter/Profile";
+import EditProfile from "./components/Tuiter/ProfileScreen/EditProfile";
+import Profile from "./components/Tuiter/ProfileScreen/Profile";
 
 const App = () => {
 
@@ -27,7 +28,8 @@ const App = () => {
                         <Route path="tuiter" element={<Tuiter/>}>
                             <Route index element={<HomeScreen/>}/>
                             <Route path="explore" element={<ExploreScreen/>}/>
-                            <Route path="profile" element={<ProfileScreen/>}/>
+                            <Route path="profile" element={<Profile/>}/>
+                            <Route path="editProfile" element={<EditProfile/>}/>
                         </Route>
                     </Route>
                 </Routes>

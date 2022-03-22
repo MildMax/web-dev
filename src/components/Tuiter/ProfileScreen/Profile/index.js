@@ -1,6 +1,6 @@
 import React from "react";
-import useSetActiveDispatch from "../../../dispatchers/setActiveDispatcher";
-import './profile.css';
+import useSetActiveDispatch from "../../../../dispatchers/setActiveDispatcher";
+import '../profile.css';
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 
@@ -58,9 +58,7 @@ const formatJoinedDate = (date) => {
     return `${month} ${dateVals[0]}`
 }
 
-const Profile = ({
-    setEditProfile = () => console.log("WARNING: setEditProfile is undefined")
-}) => {
+const Profile = () => {
 
     useSetActiveDispatch("profile");
 
@@ -79,7 +77,7 @@ const Profile = ({
             </div>
             <img className="img-fluid wd-full-width wd-profile-banner-height wd-border-color-very-dark-grey wd-thin-border" src={profileData.bannerPicture} alt=""/>
             <img className="img-fluid wd-circle-border-radius wd-profile-avatar-dimensions wd-profile-avatar-position wd-border-black" src={profileData.profilePicture} alt=""/>
-            <button onClick={() => setEditProfile(true)} className="btn rounded-pill wd-edit-button wd-bold-font wd-font-14 wd-float-right mt-2 me-2">Edit profile</button>
+            <Link to={"/tuiter/editProfile"} className="btn rounded-pill wd-edit-button wd-bold-font wd-font-14 wd-float-right mt-2 me-2">Edit profile</Link>
             <div className="wd-profile-data-break"/>
             <div className="ps-3 pe-3 mb-3">
                 <p className="mb-0 wd-fg-color-white wd-bold-font wd-font-20 wd-line-height-1-point-3">{profileData.name}</p>
