@@ -19,6 +19,7 @@ const TuitListAttachment = ({
             <div className="ps-0 pe-0 ratio ratio-16x9 overflow-hidden wd-slight-bottom-border-radius wd-slight-top-border-radius">
                 <iframe className="wd-full-width wd-full-height"
                         src={`https://www.youtube.com/embed/${tuit.attachments.video}`}
+                        title="embedded-attachment"
                         frameBorder={0}
                         allowFullScreen/>
             </div>
