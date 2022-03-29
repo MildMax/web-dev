@@ -2,6 +2,7 @@ import React from "react";
 import TuitListAttachment from "./TuitListAttachment";
 import {useDispatch} from "react-redux";
 import TuitStats from "../TuitStats";
+import {deleteTuit} from "../../../actions/tuits-actions";
 
 const TuitListItem = ({
     tuit = {
@@ -22,10 +23,6 @@ const TuitListItem = ({
 
     const dispatch = useDispatch();
 
-    const deleteTuitClickHandler = () => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
-
     return(
         <li className="list-group-item">
             <div className="row">
@@ -39,7 +36,7 @@ const TuitListItem = ({
                             {tuit.verified && <i className="fa fa-check-circle ms-1"/>}
                             <span className="ms-1 wd-light-gray-color">@{tuit.handle} - {tuit.time}</span>
                         </p>
-                        <button onClick={deleteTuitClickHandler}
+                        <button onClick={() => deleteTuit(dispatch, tuit)}
                                 className="btn wd-transparent-background-override wd-light-gray-color wd-x-width ps-0 pe-0 pt-0 pb-0 wd-float-right">
                             <i className="fas fa-remove fa-pull-right"/>
                         </button>

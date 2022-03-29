@@ -1,18 +1,41 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 import './whatsHappening.css';
+import {createTuit} from "../../../actions/tuits-actions";
 
 const WhatsHappening = () => {
 
-    let [whatsHappening, setWhatsHappening] = useState('');
+    const [newTuit, setNewTuit] = useState({topic: "Web Development",
+            postedBy: {
+                // placed username in quotes per assignment spec
+                "username": "ReactJS"
+            },
+            liked: false,
+            disliked: false,
+            verified: false,
+            handle: "ReactJS",
+            time: "2h",
+            tuit: "",
+            avatarImage: "/images/doom-guy-alt.png",
+            attachments: {
+                image: "/images/doom_banner_alt.jpg"
+            },
+            stats: {
+                comments: 111,
+                retuits: 222,
+                likes: 0,
+                dislikes: 0
+            },
+    });
 
     const dispatch = useDispatch();
 
-    const tuitClickHandler = () => {
-        dispatch({type: 'create-tuit',
-            tuit: whatsHappening
-        });
-        setWhatsHappening('');
+    const createNewTuit = () => {
+        createTuit(dispatch, newTuit);
+        setNewTuit({
+            ...newTuit,
+            tuit: ""
+        })
     }
 
     return(
@@ -24,8 +47,11 @@ const WhatsHappening = () => {
                 <div className="ms-0 me-0 pb-2 wd-tuit-text-area-bottom-border wd-full-width">
                     <textarea className="wd-bg-color-black wd-transparent-border wd-no-focus wd-fg-color-white wd-disable-textarea-resize wd-full-width"
                               rows={2}
-                              value={whatsHappening}
-                              onChange={(event) => setWhatsHappening(event.target.value)}
+                              value={newTuit.tuit}
+                              onChange={(event) => setNewTuit({
+                                  ...newTuit,
+                                  tuit: event.target.value
+                              })}
                               placeholder="What's happening?"
                     >
                     </textarea>
@@ -46,7 +72,7 @@ const WhatsHappening = () => {
                         </button>
                     </div>
 
-                    <button className="btn btn-primary btn-block rounded-pill wd-float-right wd-tuit-text-area-tweet-button-dims" onClick={tuitClickHandler}>
+                    <button className="btn btn-primary btn-block rounded-pill wd-float-right wd-tuit-text-area-tweet-button-dims" onClick={() => createNewTuit()}>
                         Tweet
                     </button>
                 </div>
