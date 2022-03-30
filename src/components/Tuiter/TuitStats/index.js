@@ -74,7 +74,7 @@ const TuitStats = ({tuit = {
                         className="btn wd-focus-override wd-button-icon-override wd-float-left wd-remove-link-underline wd-light-gray-color">
                     {
                         tuit.disliked && <i className="fa fa-thumbs-down"
-                                         style={{color: "red"}}/>
+                                         style={{color: "lightblue"}}/>
                     }
                     {
                         !tuit.disliked && <i className="far fa-thumbs-down"/>
