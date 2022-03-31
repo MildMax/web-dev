@@ -45,7 +45,7 @@ const WhatsHappening = () => {
             </div>
             <div className="col-10  ps-0 pe-0">
                 <div className="ms-0 me-0 pb-2 wd-tuit-text-area-bottom-border wd-full-width">
-                    <textarea className="wd-bg-color-black wd-transparent-border wd-no-focus wd-fg-color-white wd-disable-textarea-resize wd-full-width"
+                    <textarea className="wd-bg-color-black form-control wd-transparent-border wd-no-focus wd-fg-color-white wd-disable-textarea-resize wd-full-width"
                               rows={2}
                               value={newTuit.tuit}
                               onChange={(event) => setNewTuit({
