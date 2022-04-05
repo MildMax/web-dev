@@ -5,29 +5,7 @@ import {createTuit} from "../../../actions/tuits-actions";
 
 const WhatsHappening = () => {
 
-    const [newTuit, setNewTuit] = useState({
-            topic: "Web Development",
-            postedBy: {
-                // placed username in quotes per assignment spec
-                "username": "ReactJS"
-            },
-            liked: false,
-            disliked: false,
-            verified: false,
-            handle: "ReactJS",
-            time: "2h",
-            tuit: "",
-            avatarImage: "/images/doom-guy-alt.png",
-            attachments: {
-                image: "/images/doom_banner_alt.jpg"
-            },
-            stats: {
-                comments: 0,
-                retuits: 0,
-                likes: 0,
-                dislikes: 0
-            },
-    });
+    const [newTuit, setNewTuit] = useState({tuit: ""});
 
     const dispatch = useDispatch();
 
