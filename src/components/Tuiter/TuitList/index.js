@@ -10,7 +10,7 @@ const TuitList = () => {
     const tuits = useSelector(selectAllTuits);
 
     const dispatch = useDispatch();
-    useEffect(() => findAllTuits(dispatch), []);
+    useEffect(() => findAllTuits(dispatch), [dispatch]);
 
     return(
         <ul className="list-group ms-0 me-0 mt-3 mb-0">
