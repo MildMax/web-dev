@@ -14,7 +14,7 @@ const TuitList = () => {
 
     return(
         <ul className="list-group ms-0 me-0 mt-3 mb-0">
-            {tuits.map(tuit => { return(
+            {tuits.sort((a,b) => b.timePosted - a.timePosted).map(tuit => { return(
                 <TuitListItem key={tuit._id} tuit={tuit}/>
             );
             })}
